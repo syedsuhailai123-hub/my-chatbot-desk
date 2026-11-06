@@ -1,3 +1,5 @@
+cd ~/my-chatbot/cloud_upload
+cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +20,8 @@
     -webkit-background-clip: text; background-clip: text; color: transparent;
   }
   h2 { font-size: 13px; letter-spacing: 3px; color: var(--gold); margin: 22px 0 8px; text-transform: uppercase; }
-  .sub { font-size: 12px; letter-spacing: 2px; color: #ffd98a; margin: 6px 0 16px; }
+  .sub { font-size: 12px; letter-spacing: 1px; color: #ffd98a; margin: 8px 0 4px; }
+  .warn { color: #ff8a7a; font-weight: bold; }
   .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
   .card {
     border: 1px solid rgba(255,200,61,.5); border-left: 3px solid var(--gold);
@@ -30,6 +33,10 @@
   .card:nth-child(3) { animation-delay: .16s; }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   .label { font-size: 11px; letter-spacing: 2px; color: #ffd98a; text-transform: uppercase; }
+  .badge {
+    display: inline-block; font-size: 10px; letter-spacing: 2px; padding: 2px 6px; margin-top: 6px;
+    border: 1px solid #ffc83d; color: #ffc83d; border-radius: 3px;
+  }
   .big { font-size: 26px; margin-top: 6px; }
   .up { color: #7dffb0; } .down { color: #ff8a7a; } .muted { color: #c9a77a; font-size: 13px; }
   ul { margin: 0; padding-left: 18px; } li { margin: 8px 0; font-size: 14px; line-height: 1.35; }
@@ -38,12 +45,14 @@
     background: #4fd8ff; box-shadow: 0 0 8px #4fd8ff; animation: blink 1.4s infinite;
   }
   @keyframes blink { 50% { opacity: .25; } }
-  .foot { margin-top: 24px; font-size: 12px; color: #c9a77a; }
+  .foot { margin-top: 24px; font-size: 12px; color: #c9a77a; line-height: 1.5; }
 </style>
 </head>
 <body>
 <h1>J.A.R.V.I.S.</h1>
 <div class="sub"><span class="pulse"></span><span id="upd">LOADING...</span></div>
+<div class="sub" id="ai"></div>
+<div class="sub warn" id="stale"></div>
 
 <div class="grid">
   <div class="card"><div class="label">Bitcoin</div><div class="big" id="btc">--</div><div class="muted" id="btc_c"></div></div>
@@ -51,13 +60,14 @@
   <div class="card"><div class="label">Idea tracker</div><div class="muted" id="grade">--</div></div>
 </div>
 
-<h2>Latest AI ideas</h2>
-<div class="grid" id="ideas"></div>
+<h2>AI ideas (unverified)</h2>
+<div class="muted">These are automatic guesses from a small AI model. They are not recommendations and have not been proven. An idea only counts after the tracker shows enough graded results to beat the baseline.</div>
+<div class="grid" id="ideas" style="margin-top:10px"></div>
 
 <h2>Headlines</h2>
 <div class="card"><ul id="heads"></ul></div>
 
-<div class="foot">Paper research only. Not financial advice. Ideas must beat the baseline over 100+ graded results before they mean anything.</div>
+<div class="foot">Paper research only. Not financial advice. Ideas must beat the baseline over 100 or more graded results before they mean anything.</div>
 
 <script>
 function el(tag, text, cls) {
@@ -66,18 +76,34 @@ function el(tag, text, cls) {
   e.textContent = text;
   return e;
 }
+function parseUtc(s) {
+  // "2026-11-06 04:22 UTC" -> Date
+  const m = /^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}) UTC$/.exec(s || "");
+  return m ? new Date(m[1] + "T" + m[2] + ":00Z") : null;
+}
 function setPrice(id, cid, p) {
   const big = document.getElementById(id), c = document.getElementById(cid);
   if (!p) { big.textContent = "--"; c.textContent = "no data"; return; }
   big.textContent = p.close.toLocaleString("en-US", { maximumFractionDigits: 2 });
-  c.textContent = p.date + "  ·  " + (p.change_1d_pct >= 0 ? "+" : "") + p.change_1d_pct + "% today";
+  const sign = p.change_1d_pct >= 0 ? "+" : "";
+  c.textContent = "price date " + p.date + " · " + sign + p.change_1d_pct + "% vs previous close";
   c.className = "muted " + (p.change_1d_pct >= 0 ? "up" : "down");
 }
 async function load() {
   try {
     const r = await fetch("data/status.json?t=" + Date.now(), { cache: "no-store" });
     const s = await r.json();
-    document.getElementById("upd").textContent = "UPDATED " + s.updated_utc + "  ·  AI " + s.ai_status;
+
+    document.getElementById("upd").textContent = "DATA UPDATED " + s.updated_utc;
+    document.getElementById("ai").textContent = "AI STEP: " + s.ai_status;
+
+    const updated = parseUtc(s.updated_utc);
+    const hours = updated ? (Date.now() - updated.getTime()) / 3600000 : null;
+    document.getElementById("stale").textContent =
+      hours !== null && hours > 26
+        ? "STALE: data is " + Math.round(hours) + " hours old. The daily job may not be running."
+        : "";
+
     setPrice("btc", "btc_c", s.prices.BTC);
     setPrice("gold", "gold_c", s.prices.GOLD);
 
@@ -86,15 +112,18 @@ async function load() {
     document.getElementById("grade").textContent =
       "Made " + g.made + " · graded " + g.graded + " · pending " + g.pending +
       (g.hit_rate !== null ? " · hit rate " + g.hit_rate + "%" : "") +
-      ". Baseline 5-day up rate: BTC " + (b.BTC ?? "?") + "%, GOLD " + (b.GOLD ?? "?") + "%.";
+      ". Baseline 5-day up rate: BTC " + (b.BTC ?? "?") + "%, GOLD " + (b.GOLD ?? "?") + "%. " +
+      (g.graded < 100 ? "Need 100+ graded before any conclusion." : "");
 
     const ideas = document.getElementById("ideas");
     ideas.replaceChildren();
     if (!s.ideas.length) ideas.appendChild(el("div", "No ideas yet.", "card muted"));
     for (const i of s.ideas) {
       const card = el("div", "", "card");
-      card.appendChild(el("div", i.asset + " " + i.direction, "big " + (i.direction === "UP" ? "up" : "down")));
-      card.appendChild(el("div", "Made " + i.made_on + " on data to " + i.as_of, "label"));
+      card.appendChild(el("div", i.asset + " " + i.direction,
+        "big " + (i.direction === "UP" ? "up" : "down")));
+      card.appendChild(el("span", "UNVERIFIED PAPER IDEA", "badge"));
+      card.appendChild(el("div", "Made " + i.made_on + " from data up to " + i.as_of, "label"));
       card.appendChild(el("div", i.reason, "muted"));
       ideas.appendChild(card);
     }
@@ -111,3 +140,8 @@ setInterval(load, 300000);
 </script>
 </body>
 </html>
+EOF
+git add index.html
+git commit -m "Mark ideas unverified, add stale warning"
+git pull --rebase -q
+git push
