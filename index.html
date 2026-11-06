@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J.A.R.V.I.S. Desk</title>
+<style>
+  :root { --gold: #ffc83d; --ink: #fff1d0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 18px; color: var(--ink);
+    font-family: -apple-system, system-ui, sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, #2a0307, #070102 70%);
+  }
+  h1 {
+    margin: 0; font-size: 28px; letter-spacing: 6px;
+    background: linear-gradient(90deg, #ffe08a, #ffc83d 50%, #ff5a4a);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 { font-size: 13px; letter-spacing: 3px; color: var(--gold); margin: 22px 0 8px; text-transform: uppercase; }
+  .sub { font-size: 12px; letter-spacing: 2px; color: #ffd98a; margin: 6px 0 16px; }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    border: 1px solid rgba(255,200,61,.5); border-left: 3px solid var(--gold);
+    border-radius: 6px; padding: 12px; background: rgba(179,0,27,.18);
+    box-shadow: 0 0 18px rgba(255,200,61,.08);
+    animation: rise .5s ease both;
+  }
+  .card:nth-child(2) { animation-delay: .08s; }
+  .card:nth-child(3) { animation-delay: .16s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .label { font-size: 11px; letter-spacing: 2px; color: #ffd98a; text-transform: uppercase; }
+  .big { font-size: 26px; margin-top: 6px; }
+  .up { color: #7dffb0; } .down { color: #ff8a7a; } .muted { color: #c9a77a; font-size: 13px; }
+  ul { margin: 0; padding-left: 18px; } li { margin: 8px 0; font-size: 14px; line-height: 1.35; }
+  .pulse {
+    display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px;
+    background: #4fd8ff; box-shadow: 0 0 8px #4fd8ff; animation: blink 1.4s infinite;
+  }
+  @keyframes blink { 50% { opacity: .25; } }
+  .foot { margin-top: 24px; font-size: 12px; color: #c9a77a; }
+</style>
+</head>
+<body>
+<h1>J.A.R.V.I.S.</h1>
+<div class="sub"><span class="pulse"></span><span id="upd">LOADING...</span></div>
+
+<div class="grid">
+  <div class="card"><div class="label">Bitcoin</div><div class="big" id="btc">--</div><div class="muted" id="btc_c"></div></div>
+  <div class="card"><div class="label">Gold</div><div class="big" id="gold">--</div><div class="muted" id="gold_c"></div></div>
+  <div class="card"><div class="label">Idea tracker</div><div class="muted" id="grade">--</div></div>
+</div>
+
+<h2>Latest AI ideas</h2>
+<div class="grid" id="ideas"></div>
+
+<h2>Headlines</h2>
+<div class="card"><ul id="heads"></ul></div>
+
+<div class="foot">Paper research only. Not financial advice. Ideas must beat the baseline over 100+ graded results before they mean anything.</div>
+
+<script>
+function el(tag, text, cls) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  e.textContent = text;
+  return e;
+}
+function setPrice(id, cid, p) {
+  const big = document.getElementById(id), c = document.getElementById(cid);
+  if (!p) { big.textContent = "--"; c.textContent = "no data"; return; }
+  big.textContent = p.close.toLocaleString("en-US", { maximumFractionDigits: 2 });
+  c.textContent = p.date + "  ·  " + (p.change_1d_pct >= 0 ? "+" : "") + p.change_1d_pct + "% today";
+  c.className = "muted " + (p.change_1d_pct >= 0 ? "up" : "down");
+}
+async function load() {
+  try {
+    const r = await fetch("data/status.json?t=" + Date.now(), { cache: "no-store" });
+    const s = await r.json();
+    document.getElementById("upd").textContent = "UPDATED " + s.updated_utc + "  ·  AI " + s.ai_status;
+    setPrice("btc", "btc_c", s.prices.BTC);
+    setPrice("gold", "gold_c", s.prices.GOLD);
+
+    const g = s.grade;
+    const b = g.baseline_up_pct || {};
+    document.getElementById("grade").textContent =
+      "Made " + g.made + " · graded " + g.graded + " · pending " + g.pending +
+      (g.hit_rate !== null ? " · hit rate " + g.hit_rate + "%" : "") +
+      ". Baseline 5-day up rate: BTC " + (b.BTC ?? "?") + "%, GOLD " + (b.GOLD ?? "?") + "%.";
+
+    const ideas = document.getElementById("ideas");
+    ideas.replaceChildren();
+    if (!s.ideas.length) ideas.appendChild(el("div", "No ideas yet.", "card muted"));
+    for (const i of s.ideas) {
+      const card = el("div", "", "card");
+      card.appendChild(el("div", i.asset + " " + i.direction, "big " + (i.direction === "UP" ? "up" : "down")));
+      card.appendChild(el("div", "Made " + i.made_on + " on data to " + i.as_of, "label"));
+      card.appendChild(el("div", i.reason, "muted"));
+      ideas.appendChild(card);
+    }
+
+    const heads = document.getElementById("heads");
+    heads.replaceChildren();
+    for (const h of s.headlines) heads.appendChild(el("li", h));
+  } catch (e) {
+    document.getElementById("upd").textContent = "Could not load data: " + e;
+  }
+}
+load();
+setInterval(load, 300000);
+</script>
+</body>
+</html>
