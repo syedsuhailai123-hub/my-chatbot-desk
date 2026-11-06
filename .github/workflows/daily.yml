@@ -1,0 +1,36 @@
+name: daily-desk
+
+on:
+  schedule:
+    - cron: "30 3 * * *"   # 03:30 UTC = 09:00 India time, every day
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
+        run: pip install requests streamlit
+
+      - name: Collect prices and headlines
+        run: python daily_desk.py collect
+
+      - name: Grade past ideas
+        run: python daily_desk.py grade
+
+      - name: Save results to the repository
+        run: |
+          git config user.name "daily-desk-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          git commit -m "Daily update" || echo "Nothing new to save"
+          git push

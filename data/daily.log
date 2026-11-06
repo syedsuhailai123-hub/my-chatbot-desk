@@ -1,0 +1,32 @@
+=== Fri Nov  6 07:29:56 IST 2026 ===
+2026-11-06 07:29:59.157 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-06 07:29:59.997 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+Collected prices and headlines.
+  BTC: last close 80,405.29 on 2026-11-04 (729 days stored)
+  GOLD: last close 4,073.00 on 2026-11-04 (503 days stored)
+  Headlines saved: 20
+Ideas were already made today. Run grade to see results.
+2026-11-06 07:30:03.144 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+Ideas made: 3 · graded: 0 · still pending: 3
+
+Baseline: how often price rose over 5 days in the stored history
+  BTC: 50.1% of 5-day windows went up
+  GOLD: 58.4% of 5-day windows went up
+
+Fewer than 100 graded ideas. Do not draw conclusions yet.
+=== Fri Nov  6 07:36:10 IST 2026 ===
+2026-11-06 07:36:14.029 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-06 07:36:14.812 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+Collected prices and headlines.
+  BTC: last close 80,405.29 on 2026-11-04 (729 days stored)
+  GOLD: last close 4,113.50 on 2026-11-05 (504 days stored)
+  Headlines saved: 20
+Ideas were already made today. Run grade to see results.
+2026-11-06 07:36:16.331 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+Ideas made: 3 · graded: 0 · still pending: 3
+
+Baseline: how often price rose over 5 days in the stored history
+  BTC: 50.1% of 5-day windows went up
+  GOLD: 58.5% of 5-day windows went up
+
+Fewer than 100 graded ideas. Do not draw conclusions yet.
