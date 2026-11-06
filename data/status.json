@@ -1,0 +1,67 @@
+{
+  "updated_utc": "2026-11-06 04:22 UTC",
+  "ai_status": "ideas already made today",
+  "prices": {
+    "BTC": {
+      "date": "2026-11-04",
+      "close": 80405.29,
+      "change_1d_pct": 3.96
+    },
+    "GOLD": {
+      "date": "2026-11-05",
+      "close": 4113.5,
+      "change_1d_pct": 0.99
+    }
+  },
+  "headlines": [
+    "Police car set alight in Glasgow amid Bonfire Night trouble",
+    "Trump signs order preventing future presidents from changing Oval Office",
+    "Global tech stocks plunge as US midterms add to AI slowdown fears",
+    "Russell Brand found guilty of rape and sexual assault",
+    "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
+    "Democratic socialist defeats incumbent Karen Bass in Los Angeles mayor's race",
+    "Could the earliest weakening of the polar vortex on record bring UK snow?",
+    "Met chief warns policing 'heading for failure' without reform",
+    "The Papers:  'Justice' and 'Predatory' Brand faces jail",
+    "U2 on Dolly Parton's final duet; and the 'grudge match' behind their new album",
+    "Global tech stocks plunge as US midterms add to AI slowdown fears",
+    "The engine parts that 'fight the laws of the universe'",
+    "'I was asked if I was a crier': Your worst job interviews revealed",
+    "Firms told to publish salaries in job adverts ahead of new law",
+    "Interest rates hiked to 4% in first increase in over three years"
+  ],
+  "ideas": [
+    {
+      "made_on": "2026-11-06",
+      "as_of": "2026-11-04",
+      "asset": "BTC",
+      "direction": "DOWN",
+      "reason": "Reason from data: Major tech stocks plunged as US midterms add to fears of AI slowdown."
+    },
+    {
+      "made_on": "2026-11-06",
+      "as_of": "2026-11-04",
+      "asset": "GOLD",
+      "direction": "UP",
+      "reason": "Reason from data: The asset has shown a steady increase in value over the past week, with 4 out of the last 7 daily closes being UP."
+    },
+    {
+      "made_on": "2026-11-06",
+      "as_of": "2026-11-04",
+      "asset": "BTC",
+      "direction": "UP",
+      "reason": "Reason from data: The asset has been experiencing a significant price drop, with 3 out of the last 5 daily closes being DOWN."
+    }
+  ],
+  "grade": {
+    "made": 3,
+    "graded": 0,
+    "pending": 3,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "baseline_up_pct": {
+      "BTC": 50.1,
+      "GOLD": 58.5
+    }
+  }
+}
