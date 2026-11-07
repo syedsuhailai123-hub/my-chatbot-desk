@@ -1,8 +1,8 @@
-name: daily-desk
+name: hourly-desk
 
 on:
   schedule:
-    - cron: "30 3 * * *"   # 03:30 UTC = 09:00 India time
+    - cron: "15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -21,16 +21,19 @@ jobs:
       - name: Install packages
         run: pip install requests streamlit
 
-      - name: Collect, make ideas, grade, update status
+      - name: Collect data and make the daily AI ideas
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python daily_desk.py daily
 
+      - name: Run the 5 paper slots
+        run: python paper_trader.py
+
       - name: Save results to the repository
         run: |
-          git config user.name "daily-desk-bot"
+          git config user.name "desk-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/
-          git commit -m "Daily update" || echo "Nothing new to save"
+          git commit -m "Hourly update" || echo "Nothing new to save"
           git pull --rebase -q
           git push
