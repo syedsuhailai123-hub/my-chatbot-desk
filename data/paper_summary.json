@@ -1,0 +1,47 @@
+{
+  "updated_utc": "2026-11-07 12:58 UTC",
+  "equity": 10000.0,
+  "slots": {
+    "BTC-1h-trend": {
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change.",
+      "trades": 0,
+      "win_rate_pct": null,
+      "avg_R": null,
+      "open": null
+    },
+    "BTC-4h-breakout": {
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change.",
+      "trades": 0,
+      "win_rate_pct": null,
+      "avg_R": null,
+      "open": null
+    },
+    "BTC-1d-trend": {
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change.",
+      "trades": 0,
+      "win_rate_pct": null,
+      "avg_R": null,
+      "open": null
+    },
+    "GOLD-1h-reversion": {
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change.",
+      "trades": 0,
+      "win_rate_pct": null,
+      "avg_R": null,
+      "open": null
+    },
+    "GOLD-1d-breakout": {
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change.",
+      "trades": 0,
+      "win_rate_pct": null,
+      "avg_R": null,
+      "open": null
+    }
+  },
+  "recent_trades": []
+}

@@ -1,0 +1,40 @@
+{
+  "equity": 10000.0,
+  "slots": {
+    "BTC-1h-trend": {
+      "open": null,
+      "last_signal_t": null,
+      "trades": [],
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change."
+    },
+    "BTC-4h-breakout": {
+      "open": null,
+      "last_signal_t": null,
+      "trades": [],
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change."
+    },
+    "BTC-1d-trend": {
+      "open": null,
+      "last_signal_t": null,
+      "trades": [],
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change."
+    },
+    "GOLD-1h-reversion": {
+      "open": null,
+      "last_signal_t": null,
+      "trades": [],
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change."
+    },
+    "GOLD-1d-breakout": {
+      "open": null,
+      "last_signal_t": null,
+      "trades": [],
+      "mode": "active",
+      "mode_note": "Learning: 0/30 trades needed before any mode change."
+    }
+  }
+}

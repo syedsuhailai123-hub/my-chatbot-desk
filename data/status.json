@@ -1,29 +1,29 @@
 {
-  "updated_utc": "2026-11-07 04:15 UTC",
+  "updated_utc": "2026-11-07 12:58 UTC",
   "ai_status": "error: 'latin-1' codec can't encode character '\\u2028' in position 171: ordinal not in range(256)",
   "prices": {
     "BTC": {
-      "date": "2026-11-05",
-      "close": 75942.12,
-      "change_1d_pct": -5.55
+      "date": "2026-11-06",
+      "close": 75746.93,
+      "change_1d_pct": -0.26
     },
     "GOLD": {
       "date": "2026-11-06",
-      "close": 4079.5,
-      "change_1d_pct": -0.83
+      "close": 4074.9,
+      "change_1d_pct": -0.94
     }
   },
   "headlines": [
-    "Paraguay's president impeached after collapse of bank",
-    "One of the year's most prolific meteor showers to light up the night sky this weekend",
-    "Skepta: 'I'm what it looks like if you give an immigrant child a chance'",
-    "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
-    "Gladiator II stuntman sues over injuries from on-set explosion",
-    "This man refused life-saving treatment because of his religion - days later the rules changed",
-    "The Papers: 'Meghan's father charged' and 'Brand investigation widens'",
-    "What happens if all the lights go out? This is the plan for a 'Black Sky' event",
-    "Six tries and a big win - but were Ireland ruthless?",
-    "England 'disappointment' fuels Dewsbury-Hall's Everton heroics",
+    "Ukraine's power network suffers further damage after fresh Russian strikes",
+    "Four things we learned this week about 2028 White House race",
+    "Ponga-inspired New Zealand reach World Cup final",
+    "Relief, tears and sadness: Married at First Sight UK cast react to show being axed",
+    "Victims in rape cases must not feel like they are on trial, Burnham says",
+    "Monty Don bids 'final goodbye' to Gardeners' World after two decades",
+    "Two men arrested after boy injured in sword attack",
+    "Knicks defend Taylor Swift after players name her 'fakest celebrity fan'",
+    "Boy, 4, dies after Range Rover crashes on country road",
+    "Meghan's father Thomas Markle under house arrest after child sex abuse material charge",
     "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
     "Elon Musk appears to signal the end of the road for Cybertruck",
     "AI stocks climb after trillions wiped from market values",
@@ -60,7 +60,7 @@
     "hit_rate": null,
     "avg_return_pct": null,
     "baseline_up_pct": {
-      "BTC": 50.1,
+      "BTC": 50.0,
       "GOLD": 58.6
     }
   }
