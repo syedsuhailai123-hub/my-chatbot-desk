@@ -116,6 +116,8 @@ def safe_ascii(s):
     return s.encode("ascii", "replace").decode("ascii")
 
 def ask_llm(system, user):
+    # TRACE_LOGGED: all text is cleaned before any network call
+    system, user = safe_ascii(system), safe_ascii(user)
     key = os.environ.get("GROQ_API_KEY")
     if key:
         payload = {
@@ -144,8 +146,9 @@ def make_ideas(series, headlines):
     try:
         raw, backend = ask_llm(SYSTEM, build_prompt(series, headlines))
     except Exception as e:
-        print(f"AI step failed: {e}")
-        return f"error: {e}"
+        import traceback
+        traceback.print_exc()
+        return f"error: {type(e).__name__}: {str(e)[:120]}"
     with open(RAW_FILE, "a", encoding="utf-8") as f:
         f.write(f"--- {today} ({backend}) ---\n{raw}\n\n")
     ideas = parse_ideas(raw)
