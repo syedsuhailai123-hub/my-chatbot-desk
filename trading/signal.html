@@ -36,7 +36,7 @@ th{color:var(--muted);font-size:11px;text-transform:uppercase;background:var(--p
   <h1>Live signal</h1>
   <div class="sub" id="updated">Loading…</div>
 </header>
-<p class="sub"><a href="./">← Back to the desk</a></p>
+<p class="sub"><a href="../">← Back to the desk</a></p>
 
 <div class="notice">This shows what the frozen rule says on the latest completed hourly candle. It is information only, not an instruction to trade. The rule has not yet passed its forward test. The demo bot places orders only when it is run manually with the trade flag.</div>
 
@@ -140,7 +140,7 @@ function card(name, a) {
 
 async function load() {
   try {
-    const r = await fetch("data/signal.json?t=" + Date.now(), { cache: "no-store" });
+    const r = await fetch("../data/signal.json?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("not published");
     const s = await r.json();
     $("updated").textContent = "Updated " + s.updated_utc + " · " + s.rule;

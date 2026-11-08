@@ -34,7 +34,7 @@ th{color:var(--muted);font-size:12px;text-transform:uppercase;background:var(--p
   <h1>Candle timer and decision log</h1>
   <div class="sub" id="updated">Loading…</div>
 </header>
-<p class="sub"><a href="./">← Back to the desk</a> · <a href="signal.html">Live signal</a></p>
+<p class="sub"><a href="../">← Back to the desk</a> · <a href="signal.html">Live signal</a></p>
 
 <div class="card">
   <div class="label" id="current">Current candle</div>
@@ -90,7 +90,7 @@ function decisionClass(d) {
 
 async function load() {
   try {
-    const r = await fetch("data/candle_log.json?t=" + Date.now(), { cache: "no-store" });
+    const r = await fetch("../data/candle_log.json?t=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("not published");
     const d = await r.json();
     const recs = d.records || [];
