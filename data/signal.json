@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-11-08 23:32 UTC",
+  "updated_utc": "2026-11-08 23:41 UTC",
   "rule": "Frozen gold rule: EMA20/50 trend, RSI band, MACD cross, on completed hourly candles.",
   "max_candle_age_hours": 3.0,
   "assets": {
     "GOLD": {
       "last_bar_utc": "2026-11-06 21:00 UTC",
       "close": 4074.9,
-      "candle_age_hours": 50.5,
+      "candle_age_hours": 50.7,
       "fresh": false,
       "market_open": true,
       "signal": "NONE",
@@ -106,7 +106,7 @@
     "BTC": {
       "last_bar_utc": "2026-11-08 22:00 UTC",
       "close": 74362.68,
-      "candle_age_hours": 1.5,
+      "candle_age_hours": 1.7,
       "fresh": true,
       "market_open": true,
       "signal": "NONE",

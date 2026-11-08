@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Desk · Candle timer and log</title>
+<style>
+:root{--bg:#0b1220;--panel:#111a2e;--panel2:#162340;--line:#1f2d4d;--text:#e6edf7;--muted:#8a9bb8;--good:#22c55e;--bad:#ef4444;--warn:#f59e0b}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 18px 40px}
+header{border-bottom:1px solid var(--line);padding-bottom:14px}
+h1{margin:0;font-size:20px;font-weight:650}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+a{color:#60a5fa;text-decoration:none}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:16px}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.timer{font-size:44px;font-weight:700;font-variant-numeric:tabular-nums;margin:8px 0 4px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:14px}
+.big{font-size:22px;font-weight:650;font-variant-numeric:tabular-nums}
+.good{color:var(--good)} .bad{color:var(--bad)} .warn{color:var(--warn)} .muted{color:var(--muted)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-top:16px}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-size:12px;text-transform:uppercase;background:var(--panel2)}
+.reason{white-space:normal;min-width:260px;color:var(--muted)}
+.note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Candle timer and decision log</h1>
+  <div class="sub" id="updated">Loading…</div>
+</header>
+<p class="sub"><a href="./">← Back to the desk</a> · <a href="signal.html">Live signal</a></p>
+
+<div class="card">
+  <div class="label" id="current">Current candle</div>
+  <div class="timer" id="timer">--:--:--</div>
+  <div class="note">Time left until the current hourly candle closes (UTC clock on this screen). After it closes, the cloud job reads the new candle at about 15 minutes past the hour and writes one row for it below.</div>
+  <div class="metrics">
+    <div><div class="label">Candles logged</div><div class="big" id="n_total">--</div></div>
+    <div><div class="label">Demo orders placed</div><div class="big good" id="n_placed">--</div></div>
+    <div><div class="label">Rule fired, no order yet</div><div class="big warn" id="n_noorder">--</div></div>
+    <div><div class="label">No trade (no signal, closed or stale)</div><div class="big muted" id="n_notrade">--</div></div>
+  </div>
+</div>
+
+<div class="tablewrap"><table>
+  <thead><tr><th>Candle (UTC)</th><th>Asset</th><th>Close</th><th>Rule</th><th>Decision</th><th>Why</th></tr></thead>
+  <tbody id="rows"></tbody>
+</table></div>
+
+<div class="card">
+  <div class="label">How to read it</div>
+  <div class="note"><b>DEMO ORDER PLACED:</b> the demo bot sent an order for this candle and it filled. <b>NO DEMO ORDER:</b> the rule fired on a fresh candle, but no order is recorded yet. Run <code>python3 publish_demo.py</code> on your Mac after the bot runs, then refresh. <b>NO TRADE:</b> no signal, market closed, or the signal was too old. <b>UNKNOWN:</b> the candle was not recorded live, so the bot's action can't be known. Demo orders are practice-account orders only.</div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, "0");
+const HOUR = 3600000;
+
+function tick() {
+  const now = Date.now();
+  const next = (Math.floor(now / HOUR) + 1) * HOUR;
+  const left = Math.max(0, Math.floor((next - now) / 1000));
+  const h = Math.floor(left / 3600), m = Math.floor((left % 3600) / 60), s = left % 60;
+  $("timer").textContent = pad(h) + ":" + pad(m) + ":" + pad(s);
+  const open = new Date(next - HOUR), close = new Date(next);
+  $("current").textContent = "Current candle " + pad(open.getUTCHours()) + ":00 → " +
+    pad(close.getUTCHours()) + ":00 UTC (closes at " + pad(close.getUTCHours()) + ":00 UTC)";
+}
+
+function cell(text, cls) {
+  const td = document.createElement("td");
+  td.textContent = text == null ? "" : String(text);
+  if (cls) td.className = cls;
+  return td;
+}
+
+function decisionClass(d) {
+  if (d === "DEMO ORDER PLACED") return "good";
+  if (d === "NO DEMO ORDER" || d === "DEMO ORDER NOT FILLED") return "warn";
+  if (d === "UNKNOWN") return "muted";
+  return "muted";
+}
+
+async function load() {
+  try {
+    const r = await fetch("data/candle_log.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("not published");
+    const d = await r.json();
+    const recs = d.records || [];
+    $("updated").textContent = "Log updated " + d.updated_utc + " · newest first";
+    $("n_total").textContent = recs.length;
+    $("n_placed").textContent = recs.filter(x => x.decision === "DEMO ORDER PLACED").length;
+    $("n_noorder").textContent = recs.filter(x => x.decision === "NO DEMO ORDER").length;
+    $("n_notrade").textContent = recs.filter(x => x.decision === "NO TRADE").length;
+
+    const body = $("rows");
+    body.replaceChildren();
+    if (!recs.length) {
+      const tr = document.createElement("tr");
+      tr.appendChild(cell("No candles logged yet. The first rows appear after the next hourly run."));
+      body.appendChild(tr);
+      return;
+    }
+    for (const x of recs.slice(0, 100)) {
+      const tr = document.createElement("tr");
+      tr.append(
+        cell(x.candle_open_utc.slice(11, 16) + " → " + x.candle_close_utc.slice(11, 16) + " · " + x.candle_open_utc.slice(0, 10)),
+        cell(x.asset),
+        cell(Number(x.close).toLocaleString("en-US", { minimumFractionDigits: 2 })),
+        cell(x.signal, x.signal === "LONG" ? "good" : x.signal === "SHORT" ? "bad" : "muted"),
+        cell(x.decision, decisionClass(x.decision)),
+        cell(x.reason, "reason")
+      );
+      body.appendChild(tr);
+    }
+  } catch (e) {
+    $("updated").textContent = "Candle log not published yet. It appears after the next hourly run.";
+  }
+}
+
+tick();
+setInterval(tick, 1000);
+load();
+setInterval(load, 300000);
+</script>
+</body>
+</html>

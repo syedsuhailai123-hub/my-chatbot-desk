@@ -11,9 +11,17 @@ from forward_test import indicators
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(BASE, "data")
 OUT = os.path.join(DATA, "signal.json")
+LOG = os.path.join(DATA, "candle_log.json")
+DEMO = os.path.join(DATA, "demo_status.json")
 ASSETS = {"GOLD": "GC=F", "BTC": "BTC-USD"}
 HEADERS = {"User-Agent": "Mozilla/5.0 (signal page)"}
 MAX_AGE_HOURS = 3.0
+LOG_KEEP = 800
+BACKFILL_CANDLES = 24
+
+
+def fmt_utc(ts):
+    return datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 
 def fetch(sym):
@@ -30,9 +38,9 @@ def fetch(sym):
     return df[df["t"] + 3600 <= time.time()].reset_index(drop=True)
 
 
-def gold_market_open(now):
-    """Approximate: gold is closed from Friday 22:00 to Sunday 22:00 UTC."""
-    wd, h = now.weekday(), now.hour
+def gold_market_open(ts):
+    dt = datetime.fromtimestamp(ts, timezone.utc)
+    wd, h = dt.weekday(), dt.hour
     if wd == 5:
         return False
     if wd == 6 and h < 22:
@@ -58,27 +66,95 @@ def side_checks(row, side):
     return [{"name": n, "value": v, "ok": bool(ok)} for n, v, ok in items]
 
 
-def build(name, sym, now):
-    df = fetch(sym)
-    if len(df) < 60:
-        return {"error": f"Only {len(df)} completed candles returned."}
-    d = indicators(df)
+def demo_orders_by_candle():
+    """Maps candle open time (epoch seconds) to the demo order placed on that candle."""
+    if not os.path.exists(DEMO):
+        return {}
+    with open(DEMO, encoding="utf-8") as f:
+        orders = json.load(f).get("recent_orders", [])
+    out = {}
+    for o in orders:
+        sc = o.get("signal_candle")
+        if not sc:
+            continue
+        try:
+            ts = pd.Timestamp(sc)
+            ts = ts.tz_localize("UTC") if ts.tzinfo is None else ts.tz_convert("UTC")
+        except Exception:
+            continue
+        out[int(ts.floor("h").timestamp())] = o
+    return out
+
+
+def decide(sig, fresh, market, order, live):
+    if order is not None:
+        if order.get("filled"):
+            return ("DEMO ORDER PLACED",
+                    f"Filled at {order.get('fill_price')}. Stop {order.get('stop')}, target {order.get('target')}.")
+        return "DEMO ORDER NOT FILLED", "The order was sent but did not fill."
+    if not market:
+        return "NO TRADE", "Market was closed for this candle."
+    if sig == 0:
+        return "NO TRADE", "No signal: not every condition passed."
+    if not live:
+        return ("UNKNOWN",
+                "The rule fired on this older candle, but it was not recorded live, "
+                "so whether the bot acted is unknown.")
+    if not fresh:
+        return "NO TRADE", "Signal too old to act on."
+    return ("NO DEMO ORDER",
+            "The rule fired on a fresh candle, but no demo order is recorded. Run publish_demo.py "
+            "after the bot runs, or the bot was not started with --trade.")
+
+
+def records_for(name, d, now, demo):
+    recs = []
+    for i in range(max(60, len(d) - BACKFILL_CANDLES), len(d)):
+        row = d.iloc[i]
+        bar_open = int(row["t"])
+        live = i == len(d) - 1
+        age = (now - bar_open) / 3600
+        fresh = age <= MAX_AGE_HOURS
+        market = gold_market_open(bar_open) if name == "GOLD" else True
+        sig = int(row["Signal"])
+        order = demo.get(bar_open)
+        decision, reason = decide(sig, fresh, market, order, live)
+        recs.append({
+            "asset": name,
+            "open_ts": bar_open,
+            "candle_open_utc": fmt_utc(bar_open),
+            "candle_close_utc": fmt_utc(bar_open + 3600),
+            "close": round(float(row["Close"]), 2),
+            "signal": "LONG" if sig == 1 else "SHORT" if sig == -1 else "NONE",
+            "decision": decision,
+            "reason": reason,
+            "live": live,
+            "demo_order": None if order is None else {
+                "side": order.get("side"), "units": order.get("units"),
+                "stop": order.get("stop"), "target": order.get("target"),
+                "filled": order.get("filled"), "fill_price": order.get("fill_price"),
+            },
+        })
+    return recs
+
+
+def signal_block(name, d, now):
     row = d.iloc[-1]
     bar_open = int(row["t"])
-    age = (now.timestamp() - bar_open) / 3600
-    market = gold_market_open(now) if name == "GOLD" else True
+    age = (now - bar_open) / 3600
     sig = int(row["Signal"])
     side = "LONG" if sig == 1 else "SHORT" if sig == -1 else "NONE"
+    market = gold_market_open(bar_open) if name == "GOLD" else True
     history = []
     for r in d.tail(500).itertuples():
         if r.Signal != 0:
             history.append({
-                "time_utc": datetime.fromtimestamp(int(r.t), timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                "time_utc": fmt_utc(int(r.t)),
                 "side": "LONG" if r.Signal == 1 else "SHORT",
                 "close": round(float(r.Close), 2),
             })
     return {
-        "last_bar_utc": datetime.fromtimestamp(bar_open, timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "last_bar_utc": fmt_utc(bar_open),
         "close": round(float(row["Close"]), 2),
         "candle_age_hours": round(age, 1),
         "fresh": age <= MAX_AGE_HOURS,
@@ -95,18 +171,45 @@ def build(name, sym, now):
 
 
 def main():
-    now = datetime.now(timezone.utc)
-    assets = {name: build(name, sym, now) for name, sym in ASSETS.items()}
+    now = time.time()
+    stamp = fmt_utc(now)
+    demo = demo_orders_by_candle()
+    assets, new_records = {}, []
+    for name, sym in ASSETS.items():
+        df = fetch(sym)
+        if len(df) < 60:
+            assets[name] = {"error": f"Only {len(df)} completed candles returned."}
+            continue
+        d = indicators(df)
+        assets[name] = signal_block(name, d, now)
+        new_records += records_for(name, d, now, demo)
+
+    index = {}
+    if os.path.exists(LOG):
+        with open(LOG, encoding="utf-8") as f:
+            for r in json.load(f).get("records", []):
+                index[(r["asset"], r["open_ts"])] = r
+    for r in new_records:
+        key = (r["asset"], r["open_ts"])
+        old = index.get(key)
+        # Keep an earlier live decision unless a demo order now exists for that candle
+        if old and old.get("live") and not r["live"] and r["demo_order"] is None:
+            continue
+        index[key] = r
+    merged = sorted(index.values(), key=lambda r: r["open_ts"], reverse=True)[:LOG_KEEP]
+
+    os.makedirs(DATA, exist_ok=True)
+    with open(LOG, "w", encoding="utf-8") as f:
+        json.dump({"updated_utc": stamp, "records": merged}, f, indent=2)
     out = {
-        "updated_utc": now.strftime("%Y-%m-%d %H:%M UTC"),
+        "updated_utc": stamp,
         "rule": "Frozen gold rule: EMA20/50 trend, RSI band, MACD cross, on completed hourly candles.",
         "max_candle_age_hours": MAX_AGE_HOURS,
         "assets": assets,
     }
-    os.makedirs(DATA, exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
-    print("signal.json written:", {k: v.get("signal") for k, v in assets.items()})
+    print("signal.json and candle_log.json written. Records:", len(merged))
 
 
 if __name__ == "__main__":
