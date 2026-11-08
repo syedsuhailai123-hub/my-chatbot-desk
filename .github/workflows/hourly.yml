@@ -19,7 +19,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install packages
-        run: pip install requests streamlit
+        run: pip install requests streamlit pandas numpy
 
       - name: Collect data and make the daily AI ideas
         env:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Run the 5 paper slots
         run: python paper_trader.py
+
+      - name: Run the forward test (frozen gold rule)
+        run: python forward_test.py
 
       - name: Save results to the repository
         run: |
