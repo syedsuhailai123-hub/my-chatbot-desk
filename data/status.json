@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-08 08:10 UTC",
+  "updated_utc": "2026-11-08 08:58 UTC",
   "ai_status": "error: 'latin-1' codec can't encode character '\\u2028' in position 171: ordinal not in range(256)",
   "prices": {
     "BTC": {
@@ -14,6 +14,7 @@
     }
   },
   "headlines": [
+    "Australia reach World Cup final after Fiji scare",
     "What we know so far after Krakow gun attack",
     "The Papers: 'Briton dies in Krakow shootings' and 'Royals honour the fallen'",
     "The oldest club in London making FA Cup history",
@@ -23,7 +24,6 @@
     "Royal Family join veterans and families at Festival of Remembrance",
     "Property, football and politics: The links between Manchester and Abu Dhabi explained",
     "My parents chose to die together and I was left to grieve alone",
-    "The Trump coalition is shattered - what will Republicans do now?",
     "Traders 'priced out' of £12,000 Christmas market pitches",
     "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
     "Ipswich Town's new club shop 'here to stay'",
