@@ -1,0 +1,17 @@
+{
+  "forward_start_utc": "2026-11-08 18:00 UTC",
+  "forward_start_ts": 1794160800,
+  "rules": {
+    "symbol": "GC=F",
+    "bar_seconds": 3600,
+    "start_cash": 10000.0,
+    "risk_per_trade": 0.005,
+    "stop_atr": 1.5,
+    "reward_risk": 2.0,
+    "cost_per_side": 0.1
+  },
+  "criteria": {
+    "min_trades": 40,
+    "min_profit_factor": 1.2
+  }
+}

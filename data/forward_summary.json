@@ -1,0 +1,20 @@
+{
+  "updated_utc": "2026-11-08 18:52 UTC",
+  "forward_start_utc": "2026-11-08 18:00 UTC",
+  "rules_unchanged": true,
+  "status": "WAITING: 0 of 40 trades needed",
+  "net_pnl_usd": 0.0,
+  "return_pct": 0.0,
+  "closed_trades": 0,
+  "win_rate_pct": null,
+  "profit_factor": null,
+  "avg_R": null,
+  "max_drawdown_pct": 0.0,
+  "buy_and_hold_since_start_pct": null,
+  "open_position": null,
+  "criteria": {
+    "min_trades": 40,
+    "min_profit_factor": 1.2,
+    "min_net_pnl": 0
+  }
+}
