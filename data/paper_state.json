@@ -2,8 +2,20 @@
   "equity": 9899.999999999998,
   "slots": {
     "BTC-1h-trend": {
-      "open": null,
-      "last_signal_t": 1794128400,
+      "open": {
+        "side": -1,
+        "entry": 75653.8671875,
+        "entry_t": 1794157200,
+        "last_t": 1794157200,
+        "atr": 173.33730262075534,
+        "stop": 75913.87314143113,
+        "target": 75133.85527963773,
+        "max_hold": 48,
+        "bars_held": 0,
+        "opened": "2026-11-08 17:00 UTC",
+        "shadow": false
+      },
+      "last_signal_t": 1794157200,
       "trades": [
         {
           "slot": "BTC-1h-trend",

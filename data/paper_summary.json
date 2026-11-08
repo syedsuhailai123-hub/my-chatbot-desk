@@ -8,7 +8,13 @@
       "trades": 1,
       "win_rate_pct": 0.0,
       "avg_R": -1.0,
-      "open": null
+      "open": {
+        "side": "SHORT",
+        "entry": 75653.87,
+        "stop": 75913.87,
+        "target": 75133.86,
+        "shadow": false
+      }
     },
     "BTC-4h-breakout": {
       "mode": "active",
