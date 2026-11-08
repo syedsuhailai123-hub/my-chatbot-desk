@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-08 23:33 UTC",
+  "updated_utc": "2026-11-08 23:43 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,6 +14,7 @@
     }
   },
   "headlines": [
+    "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
     "Top House Democrat 'a hard yes' on impeaching Pete Hegseth",
     "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
     "Norris wins gripping race after Antonelli and Russell errors",
@@ -23,7 +24,6 @@
     "Maya Jama steps down as host of reality TV show Love Island",
     "White House vows to keep up immigration crackdown after midterms defeat",
     "Dense fog threatens Monday morning rush-hour disruption",
-    "Seven dead and more than 100 injured after trains collide in Egypt",
     "Government 'looking seriously' at banning under-16s from Vinted and eBay",
     "Traders 'priced out' of £12,000 Christmas market pitches",
     "He spent $50,000 on Labubus but now the craze is dying",
