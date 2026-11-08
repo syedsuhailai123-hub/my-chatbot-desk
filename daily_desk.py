@@ -106,14 +106,26 @@ def parse_ideas(text):
         out.append({"asset": asset, "direction": direction, "reason": reason[:250]})
     return out[:3]
 
+def safe_ascii(s):
+    """Replace every non-ASCII character so no HTTP library can fail on encoding."""
+    s = str(s)
+    for bad, good in {"\u2028": " ", "\u2029": " ", "\u2019": "'", "\u2018": "'",
+                      "\u201c": '"', "\u201d": '"', "\u2013": "-", "\u2014": "-",
+                      "\u2026": "..."}.items():
+        s = s.replace(bad, good)
+    return s.encode("ascii", "replace").decode("ascii")
+
 def ask_llm(system, user):
     key = os.environ.get("GROQ_API_KEY")
     if key:
-        r = requests.post(GROQ_URL, headers={"Authorization": f"Bearer {key}"}, json={
+        payload = {
             "model": GROQ_MODEL, "temperature": 0.2, "max_tokens": 300,
-            "messages": [{"role": "system", "content": system},
-                         {"role": "user", "content": user}],
-        }, timeout=120)
+            "messages": [{"role": "system", "content": safe_ascii(system)},
+                         {"role": "user", "content": safe_ascii(user)}],
+        }
+        r = requests.post(GROQ_URL, headers={"Authorization": f"Bearer {key}"},
+                          data=json.dumps(payload).encode("ascii"),
+                          timeout=120)
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"], "groq"
     r = requests.post(OLLAMA_URL, json={
