@@ -58,6 +58,47 @@
   <div class="card"><div class="label">Idea tracker</div><div class="muted" id="grade">--</div></div>
 </div>
 
+
+<h2>Forward test: frozen gold rule</h2>
+<div class="muted">Rules are locked and the test runs automatically each hour from a fixed start time. Pass needs 40+ closed trades, profit factor 1.2 or higher, and positive net P&amp;L.</div>
+<div class="card" id="forward-panel" style="margin-top:10px">
+  <div class="label">Status</div>
+  <div class="big" id="fw-status">Loading...</div>
+  <div class="muted" id="fw-meta"></div>
+  <div class="grid" style="margin-top:12px">
+    <div><div class="label">Closed trades</div><div class="big" id="fw-trades">--</div></div>
+    <div><div class="label">Net P&amp;L</div><div class="big" id="fw-pnl">--</div></div>
+    <div><div class="label">Win rate</div><div class="big" id="fw-win">--</div></div>
+    <div><div class="label">Profit factor</div><div class="big" id="fw-pf">--</div></div>
+    <div><div class="label">Max drawdown</div><div class="big" id="fw-dd">--</div></div>
+    <div><div class="label">Buy and hold since start</div><div class="big" id="fw-bh">--</div></div>
+  </div>
+  <div class="muted" id="fw-open" style="margin-top:10px"></div>
+</div>
+<div class="table-wrap" style="margin-top:10px"><table>
+  <thead><tr><th>Exit (UTC)</th><th>Side</th><th>Entry</th><th>Exit</th><th>Reason</th><th>P&amp;L $</th><th>R</th></tr></thead>
+  <tbody id="fw-trades-body"></tbody>
+</table></div>
+
+
+<h2>Demo broker bot (practice account)</h2>
+<div class="muted">Runs on the owner's Mac against a practice account only. Results appear here after the publish command is run.</div>
+<div class="card" id="demo-panel" style="margin-top:10px">
+  <div class="label">Status</div>
+  <div class="big" id="dm-status">Not published yet</div>
+  <div class="muted" id="dm-meta"></div>
+  <div class="grid" style="margin-top:12px">
+    <div><div class="label">Practice NAV</div><div class="big" id="dm-nav">--</div></div>
+    <div><div class="label">Broker closed trades</div><div class="big" id="dm-closed">--</div></div>
+    <div><div class="label">Broker realized P&amp;L</div><div class="big" id="dm-pnl">--</div></div>
+    <div><div class="label">Bot orders placed</div><div class="big" id="dm-orders">--</div></div>
+  </div>
+</div>
+<div class="table-wrap" style="margin-top:10px"><table>
+  <thead><tr><th>Time (UTC)</th><th>Side</th><th>Units</th><th>Stop</th><th>Target</th><th>Filled</th></tr></thead>
+  <tbody id="dm-orders-body"></tbody>
+</table></div>
+
 <h2>AI ideas (unverified)</h2>
 <div class="muted">These are automatic guesses from a small AI model. They are not recommendations and have not been proven. An idea only counts after the tracker shows enough graded results to beat the baseline.</div>
 <div class="grid" id="ideas" style="margin-top:10px"></div>
@@ -135,6 +176,95 @@ async function load() {
 }
 load();
 setInterval(load, 300000);
+
+async function loadForward() {
+  try {
+    const f = await getJson("data/forward_summary.json");
+    const status = document.getElementById("fw-status");
+    status.textContent = f.status;
+    status.className = "big " + (f.status.startsWith("PASS") ? "up" :
+                                 f.status.startsWith("FAIL") || f.status.startsWith("INVALID") ? "down" : "");
+    document.getElementById("fw-meta").textContent =
+      "Forward start " + f.forward_start_utc + " · updated " + f.updated_utc +
+      (f.rules_unchanged ? "" : " · WARNING: rules changed");
+    document.getElementById("fw-trades").textContent = f.closed_trades + " / " + f.criteria.min_trades;
+    const pnl = document.getElementById("fw-pnl");
+    pnl.textContent = (f.net_pnl_usd >= 0 ? "+" : "") + "$" + f.net_pnl_usd.toLocaleString("en-US", { minimumFractionDigits: 2 });
+    pnl.className = "big " + (f.net_pnl_usd >= 0 ? "up" : "down");
+    document.getElementById("fw-win").textContent = f.win_rate_pct === null ? "--" : f.win_rate_pct + "%";
+    document.getElementById("fw-pf").textContent = f.profit_factor === null ? "--" : f.profit_factor;
+    document.getElementById("fw-dd").textContent = f.max_drawdown_pct + "%";
+    document.getElementById("fw-bh").textContent =
+      f.buy_and_hold_since_start_pct === null ? "--" : (f.buy_and_hold_since_start_pct >= 0 ? "+" : "") + f.buy_and_hold_since_start_pct + "%";
+    document.getElementById("fw-open").textContent = f.open_position
+      ? "Open now: " + f.open_position.side + " from " + f.open_position.entry +
+        " (stop " + f.open_position.stop + ", target " + f.open_position.target + ")"
+      : "No open position.";
+  } catch (e) {
+    document.getElementById("fw-status").textContent = "Forward test not loaded yet";
+  }
+  try {
+    const rows = (await fetch("data/forward_trades.jsonl?t=" + Date.now(), { cache: "no-store" }).then(r => r.text()))
+      .split("\n").filter(Boolean).map(l => JSON.parse(l)).slice(-10).reverse();
+    const body = document.getElementById("fw-trades-body");
+    body.replaceChildren();
+    if (!rows.length) {
+      const tr = document.createElement("tr");
+      tr.appendChild(cell("No forward trades closed yet."));
+      body.appendChild(tr);
+    }
+    for (const t of rows) {
+      const tr = document.createElement("tr");
+      tr.appendChild(cell(t.exit_utc));
+      tr.appendChild(cell(t.side, t.side === "LONG" ? "up" : "down"));
+      tr.appendChild(cell(String(t.entry)));
+      tr.appendChild(cell(String(t.exit)));
+      tr.appendChild(cell(t.reason));
+      tr.appendChild(cell((t.pnl >= 0 ? "+" : "") + t.pnl.toFixed(2), t.pnl >= 0 ? "up" : "down"));
+      tr.appendChild(cell((t.R >= 0 ? "+" : "") + t.R.toFixed(2) + "R", t.R >= 0 ? "up" : "down"));
+      body.appendChild(tr);
+    }
+  } catch (e) {
+    document.getElementById("fw-trades-body").replaceChildren();
+  }
+}
+loadForward();
+setInterval(loadForward, 300000);
+
+
+async function loadDemo() {
+  try {
+    const d = await getJson("data/demo_status.json");
+    document.getElementById("dm-status").textContent = d.stop_switch_on ? "STOP SWITCH ON (bot blocked)" : "Running (dry-run safe by default)";
+    document.getElementById("dm-meta").textContent = "Updated " + d.updated_utc + " · " + d.note;
+    document.getElementById("dm-nav").textContent = "$" + d.account_nav.toLocaleString("en-US", { minimumFractionDigits: 2 });
+    document.getElementById("dm-closed").textContent = d.broker_closed_trades;
+    document.getElementById("dm-pnl").textContent = (d.broker_realized_pnl >= 0 ? "+" : "") + "$" + d.broker_realized_pnl.toFixed(2);
+    document.getElementById("dm-orders").textContent = d.bot_orders;
+    const body = document.getElementById("dm-orders-body");
+    body.replaceChildren();
+    if (!d.recent_orders.length) {
+      const tr = document.createElement("tr");
+      tr.appendChild(cell("No orders placed by the bot yet."));
+      body.appendChild(tr);
+    }
+    for (const o of d.recent_orders) {
+      const tr = document.createElement("tr");
+      tr.appendChild(cell(o.time_utc));
+      tr.appendChild(cell(o.side));
+      tr.appendChild(cell(String(o.units)));
+      tr.appendChild(cell(String(o.stop)));
+      tr.appendChild(cell(String(o.target)));
+      tr.appendChild(cell(o.filled ? "yes" : "no"));
+      body.appendChild(tr);
+    }
+  } catch (e) {
+    document.getElementById("dm-status").textContent = "Not published yet";
+  }
+}
+loadDemo();
+setInterval(loadDemo, 300000);
+
 </script>
 </body>
 </html>
