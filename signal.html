@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Desk · Live signal</title>
+<style>
+:root{--bg:#0b1220;--panel:#111a2e;--panel2:#162340;--line:#1f2d4d;--text:#e6edf7;--muted:#8a9bb8;--good:#22c55e;--bad:#ef4444;--warn:#f59e0b;--accent:#3b82f6}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 18px 40px}
+header{border-bottom:1px solid var(--line);padding-bottom:14px}
+h1{margin:0;font-size:20px;font-weight:650}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+a{color:#60a5fa;text-decoration:none}
+.notice{margin:16px 0;padding:12px 14px;border-radius:10px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);color:#fbd38d;font-size:13px;line-height:1.5}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:16px}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.verdict{font-size:26px;font-weight:700;margin:10px 0 4px}
+.long{color:var(--good)} .short{color:var(--bad)} .none{color:var(--muted)} .stale{color:var(--warn)}
+.small{font-size:13px;color:var(--muted);line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+h3{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:#b9c7e0;margin:16px 0 6px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-size:11px;text-transform:uppercase;background:var(--panel2)}
+.pass{color:var(--good);font-weight:600} .fail{color:var(--bad);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Live signal</h1>
+  <div class="sub" id="updated">Loading…</div>
+</header>
+<p class="sub"><a href="./">← Back to the desk</a></p>
+
+<div class="notice">This shows what the frozen rule says on the latest completed hourly candle. It is information only, not an instruction to trade. The rule has not yet passed its forward test. The demo bot places orders only when it is run manually with the trade flag.</div>
+
+<div id="cards"></div>
+
+<div class="card">
+  <div class="label">How to read this page</div>
+  <p class="small">A <b>LONG</b> or <b>SHORT</b> signal means every condition for that direction is passing on the last completed candle.
+  <b>FRESH</b> means the candle started within the last 3 hours, which the demo bot requires before acting.
+  <b>STALE</b> means the rule fired but the candle is too old to act on.
+  <b>MARKET CLOSED</b> means gold is not trading right now (roughly Friday 22:00 to Sunday 22:00 UTC).
+  If a signal fires, the rule would enter at the next candle's open, not at the price shown here.</p>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const fmt = (n, d = 2) => n == null ? "--" : Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function table(headers, rows) {
+  const wrap = el("div", "tablewrap");
+  const t = el("table");
+  const thead = el("thead");
+  const hr = el("tr");
+  headers.forEach(h => hr.appendChild(el("th", "", h)));
+  thead.appendChild(hr);
+  const tb = el("tbody");
+  rows.forEach(r => {
+    const tr = el("tr");
+    r.forEach(c => {
+      if (typeof c === "object") tr.appendChild(el("td", c.cls, c.text));
+      else tr.appendChild(el("td", "", c));
+    });
+    tb.appendChild(tr);
+  });
+  t.append(thead, tb);
+  wrap.appendChild(t);
+  return wrap;
+}
+
+function checkTable(title, checks) {
+  const box = el("div");
+  box.appendChild(el("h3", "", title));
+  box.appendChild(table(["Condition", "Now", "Result"],
+    checks.map(c => [c.name, c.value, { text: c.ok ? "PASS" : "FAIL", cls: c.ok ? "pass" : "fail" }])));
+  return box;
+}
+
+function card(name, a) {
+  const c = el("div", "card");
+  if (a.error) {
+    c.appendChild(el("div", "label", name));
+    c.appendChild(el("p", "small", a.error));
+    return c;
+  }
+
+  let verdictText, verdictCls, note;
+  if (!a.market_open) {
+    verdictText = "MARKET CLOSED"; verdictCls = "none";
+    note = "No trade is possible until the market reopens. The signal below is from the last candle that closed before the break.";
+  } else if (a.signal !== "NONE" && a.fresh) {
+    verdictText = a.signal + " SIGNAL · FRESH";
+    verdictCls = a.signal === "LONG" ? "long" : "short";
+    note = "The rule fired on a fresh candle. The demo bot would act on this only if run with the trade flag and all other checks pass.";
+  } else if (a.signal !== "NONE") {
+    verdictText = a.signal + " RULE FIRED · STALE";
+    verdictCls = "stale";
+    note = "The candle started more than 3 hours ago, so the demo bot would refuse it.";
+  } else {
+    verdictText = "NO SIGNAL";
+    verdictCls = "none";
+    note = "Not every condition for LONG or SHORT is passing on this candle.";
+  }
+
+  c.appendChild(el("div", "label", name + " · last completed candle " + a.last_bar_utc));
+  c.appendChild(el("div", "verdict " + verdictCls, verdictText));
+  c.appendChild(el("div", "small", "Close " + fmt(a.close) + " · candle age " + a.candle_age_hours + "h · EMA20 " +
+    fmt(a.values.ema20) + " · EMA50 " + fmt(a.values.ema50) + " · RSI " + a.values.rsi + " · ATR " + fmt(a.values.atr)));
+  c.appendChild(el("div", "small", note));
+
+  const two = el("div", "two");
+  two.appendChild(checkTable("LONG conditions", a.long_checks));
+  two.appendChild(checkTable("SHORT conditions", a.short_checks));
+  c.appendChild(two);
+
+  c.appendChild(el("h3", "", "Last 10 signals"));
+  if (!a.history.length) {
+    c.appendChild(el("p", "small", "No signals in the recent history."));
+  } else {
+    c.appendChild(table(["Candle (UTC)", "Side", "Close"],
+      a.history.map(h => [h.time_utc, { text: h.side, cls: h.side === "LONG" ? "pass" : "fail" }, fmt(h.close)])));
+  }
+  return c;
+}
+
+async function load() {
+  try {
+    const r = await fetch("data/signal.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("not published");
+    const s = await r.json();
+    $("updated").textContent = "Updated " + s.updated_utc + " · " + s.rule;
+    $("cards").replaceChildren(...Object.entries(s.assets).map(([k, a]) => card(k, a)));
+  } catch (e) {
+    $("updated").textContent = "Signal data not published yet. It appears after the next hourly run.";
+  }
+}
+load();
+setInterval(load, 300000);
+</script>
+</body>
+</html>

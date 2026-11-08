@@ -1,0 +1,207 @@
+{
+  "updated_utc": "2026-11-08 23:32 UTC",
+  "rule": "Frozen gold rule: EMA20/50 trend, RSI band, MACD cross, on completed hourly candles.",
+  "max_candle_age_hours": 3.0,
+  "assets": {
+    "GOLD": {
+      "last_bar_utc": "2026-11-06 21:00 UTC",
+      "close": 4074.9,
+      "candle_age_hours": 50.5,
+      "fresh": false,
+      "market_open": true,
+      "signal": "NONE",
+      "values": {
+        "ema20": 4075.74,
+        "ema50": 4072.68,
+        "rsi": 48.9,
+        "atr": 17.77
+      },
+      "long_checks": [
+        {
+          "name": "Trend: EMA20 above EMA50",
+          "value": "4075.74 vs 4072.68",
+          "ok": true
+        },
+        {
+          "name": "RSI between 50 and 70",
+          "value": "48.9",
+          "ok": false
+        },
+        {
+          "name": "MACD above its signal line",
+          "value": "-3.923 vs -5.730",
+          "ok": true
+        }
+      ],
+      "short_checks": [
+        {
+          "name": "Trend: EMA20 below EMA50",
+          "value": "4075.74 vs 4072.68",
+          "ok": false
+        },
+        {
+          "name": "RSI between 30 and 50",
+          "value": "48.9",
+          "ok": true
+        },
+        {
+          "name": "MACD below its signal line",
+          "value": "-3.923 vs -5.730",
+          "ok": false
+        }
+      ],
+      "history": [
+        {
+          "time_utc": "2026-11-06 18:00 UTC",
+          "side": "LONG",
+          "close": 4087.2
+        },
+        {
+          "time_utc": "2026-11-05 05:00 UTC",
+          "side": "LONG",
+          "close": 4123.8
+        },
+        {
+          "time_utc": "2026-11-04 14:00 UTC",
+          "side": "LONG",
+          "close": 4046.8
+        },
+        {
+          "time_utc": "2026-11-04 05:00 UTC",
+          "side": "LONG",
+          "close": 4008.6
+        },
+        {
+          "time_utc": "2026-11-03 11:00 UTC",
+          "side": "SHORT",
+          "close": 3915.4
+        },
+        {
+          "time_utc": "2026-11-03 10:00 UTC",
+          "side": "SHORT",
+          "close": 3914.1
+        },
+        {
+          "time_utc": "2026-11-03 09:00 UTC",
+          "side": "SHORT",
+          "close": 3918.4
+        },
+        {
+          "time_utc": "2026-11-03 08:00 UTC",
+          "side": "SHORT",
+          "close": 3905.8
+        },
+        {
+          "time_utc": "2026-11-03 07:00 UTC",
+          "side": "SHORT",
+          "close": 3916.3
+        },
+        {
+          "time_utc": "2026-11-03 06:00 UTC",
+          "side": "SHORT",
+          "close": 3920.9
+        }
+      ]
+    },
+    "BTC": {
+      "last_bar_utc": "2026-11-08 22:00 UTC",
+      "close": 74362.68,
+      "candle_age_hours": 1.5,
+      "fresh": true,
+      "market_open": true,
+      "signal": "NONE",
+      "values": {
+        "ema20": 75497.76,
+        "ema50": 75803.69,
+        "rsi": 27.4,
+        "atr": 345.81
+      },
+      "long_checks": [
+        {
+          "name": "Trend: EMA20 above EMA50",
+          "value": "75497.76 vs 75803.69",
+          "ok": false
+        },
+        {
+          "name": "RSI between 50 and 70",
+          "value": "27.4",
+          "ok": false
+        },
+        {
+          "name": "MACD above its signal line",
+          "value": "-231.673 vs -74.325",
+          "ok": false
+        }
+      ],
+      "short_checks": [
+        {
+          "name": "Trend: EMA20 below EMA50",
+          "value": "75497.76 vs 75803.69",
+          "ok": true
+        },
+        {
+          "name": "RSI between 30 and 50",
+          "value": "27.4",
+          "ok": false
+        },
+        {
+          "name": "MACD below its signal line",
+          "value": "-231.673 vs -74.325",
+          "ok": true
+        }
+      ],
+      "history": [
+        {
+          "time_utc": "2026-11-08 20:00 UTC",
+          "side": "SHORT",
+          "close": 75643.57
+        },
+        {
+          "time_utc": "2026-11-07 21:00 UTC",
+          "side": "SHORT",
+          "close": 75638.53
+        },
+        {
+          "time_utc": "2026-11-07 20:00 UTC",
+          "side": "SHORT",
+          "close": 75589.07
+        },
+        {
+          "time_utc": "2026-11-06 04:00 UTC",
+          "side": "SHORT",
+          "close": 75649.36
+        },
+        {
+          "time_utc": "2026-11-06 03:00 UTC",
+          "side": "SHORT",
+          "close": 75789.07
+        },
+        {
+          "time_utc": "2026-11-06 02:00 UTC",
+          "side": "SHORT",
+          "close": 76059.7
+        },
+        {
+          "time_utc": "2026-11-06 01:00 UTC",
+          "side": "SHORT",
+          "close": 76011.33
+        },
+        {
+          "time_utc": "2026-11-06 00:00 UTC",
+          "side": "SHORT",
+          "close": 76215.0
+        },
+        {
+          "time_utc": "2026-11-05 23:00 UTC",
+          "side": "SHORT",
+          "close": 75966.71
+        },
+        {
+          "time_utc": "2026-11-05 03:00 UTC",
+          "side": "LONG",
+          "close": 80456.57
+        }
+      ]
+    }
+  }
+}
