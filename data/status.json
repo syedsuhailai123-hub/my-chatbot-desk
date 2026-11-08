@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-08 22:21 UTC",
+  "updated_utc": "2026-11-08 22:45 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,10 +14,10 @@
     }
   },
   "headlines": [
+    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
     "Norris wins gripping race after Antonelli and Russell errors",
     "Doctor who treated victims of Krakow shooting speaks to the BBC",
     "Bizarre & thrilling theatre as Carrick's Man Utd future still in limbo",
-    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
     "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
     "Maya Jama steps down as host of reality TV show Love Island",
     "Top House Democrat 'a hard yes' on impeaching Pete Hegseth",
