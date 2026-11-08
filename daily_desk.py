@@ -76,6 +76,13 @@ def collect():
             f.write(json.dumps(h, ensure_ascii=False) + "\n")
     return series, headlines
 
+CLEAN_HEADLINES = True
+
+def clean_text(s):
+    """Remove line/paragraph separators and non-ASCII punctuation that break some encoders."""
+    s = str(s).replace("\u2028", " ").replace("\u2029", " ")
+    return s.encode("ascii", "ignore").decode("ascii").strip()
+
 def build_prompt(series, headlines):
     lines = []
     for name in ASSETS:
@@ -84,7 +91,7 @@ def build_prompt(series, headlines):
                      ", ".join(f"{d} {c:,.2f}" for d, c in s))
     if headlines:
         lines.append("Headlines collected today (the ONLY news you may mention):")
-        lines += [f"- {h}" for h in headlines[:15]]
+        lines += [f"- {clean_text(h)}" for h in headlines[:15]]
     return "\n".join(lines)
 
 def parse_ideas(text):
