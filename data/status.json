@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-08 22:14 UTC",
+  "updated_utc": "2026-11-08 22:18 UTC",
   "ai_status": "error: HTTPError: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
