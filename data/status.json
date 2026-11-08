@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-08 05:55 UTC",
+  "updated_utc": "2026-11-08 07:09 UTC",
   "ai_status": "error: 'latin-1' codec can't encode character '\\u2028' in position 171: ordinal not in range(256)",
   "prices": {
     "BTC": {
-      "date": "2026-11-06",
-      "close": 75746.93,
-      "change_1d_pct": -0.26
+      "date": "2026-11-07",
+      "close": 75747.58,
+      "change_1d_pct": 0.0
     },
     "GOLD": {
       "date": "2026-11-06",
@@ -14,6 +14,8 @@
     }
   },
   "headlines": [
+    "The Papers: 'Briton dies in Krakow shootings' and 'Royals honour the fallen'",
+    "The oldest club in London making FA Cup history",
     "Two seriously injured after M20 crash involving more than 30 vehicles in Kent",
     "Houthis say at least 33 killed in Saudi air strike",
     "Veterans shouldn't sleep rough this Christmas, Burnham says",
@@ -21,9 +23,7 @@
     "Royal Family join veterans and families at Festival of Remembrance",
     "Property, football and politics: The links between Manchester and Abu Dhabi explained",
     "My parents chose to die together and I was left to grieve alone",
-    "Briton among six killed in 'far-right' shooting in Krakow",
-    "The Trump coalition is shattered - what will Republicans do now?",
-    "Ambika Mod says the 'glass ceiling is always getting higher' for South Asian actors",
+    "Briton among six killed in Krakow shooting as three more bodies found at suspect's home",
     "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
     "Ipswich Town's new club shop 'here to stay'",
     "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
@@ -60,7 +60,7 @@
     "hit_rate": null,
     "avg_return_pct": null,
     "baseline_up_pct": {
-      "BTC": 50.0,
+      "BTC": 49.9,
       "GOLD": 58.6
     }
   }
