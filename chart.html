@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Desk · Live chart</title>
+<style>
+:root{--bg:#0b1220;--panel:#111a2e;--panel2:#162340;--line:#1f2d4d;--text:#e6edf7;--muted:#8a9bb8;--good:#22c55e;--bad:#ef4444;--warn:#f59e0b;--accent:#3b82f6}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 18px 40px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:14px}
+h1{margin:0;font-size:20px;font-weight:650}
+a{color:#60a5fa;text-decoration:none}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.tabs{display:flex;gap:8px}
+.tab{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer}
+.tab.on{border-color:var(--accent);background:rgba(59,130,246,.18)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:16px}
+#cv{width:100%;height:420px;display:block}
+.legend{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
+.how{font-size:14px;line-height:1.6;color:#c9d6ea}
+.how li{margin:6px 0}
+h2{font-size:14px;font-weight:650;text-transform:uppercase;letter-spacing:1px;color:#b9c7e0;margin:26px 0 8px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;background:var(--panel2)}
+.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}.muted{color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>Live chart and predictions</h1>
+    <div class="sub" id="updated">Loading…</div>
+  </div>
+  <div class="tabs">
+    <button class="tab on" data-a="GOLD">GOLD</button>
+    <button class="tab" data-a="BTC">BTC</button>
+  </div>
+</header>
+<p class="sub"><a href="./">← Back to the desk</a></p>
+
+<div class="card">
+  <canvas id="cv"></canvas>
+  <div class="legend" id="legend"></div>
+</div>
+
+<h2>How this works</h2>
+<div class="card how">
+<ul>
+  <li><b>Candles</b> are hourly prices from the market data source, refreshed every hour.</li>
+  <li><b>Amber and blue lines</b> are the 20 and 50 period averages. The rule uses them to judge trend.</li>
+  <li><b>Triangles</b> mark moments when the frozen rule would have signalled a long (green, up) or short (red, down) trade.</li>
+  <li><b>Circles</b> are predictions you recorded. Green means it was a hit, red a miss, white still pending.</li>
+  <li><b>Scoring</b> compares every graded prediction with the baseline: how often price rose over the same window in the past. A hit rate only means something if it beats the baseline over 100+ graded predictions.</li>
+  <li><b>What it cannot do:</b> it does not predict prices. It shows evidence, and it keeps score honestly.</li>
+</ul>
+</div>
+
+<h2>Prediction scoreboard</h2>
+<div class="card"><div class="sub" id="sum">--</div></div>
+<div class="tablewrap" style="margin-top:12px"><table>
+  <thead><tr><th>Made (UTC)</th><th>Asset</th><th>Call</th><th>Horizon</th><th>Price at call</th><th>Due (UTC)</th><th>Result price</th><th>Status</th></tr></thead>
+  <tbody id="pred_body"></tbody>
+</table></div>
+<div class="note">Add a prediction from the Mac Terminal: <code>python3 predict.py GOLD UP 24</code> (asset GOLD or BTC, direction UP or DOWN, hours 1 to 168). Predictions use the last completed hourly price as the starting point.</div>
+</div>
+
+<script>
+const state = { asset: "GOLD", data: null };
+const $ = id => document.getElementById(id);
+const fmt = (n, d = 2) => n == null ? "--" : Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+async function load() {
+  try {
+    const r = await fetch("data/chart.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("not published");
+    state.data = await r.json();
+    $("updated").textContent = "Updated " + state.data.updated_utc + " (hourly)";
+    render();
+  } catch (e) {
+    $("updated").textContent = "Chart data not published yet. It appears after the next hourly run.";
+  }
+}
+
+function setAsset(a) {
+  state.asset = a;
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("on", b.dataset.a === a));
+  render();
+}
+
+function render() {
+  if (!state.data || !state.data.assets[state.asset]) return;
+  const A = state.data.assets[state.asset];
+  drawChart(A);
+  $("legend").textContent = state.asset + " · last completed hourly close " + fmt(A.last_close) +
+    " (bar " + A.last_bar_utc + "). Amber EMA20, blue EMA50, triangles = rule signals, circles = your predictions.";
+  renderSummary();
+  renderPreds();
+}
+
+function drawChart(A) {
+  const cv = $("cv"), dpr = window.devicePixelRatio || 1;
+  const w = cv.clientWidth, h = cv.clientHeight;
+  cv.width = w * dpr; cv.height = h * dpr;
+  const x = cv.getContext("2d");
+  x.setTransform(dpr, 0, 0, dpr, 0, 0);
+  x.clearRect(0, 0, w, h);
+
+  const bars = A.bars, n = bars.length;
+  if (!n) return;
+  const L = 62, R = 14, T = 14, B = 26;
+  const pw = w - L - R, ph = h - T - B;
+  let lo = Infinity, hi = -Infinity;
+  for (const b of bars) { lo = Math.min(lo, b.l); hi = Math.max(hi, b.h); }
+  const pad = (hi - lo) * 0.06; lo -= pad; hi += pad;
+  const X = i => L + (i + 0.5) * pw / n;
+  const Y = p => T + (hi - p) / (hi - lo) * ph;
+  const cw = Math.max(1.5, pw / n * 0.62);
+
+  x.font = "11px -apple-system, sans-serif";
+  x.strokeStyle = "rgba(138,155,184,.15)"; x.fillStyle = "#8a9bb8"; x.lineWidth = 1;
+  for (let k = 0; k <= 4; k++) {
+    const p = lo + (hi - lo) * k / 4, yy = Y(p);
+    x.beginPath(); x.moveTo(L, yy); x.lineTo(w - R, yy); x.stroke();
+    x.fillText(fmt(p, 0), 6, yy + 4);
+  }
+
+  bars.forEach((b, i) => {
+    const col = b.c >= b.o ? "#22c55e" : "#ef4444";
+    x.strokeStyle = col; x.fillStyle = col;
+    x.beginPath(); x.moveTo(X(i), Y(b.h)); x.lineTo(X(i), Y(b.l)); x.stroke();
+    const top = Y(Math.max(b.o, b.c)), bot = Y(Math.min(b.o, b.c));
+    x.fillRect(X(i) - cw / 2, top, cw, Math.max(1, bot - top));
+  });
+
+  const ma = (key, color) => {
+    x.strokeStyle = color; x.lineWidth = 1.4; x.beginPath();
+    let started = false;
+    bars.forEach((b, i) => {
+      if (b[key] == null) return;
+      if (!started) { x.moveTo(X(i), Y(b[key])); started = true; }
+      else x.lineTo(X(i), Y(b[key]));
+    });
+    x.stroke(); x.lineWidth = 1;
+  };
+  ma("e20", "#f59e0b");
+  ma("e50", "#60a5fa");
+
+  const idx = new Map(bars.map((b, i) => [b.t, i]));
+  for (const s of A.signals) {
+    const i = idx.get(s.t);
+    if (i === undefined) continue;
+    const b = bars[i], up = s.side === "LONG";
+    const yy = up ? Y(b.l) + 10 : Y(b.h) - 10;
+    x.fillStyle = up ? "#22c55e" : "#ef4444";
+    x.beginPath();
+    if (up) { x.moveTo(X(i), yy - 7); x.lineTo(X(i) - 6, yy + 4); x.lineTo(X(i) + 6, yy + 4); }
+    else { x.moveTo(X(i), yy + 7); x.lineTo(X(i) - 6, yy - 4); x.lineTo(X(i) + 6, yy - 4); }
+    x.closePath(); x.fill();
+  }
+
+  const mine = state.data.predictions.filter(p => p.asset === state.asset);
+  for (const p of mine) {
+    let i = bars.findIndex(b => b.t >= p.made_ts);
+    if (i < 0) i = n - 1;
+    const yy = Y(p.price_at_call);
+    const c = p.status === "hit" ? "#22c55e" : p.status === "miss" ? "#ef4444" : "#e6edf7";
+    x.strokeStyle = c; x.fillStyle = c; x.lineWidth = 2;
+    x.beginPath(); x.arc(X(i), yy, 6, 0, Math.PI * 2); x.stroke();
+    x.lineWidth = 1;
+    x.font = "10px -apple-system, sans-serif";
+    x.fillText(p.direction + " " + p.horizon_h + "h", X(i) + 8, yy - 8);
+    x.font = "11px -apple-system, sans-serif";
+  }
+
+  x.fillStyle = "#8a9bb8";
+  [0, Math.floor(n / 2), n - 1].forEach(i => {
+    const label = new Date(bars[i].t * 1000).toISOString().slice(5, 16).replace("T", " ");
+    x.fillText(label, Math.max(L, X(i) - 40), h - 8);
+  });
+}
+
+function renderSummary() {
+  const s = state.data.summary;
+  const b = s.baseline_up_pct || {};
+  $("sum").textContent = "Predictions " + s.total + " · graded " + s.graded + " · pending " + s.pending +
+    (s.hit_rate_pct == null ? "" : " · hit rate " + s.hit_rate_pct + "%") +
+    ". Baseline (share of 24h windows that rose): GOLD " + ((b.GOLD || {})["24"] ?? "--") +
+    "%, BTC " + ((b.BTC || {})["24"] ?? "--") + "%. " + s.note;
+}
+
+function cell(text, c) {
+  const e = document.createElement("td");
+  e.textContent = text == null ? "" : String(text);
+  if (c) e.className = c;
+  return e;
+}
+
+function renderPreds() {
+  const tb = $("pred_body");
+  const rows = state.data.predictions.filter(p => p.asset === state.asset);
+  if (!rows.length) {
+    const r = document.createElement("tr");
+    const c = cell("No predictions recorded for " + state.asset + " yet.", "muted");
+    c.colSpan = 8;
+    r.appendChild(c);
+    tb.replaceChildren(r);
+    return;
+  }
+  tb.replaceChildren(...rows.map(p => {
+    const r = document.createElement("tr");
+    const statusCls = p.status === "hit" ? "good" : p.status === "miss" ? "bad" : "warn";
+    r.append(
+      cell(p.made_utc), cell(p.asset), cell(p.direction, p.direction === "UP" ? "good" : "bad"),
+      cell(p.horizon_h + "h"), cell(fmt(p.price_at_call, 2)), cell(p.due_utc),
+      cell(p.result_price == null ? "--" : fmt(p.result_price, 2)),
+      cell(p.status.toUpperCase(), statusCls)
+    );
+    return r;
+  }));
+}
+
+document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => setAsset(b.dataset.a)));
+window.addEventListener("resize", () => render());
+load();
+setInterval(load, 300000);
+</script>
+</body>
+</html>

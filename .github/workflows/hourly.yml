@@ -32,6 +32,9 @@ jobs:
       - name: Run the forward test (frozen gold rule)
         run: python forward_test.py
 
+      - name: Build chart and grade predictions
+        run: python chart_data.py
+
       - name: Save results to the repository
         run: |
           git config user.name "desk-bot"
