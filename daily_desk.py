@@ -118,7 +118,8 @@ def safe_ascii(s):
 def ask_llm(system, user):
     # TRACE_LOGGED: all text is cleaned before any network call
     system, user = safe_ascii(system), safe_ascii(user)
-    key = os.environ.get("GROQ_API_KEY")
+    # KEY_CLEANED: remove hidden characters that break HTTP headers
+    key = safe_ascii(os.environ.get("GROQ_API_KEY", "")).strip()
     if key:
         payload = {
             "model": GROQ_MODEL, "temperature": 0.2, "max_tokens": 300,
