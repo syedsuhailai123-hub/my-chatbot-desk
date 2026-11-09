@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 16:11 UTC",
+  "updated_utc": "2026-11-09 17:18 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -15,19 +15,19 @@
   },
   "headlines": [
     "Civil servant who secretly held five jobs found guilty of fraud",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Ground Force and Homes Under the Hammer star Tommy Walsh dies aged 69",
-    "James Bulger's killer to stay in prison after parole hearing",
-    "Watch: Moment judge sentences Brand in court",
-    "How Hawkins overcame illness to star for England",
-    "Bronze named in World 11 for record ninth time",
-    "Who is the suspected Chinese spy at centre of the Nvidia investigation?",
+    "Trump questions midterm elections integrity after previously accepting results",
+    "Nine Zimbabweans caught allegedly trying to leave South Africa to fight in Ukraine",
+    "Men recruited to French gang as children to kill give rare insight into drug underworld",
+    "France accuses Iran of supermarket fridge hacking",
+    "Poundland unable to buy new stock as fears over collapse grow",
+    "Aberdeen sack Robinson after league slump",
     "At least 39 die after Europe-bound migrant boat sinks off Senegal",
-    "Incident-by-incident: Was it a bad weekend for VAR?",
-    "Civil servant who secretly held five jobs found guilty of fraud",
     "Action on energy costs is my overriding aim, says Fahnbulleh",
     "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+    "Civil servant who secretly held five jobs found guilty of fraud",
+    "Poundland unable to buy new stock as fears over collapse grow",
+    "Action on energy costs is my overriding aim, says Fahnbulleh",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Rising cost of living tests UK's net zero ambitions"
   ],
   "ideas": [
