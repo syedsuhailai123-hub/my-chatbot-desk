@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 06:23 UTC",
+  "updated_utc": "2026-11-09 08:33 UTC",
   "forward_start_utc": "2026-11-08 18:00 UTC",
   "rules_unchanged": true,
   "status": "WAITING: 0 of 40 trades needed",
@@ -10,12 +10,12 @@
   "profit_factor": null,
   "avg_R": null,
   "max_drawdown_pct": 0.0,
-  "buy_and_hold_since_start_pct": 1.28,
+  "buy_and_hold_since_start_pct": 0.39,
   "open_position": {
     "side": "LONG",
-    "entry": 4115.8,
-    "stop": 4085.26,
-    "target": 4176.58,
+    "entry": 4114.4,
+    "stop": 4083.86,
+    "target": 4175.18,
     "opened_utc": "2026-11-09 01:00 UTC"
   },
   "criteria": {

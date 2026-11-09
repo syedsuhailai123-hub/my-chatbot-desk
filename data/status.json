@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-09 06:23 UTC",
+  "updated_utc": "2026-11-09 08:33 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-07",
-      "close": 75747.58,
-      "change_1d_pct": 0.0
+      "date": "2026-11-08",
+      "close": 74584.65,
+      "change_1d_pct": -1.54
     },
     "GOLD": {
       "date": "2026-11-06",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
+    "Khawaja 100% accurate on ball-tampering - Warner",
     "Dense fog threatens Monday morning rush-hour disruption",
-    "Jensen Huang: Silicon Valley superstar engulfed by personal scandal",
-    "The Papers:  'There are more like Brand' and 'Steep cuts to EV targets'",
-    "Inside the French drug gangs recruiting children to kill",
-    "Pope delivers veiled rebuke of Milei's austerity measures",
     "Government's EV targets expected to be reduced this week",
-    "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
-    "'Time is up': Minister warns media industry to take abuse seriously in wake of Brand case",
-    "Society needs to act to help white working-class pupils, inquiry says",
-    "Woman says Al Fayed's brother drugged and sexually abused her at Highland estate",
-    "How you can get council's £250 cost of living help",
-    "Indoor soft play centres struggling to stay open",
-    "Doing these things now will help you save money at Christmas",
-    "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-    "Traders 'priced out' of £12,000 Christmas market pitches"
+    "Scientists predict 2026 hottest year on record as climate talks begin",
+    "Sports Personality of the Year returns - with five awards decided by public",
+    "Krakow shooting suspect has died in hospital, police say",
+    "Packers & Bengals win in style - NFL week nine",
+    "Gauff opens WTA Finals with gritty win over Pegula",
+    "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
+    "England make massive step up in Australia victory",
+    "Government's EV targets expected to be reduced this week",
+    "Is it the end of free school milk?",
+    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+    "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
+    "How you can get council's £250 cost of living help"
   ],
   "ideas": [
     {
