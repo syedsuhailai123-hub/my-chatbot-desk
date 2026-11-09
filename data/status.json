@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 22:54 UTC",
+  "updated_utc": "2026-11-09 23:47 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Man Utd expected to sack head coach Carrick",
+    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Judge denies motion to dismiss Lindsay Clancy's murder case",
+    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+    "Man Utd expected to sack head coach Carrick",
+    "Sabalenka wins WTA Finals opener despite wayward serve",
+    "Phones to be banned from pupils' bags or pockets under stricter rules for schools in England",
+    "Dana White declines Trump’s offer to be White House press secretary",
     "Brady ends association with Birmingham City",
     "'Baffling but brilliant' post-apocalyptic novel The End of Everything wins Booker Prize",
     "Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
-    "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-    "Turkey steel factory blast kills at least 17 people",
-    "France accuses Iran of supermarket fridge hacking",
-    "What happened inside court as Brand was sentenced",
+    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
     "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
     "The facial recognition technology stopping shoplifters",
-    "How a civil servant got away with juggling five jobs for so long",
-    "Civil servant who secretly held five jobs found guilty of fraud"
+    "How a civil servant got away with juggling five jobs for so long"
   ],
   "ideas": [
     {
