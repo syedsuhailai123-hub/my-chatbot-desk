@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 09:07 UTC",
+  "updated_utc": "2026-11-09 09:34 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -15,10 +15,10 @@
   },
   "headlines": [
     "Government's EV targets expected to be reduced this week",
+    "Thick fog disrupts morning travel as yellow weather warnings in effect",
+    "Khawaja 100% accurate on ball-tampering - Warner",
     "Woman says Al Fayed's brother drugged and sexually abused her at Highland estate",
     "Trump says he was 'kidding' about Dana White press secretary offer",
-    "Khawaja 100% accurate on ball-tampering - Warner",
-    "Thick fog disrupts morning travel as yellow weather warnings in effect",
     "At least 34 dead after Europe-bound migrant boat sinks off Senegal",
     "Scientists predict 2026 hottest year on record as climate talks begin",
     "Sports Personality of the Year returns - with five awards decided by public",
