@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 17:18 UTC",
+  "updated_utc": "2026-11-09 19:02 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Civil servant who secretly held five jobs found guilty of fraud",
+    "How a civil servant got away with juggling five jobs for so long",
+    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+    "Russia's leading independent newspaper closes after eviction",
+    "Turkey steel factory blast kills at least 16 people",
+    "Drone delivers food to chimpanzee cut off by Florida flooding",
+    "Man Utd yet to make decision on Carrick's future",
     "Trump questions midterm elections integrity after previously accepting results",
-    "Nine Zimbabweans caught allegedly trying to leave South Africa to fight in Ukraine",
-    "Men recruited to French gang as children to kill give rare insight into drug underworld",
-    "France accuses Iran of supermarket fridge hacking",
-    "Poundland unable to buy new stock as fears over collapse grow",
-    "Aberdeen sack Robinson after league slump",
-    "At least 39 die after Europe-bound migrant boat sinks off Senegal",
-    "Action on energy costs is my overriding aim, says Fahnbulleh",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
+    "Russell Brand sentenced to 10-and-a-half years in prison for rape and sexual assault",
+    "Kane and Bellingham air strong views in England World Cup review",
+    "The facial recognition technology stopping shoplifters",
+    "How a civil servant got away with juggling five jobs for so long",
+    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
     "Civil servant who secretly held five jobs found guilty of fraud",
-    "Poundland unable to buy new stock as fears over collapse grow",
-    "Action on energy costs is my overriding aim, says Fahnbulleh",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Rising cost of living tests UK's net zero ambitions"
+    "Poundland unable to buy new stock as fears over collapse grow"
   ],
   "ideas": [
     {
