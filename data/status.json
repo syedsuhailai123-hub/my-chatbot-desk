@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 13:23 UTC",
+  "updated_utc": "2026-11-09 15:02 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Passenger feared Huntingdon train attacker was suicide bomber, court hears",
+    "James Bulger's killer to stay in prison after parole hearing",
+    "Who is the suspected Chinese spy at centre of the Nvidia investigation?",
+    "At least 39 die after Europe-bound migrant boat sinks off Senegal",
+    "Incident-by-incident: Was it a bad weekend for VAR?",
+    "Thirteen migrants die after boat sinks off Crete",
     "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Man jailed over racist Badenoch death threats",
     "Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine",
     "Thick fog disrupts travel with further weather warning issued",
     "Government's EV targets expected to be reduced this week",
-    "Burn replaces injured Guehi in England squad",
-    "England clear way for Carse return and drop Bashir",
-    "Alisson wants to sign new Liverpool contract",
-    "Krakow shooting suspect has died in hospital, police say",
+    "Rising cost of living tests UK's net zero ambitions",
     "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Government's EV targets expected to be reduced this week",
     "Is it the end of free school milk?",
-    "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
-    "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?"
+    "Nvidia launches investigation into CEO's affair with suspected Chinese spy"
   ],
   "ideas": [
     {
