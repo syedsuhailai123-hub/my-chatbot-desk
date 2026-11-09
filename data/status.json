@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 11:05 UTC",
+  "updated_utc": "2026-11-09 12:04 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,6 +14,8 @@
     }
   },
   "headlines": [
+    "England clear way for Carse return and drop Bashir",
+    "Krakow shooting suspect has died in hospital, police say",
     "At least 34 dead after Europe-bound migrant boat sinks off Senegal",
     "Woman says Al Fayed's brother drugged and sexually abused her at Highland estate",
     "Thick fog disrupts morning travel as yellow weather warnings in effect",
@@ -22,13 +24,11 @@
     "Trump says he was 'kidding' about Dana White press secretary offer",
     "Scientists predict 2026 hottest year on record as climate talks begin",
     "Sports Personality of the Year returns - with five awards decided by public",
-    "Krakow shooting suspect has died in hospital, police say",
-    "Packers & Bengals win in style - NFL week nine",
     "Government's EV targets expected to be reduced this week",
     "Is it the end of free school milk?",
     "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
     "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
-    "How you can get council's £250 cost of living help"
+    "Hut owner wins battle to keep living in off-grid home he built"
   ],
   "ideas": [
     {
