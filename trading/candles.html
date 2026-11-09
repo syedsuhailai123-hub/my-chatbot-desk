@@ -82,7 +82,7 @@ function cell(text, cls) {
 }
 
 function decisionClass(d) {
-  if (d === "DEMO ORDER PLACED") return "good";
+  if (d === "DEMO ORDER PLACED" || d === "PAPER TRADE TAKEN") return "good";
   if (d === "NO DEMO ORDER" || d === "DEMO ORDER NOT FILLED") return "warn";
   if (d === "UNKNOWN") return "muted";
   return "muted";

@@ -184,6 +184,36 @@ def main():
         assets[name] = signal_block(name, d, now)
         new_records += records_for(name, d, now, demo)
 
+    # PAPER_LINK: mark candles where the paper gold account entered
+    FWD = os.path.join(DATA, "forward_trades.jsonl")
+    FWD_SUM = os.path.join(DATA, "forward_summary.json")
+    paper = {}
+    def _ts(text):
+        return int(pd.Timestamp(text.replace(" UTC", ":00+00:00")).timestamp())
+    if os.path.exists(FWD):
+        with open(FWD, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    t = json.loads(line)
+                    paper[_ts(t["entry_utc"])] = {"kind": "closed", **t}
+    if os.path.exists(FWD_SUM):
+        with open(FWD_SUM, encoding="utf-8") as f:
+            op = json.load(f).get("open_position")
+        if op and op.get("opened_utc"):
+            paper.setdefault(_ts(op["opened_utc"]), {"kind": "open", **op})
+    for r in new_records:
+        entry = paper.get(r["open_ts"] + 3600)
+        if r["asset"] != "GOLD" or entry is None or r["demo_order"] is not None:
+            continue
+        if entry["kind"] == "closed":
+            detail = (f"Paper {entry['side']} entered at {entry['entry']}, closed by "
+                      f"{entry['reason']}, P&L {entry['pnl']:,.2f}.")
+        else:
+            detail = (f"Paper {entry['side']} entered at {entry['entry']}, still open "
+                      f"(stop {entry['stop']}, target {entry['target']}).")
+        r["decision"] = "PAPER TRADE TAKEN"
+        r["reason"] = detail + " Entry was at the open of the next candle."
+        r["paper"] = True
     index = {}
     if os.path.exists(LOG):
         with open(LOG, encoding="utf-8") as f:
@@ -193,7 +223,7 @@ def main():
         key = (r["asset"], r["open_ts"])
         old = index.get(key)
         # Keep an earlier live decision unless a demo order now exists for that candle
-        if old and old.get("live") and not r["live"] and r["demo_order"] is None:
+        if old and old.get("live") and not r["live"] and r["demo_order"] is None and not r.get("paper"):
             continue
         index[key] = r
     merged = sorted(index.values(), key=lambda r: r["open_ts"], reverse=True)[:LOG_KEEP]
