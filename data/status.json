@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 12:04 UTC",
+  "updated_utc": "2026-11-09 13:23 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "England clear way for Carse return and drop Bashir",
-    "Krakow shooting suspect has died in hospital, police say",
-    "At least 34 dead after Europe-bound migrant boat sinks off Senegal",
-    "Woman says Al Fayed's brother drugged and sexually abused her at Highland estate",
-    "Thick fog disrupts morning travel as yellow weather warnings in effect",
+    "Passenger feared Huntingdon train attacker was suicide bomber, court hears",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
+    "Man jailed over racist Badenoch death threats",
+    "Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine",
+    "Thick fog disrupts travel with further weather warning issued",
     "Government's EV targets expected to be reduced this week",
-    "Khawaja 100% accurate on ball-tampering - Warner",
-    "Trump says he was 'kidding' about Dana White press secretary offer",
-    "Scientists predict 2026 hottest year on record as climate talks begin",
-    "Sports Personality of the Year returns - with five awards decided by public",
+    "Burn replaces injured Guehi in England squad",
+    "England clear way for Carse return and drop Bashir",
+    "Alisson wants to sign new Liverpool contract",
+    "Krakow shooting suspect has died in hospital, police say",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Government's EV targets expected to be reduced this week",
     "Is it the end of free school milk?",
     "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
-    "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
-    "Hut owner wins battle to keep living in off-grid home he built"
+    "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?"
   ],
   "ideas": [
     {
