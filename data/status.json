@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 19:02 UTC",
+  "updated_utc": "2026-11-09 20:01 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,19 +14,19 @@
     }
   },
   "headlines": [
-    "How a civil servant got away with juggling five jobs for so long",
-    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+    "People don't know full story behind England exile - White",
+    "How a civil servant got away with juggling five jobs for so long",
     "Russia's leading independent newspaper closes after eviction",
     "Turkey steel factory blast kills at least 16 people",
-    "Drone delivers food to chimpanzee cut off by Florida flooding",
+    "Drone delivers food to chimpanzee cut off by flooding",
     "Man Utd yet to make decision on Carrick's future",
     "Trump questions midterm elections integrity after previously accepting results",
     "Russell Brand sentenced to 10-and-a-half years in prison for rape and sexual assault",
-    "Kane and Bellingham air strong views in England World Cup review",
+    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
     "The facial recognition technology stopping shoplifters",
     "How a civil servant got away with juggling five jobs for so long",
-    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
     "Civil servant who secretly held five jobs found guilty of fraud",
     "Poundland unable to buy new stock as fears over collapse grow"
   ],
