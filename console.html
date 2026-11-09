@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Desk">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Desk · Research Console</title>
+<style>
+:root{--bg:#0b1220;--panel:#111a2e;--panel2:#162340;--line:#1f2d4d;--text:#e6edf7;--muted:#8a9bb8;--accent:#3b82f6;--good:#22c55e;--bad:#ef4444;--warn:#f59e0b;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 18px 40px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#1e3a8a,#3b82f6);display:grid;place-items:center;font-weight:700}
+h1{margin:0;font-size:20px;font-weight:650;letter-spacing:.2px}
+.sub{color:var(--muted);font-size:13px;margin-top:2px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);color:var(--text)}
+.badge.good{color:var(--good);border-color:rgba(34,197,94,.35);background:rgba(34,197,94,.1)}
+.badge.bad{color:var(--bad);border-color:rgba(239,68,68,.35);background:rgba(239,68,68,.1)}
+.badge.warn{color:var(--warn);border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.1)}
+.notice{margin:16px 0;padding:12px 14px;border-radius:10px;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);color:#fbd38d;font-size:13px;line-height:1.5}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.big{font-size:24px;font-weight:650;margin-top:6px;font-variant-numeric:tabular-nums}
+.small{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.45}
+.good{color:var(--good)}.bad{color:var(--bad)}.muted{color:var(--muted)}
+section{margin-top:26px}
+h2{font-size:14px;font-weight:650;text-transform:uppercase;letter-spacing:1px;color:#b9c7e0;margin:0 0 4px}
+.hint{color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.6px;background:var(--panel2)}
+tr:last-child td{border-bottom:none}
+.ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.idea-dir{font-size:20px;font-weight:650}
+ul.heads{margin:0;padding:0;list-style:none}
+ul.heads li{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.4}
+ul.heads li:last-child{border-bottom:none}
+footer{margin-top:34px;color:var(--muted);font-size:12px;line-height:1.6;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <div class="logo">D</div>
+    <div>
+      <h1>Desk · Research Console</h1>
+      <div class="sub" id="updated">Loading…</div>
+    </div>
+  </div>
+  <div class="pills">
+    <span class="badge" id="fresh">—</span>
+    <span class="badge" id="ai">AI step</span>
+  </div>
+</header>
+
+<div class="notice">Research and paper trading only. Paper and demo results use simulated or practice money. Nothing on this page is financial advice, and AI ideas are unverified until graded.</div>
+
+<p style="margin:0 0 14px"><a href="trading/chart.html" style="color:#60a5fa">Live chart and predictions →</a></p>
+<div class="kpis">
+  <div class="card"><div class="label">Bitcoin</div><div class="big" id="btc">--</div><div class="small" id="btc_d"></div></div>
+  <div class="card"><div class="label">Gold</div><div class="big" id="gold">--</div><div class="small" id="gold_d"></div></div>
+  <div class="card"><div class="label">Paper equity</div><div class="big" id="equity">--</div><div class="small">Simulated, starts at $10,000</div></div>
+  <div class="card"><div class="label">Demo account NAV</div><div class="big" id="dm_nav_top">--</div><div class="small">Practice account only</div></div>
+</div>
+
+<section>
+  <h2>Forward test · frozen gold rule</h2>
+  <p class="hint">Rules are locked and run every hour from a fixed start. Pass needs 40+ closed trades, profit factor 1.2 or higher, and positive net P&amp;L.</p>
+  <div class="card">
+    <span class="badge" id="fw_status">Loading…</span>
+    <div class="small" id="fw_meta"></div>
+    <div class="metrics">
+      <div><div class="label">Closed trades</div><div class="big" id="fw_trades">--</div></div>
+      <div><div class="label">Net P&amp;L</div><div class="big" id="fw_pnl">--</div></div>
+      <div><div class="label">Win rate</div><div class="big" id="fw_win">--</div></div>
+      <div><div class="label">Profit factor</div><div class="big" id="fw_pf">--</div></div>
+      <div><div class="label">Max drawdown</div><div class="big" id="fw_dd">--</div></div>
+      <div><div class="label">Buy and hold</div><div class="big" id="fw_bh">--</div></div>
+    </div>
+  </div>
+  <div class="tablewrap" style="margin-top:12px"><table>
+    <thead><tr><th>Exit (UTC)</th><th>Side</th><th>Entry</th><th>Exit</th><th>Reason</th><th>P&amp;L</th><th>R</th></tr></thead>
+    <tbody id="fw_trades_body"></tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Paper trading slots</h2>
+  <p class="hint">Five rule-based paper traders. Each trades only when its own rule fires. After every trade it re-checks its last 30 trades and pauses if the average is clearly negative.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Slot</th><th>Mode</th><th>Trades</th><th>Win %</th><th>Avg R</th><th>Open now</th></tr></thead>
+    <tbody id="slots_body"></tbody>
+  </table></div>
+  <div class="tablewrap" style="margin-top:12px"><table>
+    <thead><tr><th>Closed (UTC)</th><th>Slot</th><th>Side</th><th>Entry</th><th>Exit</th><th>Reason</th><th>R</th></tr></thead>
+    <tbody id="paper_trades_body"></tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Demo broker bot · practice account</h2>
+  <p class="hint">Runs on the owner's Mac against a practice account. Dry run by default. Results appear after the publish command is run.</p>
+  <div class="card">
+    <span class="badge" id="dm_stop">Loading…</span>
+    <div class="small" id="dm_meta"></div>
+    <div class="metrics">
+      <div><div class="label">Practice NAV</div><div class="big" id="dm_nav">--</div></div>
+      <div><div class="label">Broker closed trades</div><div class="big" id="dm_closed">--</div></div>
+      <div><div class="label">Broker realized P&amp;L</div><div class="big" id="dm_pnl">--</div></div>
+      <div><div class="label">Bot orders placed</div><div class="big" id="dm_orders">--</div></div>
+    </div>
+  </div>
+  <div class="tablewrap" style="margin-top:12px"><table>
+    <thead><tr><th>Time (UTC)</th><th>Side</th><th>Units</th><th>Stop</th><th>Target</th><th>Filled</th></tr></thead>
+    <tbody id="dm_orders_body"></tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>AI ideas · unverified</h2>
+  <p class="hint">Automatic guesses from a small AI model. Not recommendations. An idea counts only after the tracker shows 100+ graded results that beat the baseline.</p>
+  <div class="card">
+    <div class="small" id="grade">--</div>
+  </div>
+  <div class="ideas" id="ideas" style="margin-top:12px"></div>
+</section>
+
+<section>
+  <h2>Headlines</h2>
+  <div class="card"><ul class="heads" id="heads"></ul></div>
+</section>
+
+<footer>
+  Data refreshes automatically every hour from GitHub. This page shows public research data only. No account login, token, or order control is available here.
+</footer>
+
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const fmt = (n, d = 2) => n == null ? "--" : Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+const signed = (n, d = 2) => n == null ? "--" : (n >= 0 ? "+" : "") + fmt(n, d);
+const money = n => n == null ? "--" : (n >= 0 ? "+$" : "-$") + fmt(Math.abs(n));
+const cls = n => n == null ? "" : (n >= 0 ? "good" : "bad");
+const base = "data/";
+
+async function get(name) {
+  try {
+    const r = await fetch(base + name + "?t=" + Date.now(), { cache: "no-store" });
+    return r.ok ? await r.json() : null;
+  } catch (e) { return null; }
+}
+async function text(name) {
+  try {
+    const r = await fetch(base + name + "?t=" + Date.now(), { cache: "no-store" });
+    return r.ok ? await r.text() : "";
+  } catch (e) { return ""; }
+}
+function hoursSince(s) {
+  const m = /^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}) UTC$/.exec(s || "");
+  return m ? (Date.now() - new Date(m[1] + "T" + m[2] + ":00Z").getTime()) / 3600000 : null;
+}
+function badge(el, label, kind) {
+  el.textContent = label;
+  el.className = "badge" + (kind ? " " + kind : "");
+}
+function td(text, c) {
+  const e = document.createElement("td");
+  e.textContent = text == null ? "" : String(text);
+  if (c) e.className = c;
+  return e;
+}
+function row(cells) {
+  const r = document.createElement("tr");
+  cells.forEach(c => r.appendChild(c));
+  return r;
+}
+function empty(tb, cols, msg) {
+  const c = td(msg, "muted");
+  c.colSpan = cols;
+  tb.replaceChildren(row([c]));
+}
+
+function renderForward(f) {
+  const kind = f.status.startsWith("PASS") ? "good"
+    : (f.status.startsWith("FAIL") || f.status.startsWith("INVALID")) ? "bad" : "warn";
+  badge($("fw_status"), f.status, kind);
+  $("fw_meta").textContent = "Start " + f.forward_start_utc + " · updated " + f.updated_utc +
+    (f.rules_unchanged ? "" : " · RULES CHANGED");
+  $("fw_trades").textContent = f.closed_trades + " / " + f.criteria.min_trades;
+  const pnl = $("fw_pnl");
+  pnl.textContent = money(f.net_pnl_usd);
+  pnl.className = "big " + cls(f.net_pnl_usd);
+  $("fw_win").textContent = f.win_rate_pct == null ? "--" : f.win_rate_pct + "%";
+  $("fw_pf").textContent = f.profit_factor == null ? "--" : f.profit_factor;
+  $("fw_dd").textContent = f.max_drawdown_pct + "%";
+  $("fw_bh").textContent = f.buy_and_hold_since_start_pct == null ? "--" : signed(f.buy_and_hold_since_start_pct) + "%";
+}
+
+function renderFwTrades(raw) {
+  const tb = $("fw_trades_body");
+  const rows = raw.split("\n").filter(Boolean).map(l => { try { return JSON.parse(l); } catch (e) { return null; } })
+    .filter(Boolean).slice(-10).reverse();
+  if (!rows.length) return empty(tb, 7, "No forward trades closed yet.");
+  tb.replaceChildren(...rows.map(t => row([
+    td(t.exit_utc), td(t.side, t.side === "LONG" ? "good" : "bad"), td(t.entry),
+    td(t.exit), td(t.reason), td(money(t.pnl), cls(t.pnl)), td(signed(t.R) + "R", cls(t.R))
+  ])));
+}
+
+function renderSlots(slots) {
+  const tb = $("slots_body");
+  const entries = Object.entries(slots || {});
+  if (!entries.length) return empty(tb, 6, "Not published yet.");
+  tb.replaceChildren(...entries.map(([id, s]) => {
+    const open = s.open ? (s.open.side + " from " + fmt(s.open.entry)) : "none";
+    return row([
+      td(id),
+      td(s.mode, s.mode === "active" ? "good" : "bad"),
+      td(s.trades),
+      td(s.win_rate_pct == null ? "--" : s.win_rate_pct + "%"),
+      td(s.avg_R == null ? "--" : signed(s.avg_R) + "R", cls(s.avg_R)),
+      td(open)
+    ]);
+  }));
+}
+
+function renderPaperTrades(trades) {
+  const tb = $("paper_trades_body");
+  if (!trades.length) return empty(tb, 7, "No closed paper trades yet.");
+  tb.replaceChildren(...trades.map(t => row([
+    td(t.closed), td(t.slot), td(t.side, t.side === "LONG" ? "good" : "bad"),
+    td(fmt(t.entry)), td(fmt(t.exit)), td(t.reason), td(signed(t.R) + "R", cls(t.R))
+  ])));
+}
+
+function renderDemo(d) {
+  $("dm_nav").textContent = "$" + fmt(d.account_nav);
+  $("dm_nav_top").textContent = "$" + fmt(d.account_nav);
+  $("dm_closed").textContent = d.broker_closed_trades;
+  const pnl = $("dm_pnl");
+  pnl.textContent = money(d.broker_realized_pnl);
+  pnl.className = "big " + cls(d.broker_realized_pnl);
+  $("dm_orders").textContent = d.bot_orders;
+  badge($("dm_stop"), d.stop_switch_on ? "Stop switch ON" : "Running (dry run default)",
+        d.stop_switch_on ? "bad" : "good");
+  $("dm_meta").textContent = "Updated " + d.updated_utc;
+  const tb = $("dm_orders_body");
+  const orders = d.recent_orders || [];
+  if (!orders.length) return empty(tb, 6, "No orders placed by the bot yet.");
+  tb.replaceChildren(...orders.map(o => row([
+    td(o.time_utc), td(o.side, o.side === "LONG" ? "good" : "bad"), td(o.units),
+    td(fmt(o.stop, 3)), td(fmt(o.target, 3)), td(o.filled ? "yes" : "no")
+  ])));
+}
+
+function renderIdeas(ideas) {
+  const box = $("ideas");
+  if (!ideas.length) {
+    const c = document.createElement("div");
+    c.className = "card muted";
+    c.textContent = "No ideas yet.";
+    box.replaceChildren(c);
+    return;
+  }
+  box.replaceChildren(...ideas.map(i => {
+    const c = document.createElement("div");
+    c.className = "card";
+    const d = document.createElement("div");
+    d.className = "idea-dir " + (i.direction === "UP" ? "good" : "bad");
+    d.textContent = i.asset + " " + i.direction;
+    const b = document.createElement("span");
+    b.className = "badge warn";
+    b.textContent = "UNVERIFIED";
+    const m = document.createElement("div");
+    m.className = "small";
+    m.textContent = "Made " + i.made_on + " from data to " + i.as_of;
+    const r = document.createElement("div");
+    r.className = "small";
+    r.textContent = i.reason;
+    c.append(d, b, m, r);
+    return c;
+  }));
+}
+
+function renderHeads(items) {
+  const ul = $("heads");
+  ul.replaceChildren(...items.map(h => {
+    const li = document.createElement("li");
+    li.textContent = h;
+    return li;
+  }));
+}
+
+async function load() {
+  const [s, p, f, d, ft] = await Promise.all([
+    get("status.json"), get("paper_summary.json"), get("forward_summary.json"),
+    get("demo_status.json"), text("forward_trades.jsonl")
+  ]);
+
+  const age = hoursSince(s && s.updated_utc);
+  if (age == null) badge($("fresh"), "No market data", "bad");
+  else if (age > 26) badge($("fresh"), "Stale · " + Math.round(age) + "h old", "bad");
+  else badge($("fresh"), "Live", "good");
+  $("updated").textContent = s ? "Market data updated " + s.updated_utc : "Market data unavailable";
+
+  if (s) {
+    const b = s.prices && s.prices.BTC, g = s.prices && s.prices.GOLD;
+    $("btc").textContent = b ? fmt(b.close) : "--";
+    $("btc_d").textContent = b ? "Price date " + b.date + " · " + signed(b.change_1d_pct) + "% today" : "";
+    $("gold").textContent = g ? fmt(g.close) : "--";
+    $("gold_d").textContent = g ? "Price date " + g.date + " · " + signed(g.change_1d_pct) + "% today" : "";
+    $("ai").textContent = "AI: " + (s.ai_status || "--");
+    const gr = s.grade || {};
+    const bl = gr.baseline_up_pct || {};
+    $("grade").textContent = "Made " + (gr.made ?? "--") + " · graded " + (gr.graded ?? "--") +
+      " · pending " + (gr.pending ?? "--") +
+      (gr.hit_rate == null ? "" : " · hit rate " + gr.hit_rate + "%") +
+      ". Baseline 5-day up rate: BTC " + (bl.BTC ?? "--") + "%, GOLD " + (bl.GOLD ?? "--") +
+      "%. Need 100+ graded before any conclusion.";
+    renderIdeas(s.ideas || []);
+    renderHeads(s.headlines || []);
+  }
+  if (p) {
+    $("equity").textContent = "$" + fmt(p.equity);
+    renderSlots(p.slots);
+    renderPaperTrades(p.recent_trades || []);
+  }
+  if (f) renderForward(f);
+  if (d) renderDemo(d);
+  renderFwTrades(ft);
+}
+
+load();
+setInterval(load, 300000);
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>
