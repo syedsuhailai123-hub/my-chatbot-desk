@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 02:56 UTC",
+  "updated_utc": "2026-11-09 04:04 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,6 +14,8 @@
     }
   },
   "headlines": [
+    "Dense fog threatens Monday morning rush-hour disruption",
+    "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
     "'Time is up': Minister warns media industry to take abuse seriously in wake of Brand case",
     "Top House Democrat 'a hard yes' on impeaching Pete Hegseth",
     "Society needs to act to help white working-class pupils, inquiry says",
@@ -22,8 +24,6 @@
     "What's your love language - and does it actually mean anything?",
     "The Papers:  'There are more like Brand' and 'Steep cuts to EV targets'",
     "Doing these things now will help you save money at Christmas",
-    "Norris sparkles in Sao Paulo despite firework mishap",
-    "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
     "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
     "Doing these things now will help you save money at Christmas",
     "Government 'looking seriously' at banning under-16s from Vinted and eBay",
