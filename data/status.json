@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 11:57 UTC",
+  "updated_utc": "2026-11-10 13:12 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Met Police investigate several new reports on Russell Brand following his conviction",
+    "Anthropic to raise $64bn in major stock market listing",
+    "How did Mildenhall become crucial to the US Air Force?",
+    "US military aircraft leave second UK base",
+    "At least 11 dead after motorway pile-ups in Bulgaria fog",
+    "Israel's new parliament to be sworn in as leaders compete to form government",
+    "Watch: Meghan's first public appearance since father arrested",
+    "Met Police investigate several reports on Russell Brand following his conviction",
     "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
     "Hill gets first England call-up as Konsa cover",
     "Police officer dies and another injured after backpack explosion in Oviedo",
-    "Carrick's Man Utd future to be decided at Wednesday meeting",
-    "Israeli forces kill Palestinian boy in West Bank, health ministry says",
-    "Edinburgh Academy pupils suffered decades of 'dreadful abuse'",
-    "How did Mildenhall become crucial to the US Air Force?",
-    "US military aircraft leave second UK base",
-    "Meghan joins Harry in Brussels in first public appearance since father's arrest",
+    "Anthropic to raise $64bn in major stock market listing",
     "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
     "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
     "Thousands of 'off-grid' homes eligible for £250 to help with heating bills",
-    "Holiday hunger bill to face final Stormont hurdle",
-    "Faisal Islam: What the boss of US tech giant Nvidia told me about China and national security"
+    "Holiday hunger bill to face final Stormont hurdle"
   ],
   "ideas": [
     {
