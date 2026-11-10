@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 13:12 UTC",
+  "updated_utc": "2026-11-10 14:23 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Anthropic to raise $64bn in major stock market listing",
     "How did Mildenhall become crucial to the US Air Force?",
-    "US military aircraft leave second UK base",
-    "At least 11 dead after motorway pile-ups in Bulgaria fog",
-    "Israel's new parliament to be sworn in as leaders compete to form government",
-    "Watch: Meghan's first public appearance since father arrested",
-    "Met Police investigate several reports on Russell Brand following his conviction",
     "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
-    "Hill gets first England call-up as Konsa cover",
-    "Police officer dies and another injured after backpack explosion in Oviedo",
-    "Anthropic to raise $64bn in major stock market listing",
+    "Met Police investigating more 'potential criminal allegations' about Brand",
+    "Edinburgh Academy pupils suffered decades of 'dreadful abuse'",
+    "Anthropic heads for $1.3 trillion valuation in major stock market listing",
+    "Australia doomed to live with stench of sandpapergate",
+    "Iran rejects French claims it was behind supermarket fridge hacking",
+    "Tories pledge to cut benefits for children with 'milder cases' of ADHD",
+    "French wartime resistance heroine Solange Alexandre dies aged 104",
+    "California police investigate after 27 fall ill at half-marathon running event",
     "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
-    "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
-    "Thousands of 'off-grid' homes eligible for £250 to help with heating bills",
-    "Holiday hunger bill to face final Stormont hurdle"
+    "Anthropic heads for $1.3 trillion valuation in major stock market listing",
+    "US inflation higher than expected in October - here's what is happening with prices",
+    "New regulation for heating oil market, but no price controls",
+    "Civil servant who secretly held five jobs found guilty of fraud"
   ],
   "ideas": [
     {
