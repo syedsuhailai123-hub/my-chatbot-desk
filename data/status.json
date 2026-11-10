@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 03:58 UTC",
+  "updated_utc": "2026-11-10 05:00 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,18 +14,18 @@
     }
   },
   "headlines": [
+    "The Papers: 'Brand jailed for 10 years' and 'shamed star caged'",
+    "Trump says more US attacks on Iran 'highly unlikely'",
+    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Californians reject wealth tax for billionaires",
     "Russell Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
-    "Trump says Iran war is 'effectively over' militarily with further strikes unlikely",
     "Qantas to outsource 850 local jobs with most roles moving to India",
     "'Cruise for life' ship seized in Singapore",
-    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Hundreds more offenders to leave jail on Tuesday",
-    "The Papers: 'Brand jailed for 10 years' and 'shamed star caged'",
     "Prince William wants more protection from harassment for service women",
-    "Qantas to outsource 850 local jobs with most roles moving to India",
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+    "Qantas to outsource 850 local jobs with most roles moving to India",
     "Headteachers say families will struggle after another rise in school dinner prices",
     "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond"
