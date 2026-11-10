@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-09 23:47 UTC",
+  "updated_utc": "2026-11-10 01:11 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-    "Judge denies motion to dismiss Lindsay Clancy's murder case",
+    "The Papers: 'Brand jailed for 10 years' and 'shamed star caged'",
+    "Prince William wants more protection from harassment for service women",
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-    "Man Utd expected to sack head coach Carrick",
+    "I took Vinted to court to get my money back",
+    "My life as the UK's youngest lighthouse keeper",
+    "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
+    "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+    "The superpower battle over energy – and what it means for your bills",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Sabalenka wins WTA Finals opener despite wayward serve",
-    "Phones to be banned from pupils' bags or pockets under stricter rules for schools in England",
-    "Dana White declines Trump’s offer to be White House press secretary",
-    "Brady ends association with Birmingham City",
-    "'Baffling but brilliant' post-apocalyptic novel The End of Everything wins Booker Prize",
-    "Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+    "Headteachers say families will struggle after another rise in school dinner prices",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
     "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-    "The facial recognition technology stopping shoplifters",
-    "How a civil servant got away with juggling five jobs for so long"
+    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy"
   ],
   "ideas": [
     {
