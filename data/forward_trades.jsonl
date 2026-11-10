@@ -1,1 +1,2 @@
 {"entry_utc": "2026-11-09 01:00 UTC", "exit_utc": "2026-11-09 14:00 UTC", "side": "LONG", "entry": 4115.8, "exit": 4085.16, "reason": "Stop loss", "pnl": -50.0, "R": -1.0, "cash_after": 9950.0}
+{"entry_utc": "2026-11-09 15:00 UTC", "exit_utc": "2026-11-10 09:00 UTC", "side": "LONG", "entry": 4130.2, "exit": 4099.84, "reason": "Stop loss", "pnl": -49.75, "R": -1.0, "cash_after": 9900.25}

@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 08:59 UTC",
+  "updated_utc": "2026-11-10 10:00 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Wenger considers standing against Infantino",
-    "Hundreds more offenders leaving jail on Tuesday",
-    "DR Congo sentences 66 soldiers to death for being 'cowards'",
-    "Australia fans 'can't trust what's real' - Clarke",
-    "Vote for your greatest all-British boxing fight",
+    "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
+    "Meghan joins Harry in Brussels in first public appearance since father's arrest",
+    "Trump says more US attacks on Iran 'highly unlikely'",
+    "Watch: Man smashes Chinese government building with excavator",
+    "'Baffling but brilliant' post-apocalyptic novel The End of Everything wins Booker Prize",
     "US military aircraft leave second UK base, report says",
-    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-    "Meghan makes first public appearance since father's arrest",
-    "Faisal Islam: What Jensen Huang told me about China, national security and persuading Trump",
-    "How good is Hamilton and how long can he stay in F1? - Q&A",
-    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-    "Faisal Islam: What Jensen Huang told me about China, national security and persuading Trump",
-    "Independent bookshop closing after rise in bills",
+    "Police officer dies and another injured after backpack explosion in Oviedo",
+    "Phones to be banned from pupils' bags or pockets under stricter rules for schools in England",
+    "Faisal Islam: What the boss of US tech giant Nvidia told me about China and national security",
+    "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+    "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
+    "Nearly 20,000 households eligible for £250 to help with heating bills",
     "Holiday hunger bill to face final Stormont hurdle",
-    "New chief outlines main issues facing Isle of Man"
+    "Faisal Islam: What the boss of US tech giant Nvidia told me about China and national security",
+    "Headteachers say families will struggle after another rise in school dinner prices"
   ],
   "ideas": [
     {
