@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 01:11 UTC",
+  "updated_utc": "2026-11-10 02:14 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": -1.54
     },
     "GOLD": {
-      "date": "2026-11-06",
-      "close": 4074.9,
-      "change_1d_pct": -0.94
+      "date": "2026-11-09",
+      "close": 4114.5,
+      "change_1d_pct": 0.97
     }
   },
   "headlines": [
+    "Qantas to outsource 850 local jobs with most roles moving to India",
+    "'Cruise for life' ship seized in Singapore",
+    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
+    "Hundreds more offenders to leave jail on Tuesday",
     "The Papers: 'Brand jailed for 10 years' and 'shamed star caged'",
     "Prince William wants more protection from harassment for service women",
-    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "I took Vinted to court to get my money back",
     "My life as the UK's youngest lighthouse keeper",
     "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
-    "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-    "The superpower battle over energy – and what it means for your bills",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Sabalenka wins WTA Finals opener despite wayward serve",
+    "Qantas to outsource 850 local jobs with most roles moving to India",
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Headteachers say families will struggle after another rise in school dinner prices",
     "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-    "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy"
+    "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": null,
     "baseline_up_pct": {
       "BTC": 49.9,
-      "GOLD": 58.6
+      "GOLD": 58.7
     }
   }
 }
