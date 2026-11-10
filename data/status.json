@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 16:59 UTC",
+  "updated_utc": "2026-11-10 22:22 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "More than 12 US military aircraft leave second UK base",
-    "Tories pledge to cut benefits for children with 'milder cases' of ADHD",
-    "Arrests made in Mohamed Al Fayed probe in France, police say",
-    "Pochettino, Howe, Emery... or Carrick? Man Utd's managerial options",
-    "Israel's new parliament sworn in as leaders compete to form government",
-    "'It's a farce': Hegseth's defiant response to impeachment effort",
-    "Board of Peace says Israel's aid response after Gaza floods 'insufficent'",
-    "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
-    "Formula 1 to finish season in Middle East",
-    "David Walliams' career and controversies including Britain's Got Talent and Little Britain",
-    "Some pupils 'struggling just to get a hot meal'",
-    "Thousands of 'off-grid' homes eligible for £250 to help with heating bills",
-    "Sales of tinned food and bottled water  jump after 'Be Ready' campaign launch",
-    "Anthropic heads for lower than expected $1.3 trillion valuation in stock market debut",
-    "US inflation higher than expected in October - here's what is happening with prices"
+    "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
+    "Census should include black English and Asian English options, says MP",
+    "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+    "First day of Ukraine peace talks constructive, Zelensky says",
+    "Why does Australia want Brits to swap Sydney for the outback?",
+    "Spain's king and queen attend memorial service for rail crash victims",
+    "US federal authorities could have prevented Epstein crimes, report finds",
+    "Watch: E-bike battery explodes into massive fireball inside Oregon home",
+    "David Walliams accused of sexual misconduct after losing injunction bid",
+    "US Army soldier suspected of spying for Russia arrested in UK",
+    "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+    "Law on 'holiday hunger' passed by Stormont assembly",
+    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
+    "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+    "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash"
   ],
   "ideas": [
     {
