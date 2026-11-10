@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-10 05:59 UTC",
+  "updated_utc": "2026-11-10 07:19 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-08",
-      "close": 74584.65,
-      "change_1d_pct": -1.54
+      "date": "2026-11-09",
+      "close": 75223.15,
+      "change_1d_pct": 0.86
     },
     "GOLD": {
       "date": "2026-11-09",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
+    "Cast your vote for BBC Women's Footballer of the Year 2026",
+    "Meet Stephanie Case - the first woman to run 100 miles in Antarctica",
+    "Faisal Islam: What Jensen Huang told me about China, national security and persuading Trump",
+    "Watch: Rivals - Fury v Joshua on BBC iPlayer",
     "Polish unity on show in silent march to honour Krakow shooting victims",
     "Trump says more US attacks on Iran 'highly unlikely'",
     "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
     "The Papers: 'Brand jailed for 10 years' and 'shamed star caged'",
     "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
     "Californians reject wealth tax for billionaires",
-    "Russell Brand's ex Jemima Goldsmith accuses him of violence and abuse against her",
-    "Qantas to outsource 850 local jobs with most roles moving to India",
-    "'Cruise for life' ship seized in Singapore",
-    "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
-    "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-    "Qantas to outsource 850 local jobs with most roles moving to India",
-    "Headteachers say families will struggle after another rise in school dinner prices",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond"
+    "Independent bookshop closing after rise in bills",
+    "Holiday hunger bill to face final Stormont hurdle",
+    "New chief outlines main issues facing Isle of Man",
+    "Faisal Islam: What Jensen Huang told me about China, national security and persuading Trump",
+    "Australia considers criminal penalties for rogue AI in wake of OpenAI hack"
   ],
   "ideas": [
     {
@@ -55,12 +55,12 @@
   ],
   "grade": {
     "made": 3,
-    "graded": 0,
-    "pending": 3,
-    "hit_rate": null,
-    "avg_return_pct": null,
+    "graded": 2,
+    "pending": 1,
+    "hit_rate": 50.0,
+    "avg_return_pct": -6.45,
     "baseline_up_pct": {
-      "BTC": 49.9,
+      "BTC": 49.8,
       "GOLD": 58.7
     }
   }
