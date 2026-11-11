@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-10 22:22 UTC",
+  "updated_utc": "2026-11-11 02:46 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -15,20 +15,20 @@
   },
   "headlines": [
     "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
-    "Census should include black English and Asian English options, says MP",
-    "Nvidia hires major New York law firm to investigate Jensen Huang affair",
-    "First day of Ukraine peace talks constructive, Zelensky says",
-    "Why does Australia want Brits to swap Sydney for the outback?",
-    "Spain's king and queen attend memorial service for rail crash victims",
-    "US federal authorities could have prevented Epstein crimes, report finds",
-    "Watch: E-bike battery explodes into massive fireball inside Oregon home",
-    "David Walliams accused of sexual misconduct after losing injunction bid",
-    "US Army soldier suspected of spying for Russia arrested in UK",
-    "Nvidia hires major New York law firm to investigate Jensen Huang affair",
-    "Law on 'holiday hunger' passed by Stormont assembly",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
-    "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash"
+    "Judge allows Trump's $10bn defamation case against BBC to proceed",
+    "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+    "New photos are 'essential evidence' of possible SAS war crimes, inquiry told",
+    "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+    "Prince George's artwork featured in Country Life magazine",
+    "Duchy tenants may have to buy farms or leave as Prince William plans sell-off",
+    "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
+    "Students passing university assessments in minutes using AI, regulator warns",
+    "Real Madrid's Vinícius Jr sends surprise message to boy who lost his legs in Sudan's war",
+    "Robot vessels take on the dangerous work of mine hunting",
+    "Stickers and building sets help drive toy sales ahead of Christmas rush",
+    "Poundland hopeful for last-minute rescue deal to stave off collapse",
+    "Nvidia hires major US law firm to investigate alleged Chinese spy affair",
+    "Law on 'holiday hunger' passed by Stormont assembly"
   ],
   "ideas": [
     {
