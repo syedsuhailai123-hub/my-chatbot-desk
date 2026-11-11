@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-11 10:56 UTC",
+  "updated_utc": "2026-11-11 18:41 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Services being held across UK to mark Armistice Day",
-    "Pochettino ready to accept Man Utd offer to replace Carrick",
-    "Police told Russell Brand to leave Jemima Goldsmith's house in 2014",
-    "Wayne Rooney leads I'm A Celebrity... Get Me Out of Here! line-up",
-    "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-    "Jonathan Ross 'horrified' by Walliams allegations and Brand conviction",
-    "Bethell out of Australia trip and doubt for SA",
-    "Tearful Smith switches allegiance to Netherlands",
-    "Khawaja refuses to name Aussie ball tamperers",
-    "Vonn has ninth operation after Olympic crash",
-    "Poundland set for more time to secure a rescue deal as emergency talks continue",
-    "The Global Story",
-    "Christmas toy rush being driven by squishies and building sets",
-    "What we know so far about Jensen Huang's affair with suspected Chinese spy",
-    "Electricity bills to rise by 2.5% from March"
+    "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
+    "Author says there were 'real concerns' about David Walliams within publishing industry",
+    "Missing 11-month-old baby found buried alive in a crate in South Carolina",
+    "Raducanu to return at January's United Cup after injury absence",
+    "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+    "Former minister calls for phone tech to block live-streamed child sex abuse",
+    "What is the state of our grooming laws?",
+    "Spain sees widespread disruption in first general strike for 14 years",
+    "Jailed undertaker lodges bid to appeal against sentence",
+    "Ex-parliamentary aide acquitted for spying tells BBC he was 'fall guy' but also 'naive'",
+    "Poundland founder writes to King for help",
+    "Brad Friedel on Shrewsbury Town takeover",
+    "Spain sees widespread disruption in first general strike for 14 years",
+    "Workers across Spain stage first general strike in 14 years",
+    "Protesters gather in Spain for first general strike in 14 years"
   ],
   "ideas": [
     {
