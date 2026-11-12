@@ -2,3 +2,4 @@
 {"entry_utc": "2026-11-09 15:00 UTC", "exit_utc": "2026-11-10 09:00 UTC", "side": "LONG", "entry": 4130.2, "exit": 4099.84, "reason": "Stop loss", "pnl": -49.75, "R": -1.0, "cash_after": 9900.25}
 {"entry_utc": "2026-11-10 20:00 UTC", "exit_utc": "2026-11-11 05:00 UTC", "side": "SHORT", "entry": 4037.5, "exit": 4064.7, "reason": "Stop loss", "pnl": -49.5, "R": -1.0, "cash_after": 9850.75}
 {"entry_utc": "2026-11-12 01:00 UTC", "exit_utc": "2026-11-12 08:00 UTC", "side": "SHORT", "entry": 3999.8, "exit": 3959.13, "reason": "Take profit", "pnl": 97.08, "R": 1.971, "cash_after": 9947.82}
+{"entry_utc": "2026-11-12 11:00 UTC", "exit_utc": "2026-11-12 13:00 UTC", "side": "SHORT", "entry": 3959.3, "exit": 3911.31, "reason": "Take profit", "pnl": 98.25, "R": 1.975, "cash_after": 10046.07}

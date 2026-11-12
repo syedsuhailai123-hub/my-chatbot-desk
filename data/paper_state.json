@@ -46,8 +46,20 @@
       "mode_note": "Learning: 3/30 trades needed before any mode change."
     },
     "BTC-4h-breakout": {
-      "open": null,
-      "last_signal_t": 1794312000,
+      "open": {
+        "side": -1,
+        "entry": 71610.0,
+        "entry_t": 1794484800,
+        "last_t": 1794484800,
+        "atr": 932.3742688285909,
+        "stop": 73008.56140324289,
+        "target": 68812.87719351423,
+        "max_hold": 30,
+        "bars_held": 0,
+        "opened": "2026-11-12 12:00 UTC",
+        "shadow": false
+      },
+      "last_signal_t": 1794484800,
       "trades": [
         {
           "slot": "BTC-4h-breakout",

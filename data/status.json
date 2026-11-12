@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-12 09:49 UTC",
+  "updated_utc": "2026-11-12 18:19 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
+    "Teenage girl admits murder in row over boy",
+    "Some under-25s should get fewer benefits, Milburn review to say",
+    "Some childhood offenders may no longer have to reveal convictions to employers",
+    "Palace sack Sage after 16 games with Frank in advanced talks",
+    "Washington DC shooting leaves one dead and four injured as suspect dies after standoff",
+    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+    "Fourteen dead after truck loses control in 23-vehicle crash in UAE",
     "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-    "England legend Anderson, 44, joins Surrey",
-    "Cold health alerts begin as surge of Arctic air sees temperatures plummet",
+    "Pentagon backs war memorial guard who reprimanded Hegseth's group",
+    "Activist Daniel Thomas admits criminal damage after slashing migrant dinghy in Channel",
     "Some under-25s should get fewer benefits, Milburn review to say",
-    "Indonesia's vice-president resigns amid signs ruling alliance is fraying",
-    "Tourette syndrome: The life-changing device helping to stop tics",
-    "Nurmagomedov slaps Dvalishvili to spark hotel brawl",
-    "Marsh dodges Khawaja claims as Cummins vows to 'respond properly'",
-    "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
-    "Ugandan police investigate deaths of four pupils in suspected school poisoning",
-    "UK economy grows at fastest rate for more than two years",
-    "Some under-25s should get fewer benefits, Milburn review to say",
-    "Are branded cold and flu tablets really worth the extra money?",
-    "Gas bills to rise as Middle East turmoil persists",
-    "What we know as pressure builds on embattled Nvidia CEO Jensen Huang"
+    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+    "What we know as Nvidia CEO Jensen Huang resigns over affair allegations",
+    "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
+    "What in the World"
   ],
   "ideas": [
     {
