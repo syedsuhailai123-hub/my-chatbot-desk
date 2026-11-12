@@ -1,34 +1,34 @@
 {
-  "updated_utc": "2026-11-12 01:32 UTC",
+  "updated_utc": "2026-11-12 09:49 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-10",
-      "close": 73720.12,
-      "change_1d_pct": -2.0
+      "date": "2026-11-11",
+      "close": 73964.47,
+      "change_1d_pct": 0.33
     },
     "GOLD": {
-      "date": "2026-11-10",
-      "close": 4030.2,
-      "change_1d_pct": -2.05
+      "date": "2026-11-11",
+      "close": 4000.5,
+      "change_1d_pct": -0.74
     }
   },
   "headlines": [
-    "How much art does your council own and is it locked away or on display?",
-    "Democrat Scott Colom seals historic win in Mississippi Senate race",
-    "'You're triggering me': How to understand your therapy-speak teen",
-    "Poundland set for more time to secure a rescue deal as emergency talks continue",
-    "Andreeva wins 11 games in a row to thrash Sabalenka at WTA Finals",
-    "Nigeria's president launches re-election manifesto but can he regain voters' trust?",
-    "Burnham's push for closer EU ties causes ripples in his party and others",
-    "Sunbed firms must not downplay cancer risk, says watchdog",
-    "Significant drop in levels of toxic 'forever' chemicals in England's rivers",
-    "Are max strength cold and flu pills worth the money?",
-    "Poundland set for more time to secure a rescue deal as emergency talks continue",
-    "From Paris to DC - why offices are being turned into apartments",
-    "Some under-25s should get less benefits, Milburn review to say",
-    "Clashes erupt in Barcelona after thousands join Spain general strike",
-    "'Not the answer': Labour MPs speak out against Rosebank as decision looms"
+    "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+    "England legend Anderson, 44, joins Surrey",
+    "Cold health alerts begin as surge of Arctic air sees temperatures plummet",
+    "Some under-25s should get fewer benefits, Milburn review to say",
+    "Indonesia's vice-president resigns amid signs ruling alliance is fraying",
+    "Tourette syndrome: The life-changing device helping to stop tics",
+    "Nurmagomedov slaps Dvalishvili to spark hotel brawl",
+    "Marsh dodges Khawaja claims as Cummins vows to 'respond properly'",
+    "'No light, no water, no heat': Ukrainians struggle with blackouts as Russia hits power grid",
+    "Ugandan police investigate deaths of four pupils in suspected school poisoning",
+    "UK economy grows at fastest rate for more than two years",
+    "Some under-25s should get fewer benefits, Milburn review to say",
+    "Are branded cold and flu tablets really worth the extra money?",
+    "Gas bills to rise as Middle East turmoil persists",
+    "What we know as pressure builds on embattled Nvidia CEO Jensen Huang"
   ],
   "ideas": [
     {
@@ -55,13 +55,13 @@
   ],
   "grade": {
     "made": 3,
-    "graded": 2,
-    "pending": 1,
-    "hit_rate": 50.0,
-    "avg_return_pct": -6.45,
+    "graded": 3,
+    "pending": 0,
+    "hit_rate": 33.3,
+    "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.7,
-      "GOLD": 58.8
+      "GOLD": 58.6
     }
   }
 }
