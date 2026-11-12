@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-11 18:41 UTC",
+  "updated_utc": "2026-11-12 01:32 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
-    "Author says there were 'real concerns' about David Walliams within publishing industry",
-    "Missing 11-month-old baby found buried alive in a crate in South Carolina",
-    "Raducanu to return at January's United Cup after injury absence",
-    "Russia-Ukraine talks turn to post-war security but end without breakthrough",
-    "Former minister calls for phone tech to block live-streamed child sex abuse",
-    "What is the state of our grooming laws?",
-    "Spain sees widespread disruption in first general strike for 14 years",
-    "Jailed undertaker lodges bid to appeal against sentence",
-    "Ex-parliamentary aide acquitted for spying tells BBC he was 'fall guy' but also 'naive'",
-    "Poundland founder writes to King for help",
-    "Brad Friedel on Shrewsbury Town takeover",
-    "Spain sees widespread disruption in first general strike for 14 years",
-    "Workers across Spain stage first general strike in 14 years",
-    "Protesters gather in Spain for first general strike in 14 years"
+    "How much art does your council own and is it locked away or on display?",
+    "Democrat Scott Colom seals historic win in Mississippi Senate race",
+    "'You're triggering me': How to understand your therapy-speak teen",
+    "Poundland set for more time to secure a rescue deal as emergency talks continue",
+    "Andreeva wins 11 games in a row to thrash Sabalenka at WTA Finals",
+    "Nigeria's president launches re-election manifesto but can he regain voters' trust?",
+    "Burnham's push for closer EU ties causes ripples in his party and others",
+    "Sunbed firms must not downplay cancer risk, says watchdog",
+    "Significant drop in levels of toxic 'forever' chemicals in England's rivers",
+    "Are max strength cold and flu pills worth the money?",
+    "Poundland set for more time to secure a rescue deal as emergency talks continue",
+    "From Paris to DC - why offices are being turned into apartments",
+    "Some under-25s should get less benefits, Milburn review to say",
+    "Clashes erupt in Barcelona after thousands join Spain general strike",
+    "'Not the answer': Labour MPs speak out against Rosebank as decision looms"
   ],
   "ideas": [
     {
