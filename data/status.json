@@ -1,34 +1,34 @@
 {
-  "updated_utc": "2026-11-13 00:22 UTC",
+  "updated_utc": "2026-11-13 07:56 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-11",
-      "close": 73964.47,
-      "change_1d_pct": 0.33
+      "date": "2026-11-12",
+      "close": 71342.97,
+      "change_1d_pct": -3.54
     },
     "GOLD": {
-      "date": "2026-11-11",
-      "close": 4000.5,
-      "change_1d_pct": -0.74
+      "date": "2026-11-12",
+      "close": 3885.3,
+      "change_1d_pct": -2.88
     }
   },
   "headlines": [
-    "Cricket sandpaper scandal claims '100% wrong', Australia captain says",
-    "US doctor kills building manager after long-running dispute over mould, police say",
-    "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
-    "'A lie' - Palmer committed to England, says Rogers",
-    "Some under-25s should get fewer benefits, Milburn review to say",
-    "Gauff battles through back injury to keep WTA Finals hopes alive",
-    "Military base asylum plans granted planning approval",
-    "Grealish apologises for absence after breach of discipline",
-    "Where does Kane rank among all-time England greats?",
-    "Gritty Arsenal show different side in Barcelona draw",
-    "The rise of 'housefishing' - when does using AI go from enhancing to misleading?",
-    "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
-    "Some under-25s should get fewer benefits, Milburn review to say",
-    "Jensen Huang has resigned, what's next for Nvidia?",
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal"
+    "What we know about the global Microsoft outage",
+    "How Riley went from KSI's trainer to world-title dream",
+    "What happened overnight with the Microsoft global outage",
+    "African Miss Universe beauty queens in limbo as US visa restrictions bite",
+    "Liverpool and Van Dijk have a decision to make",
+    "Asylum centre on military base near Piddington approved",
+    "Whatever happened to the diamond that went missing in F1 crash?",
+    "Firms help migrants pose as artists and tech experts for 'Global Talent' visas, BBC finds",
+    "The Papers: 'Nvidia chief quits' and 'Six women say they too were preyed on by Brand'",
+    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+    "What we know about the global Microsoft outage",
+    "Politicians back focus on cost of living",
+    "Cider makers fear future for orchards as costs grow",
+    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+    "'My window faces a brick wall': What's your rent in NYC?"
   ],
   "ideas": [
     {
@@ -60,8 +60,8 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.7,
-      "GOLD": 58.6
+      "BTC": 49.6,
+      "GOLD": 58.5
     }
   }
 }
