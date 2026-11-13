@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-12 18:19 UTC",
+  "updated_utc": "2026-11-13 00:22 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Teenage girl admits murder in row over boy",
+    "Cricket sandpaper scandal claims '100% wrong', Australia captain says",
+    "US doctor kills building manager after long-running dispute over mould, police say",
+    "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+    "'A lie' - Palmer committed to England, says Rogers",
     "Some under-25s should get fewer benefits, Milburn review to say",
-    "Some childhood offenders may no longer have to reveal convictions to employers",
-    "Palace sack Sage after 16 games with Frank in advanced talks",
-    "Washington DC shooting leaves one dead and four injured as suspect dies after standoff",
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Fourteen dead after truck loses control in 23-vehicle crash in UAE",
-    "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-    "Pentagon backs war memorial guard who reprimanded Hegseth's group",
-    "Activist Daniel Thomas admits criminal damage after slashing migrant dinghy in Channel",
+    "Gauff battles through back injury to keep WTA Finals hopes alive",
+    "Military base asylum plans granted planning approval",
+    "Grealish apologises for absence after breach of discipline",
+    "Where does Kane rank among all-time England greats?",
+    "Gritty Arsenal show different side in Barcelona draw",
+    "The rise of 'housefishing' - when does using AI go from enhancing to misleading?",
+    "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
     "Some under-25s should get fewer benefits, Milburn review to say",
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "What we know as Nvidia CEO Jensen Huang resigns over affair allegations",
-    "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
-    "What in the World"
+    "Jensen Huang has resigned, what's next for Nvidia?",
+    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal"
   ],
   "ideas": [
     {
