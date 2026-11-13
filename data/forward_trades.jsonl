@@ -1,5 +1,5 @@
-{"entry_utc": "2026-11-09 01:00 UTC", "exit_utc": "2026-11-09 14:00 UTC", "side": "LONG", "entry": 4114.4, "exit": 4083.76, "reason": "Stop loss", "pnl": -50.0, "R": -1.0, "cash_after": 9950.0}
-{"entry_utc": "2026-11-09 15:00 UTC", "exit_utc": "2026-11-10 09:00 UTC", "side": "LONG", "entry": 4129.6, "exit": 4099.24, "reason": "Stop loss", "pnl": -49.75, "R": -1.0, "cash_after": 9900.25}
-{"entry_utc": "2026-11-10 20:00 UTC", "exit_utc": "2026-11-11 05:00 UTC", "side": "SHORT", "entry": 4037.3, "exit": 4064.52, "reason": "Stop loss", "pnl": -49.5, "R": -1.0, "cash_after": 9850.75}
-{"entry_utc": "2026-11-12 01:00 UTC", "exit_utc": "2026-11-12 08:00 UTC", "side": "SHORT", "entry": 3999.4, "exit": 3959.62, "reason": "Take profit", "pnl": 97.04, "R": 1.97, "cash_after": 9947.79}
-{"entry_utc": "2026-11-12 11:00 UTC", "exit_utc": "2026-11-12 13:00 UTC", "side": "SHORT", "entry": 3959.3, "exit": 3911.7, "reason": "Take profit", "pnl": 98.24, "R": 1.975, "cash_after": 10046.03}
+{"entry_utc": "2026-11-09 01:00 UTC", "exit_utc": "2026-11-09 14:00 UTC", "side": "LONG", "entry": 4115.8, "exit": 4085.16, "reason": "Stop loss", "pnl": -50.0, "R": -1.0, "cash_after": 9950.0}
+{"entry_utc": "2026-11-09 15:00 UTC", "exit_utc": "2026-11-10 09:00 UTC", "side": "LONG", "entry": 4130.2, "exit": 4099.84, "reason": "Stop loss", "pnl": -49.75, "R": -1.0, "cash_after": 9900.25}
+{"entry_utc": "2026-11-10 20:00 UTC", "exit_utc": "2026-11-11 05:00 UTC", "side": "SHORT", "entry": 4037.5, "exit": 4064.7, "reason": "Stop loss", "pnl": -49.5, "R": -1.0, "cash_after": 9850.75}
+{"entry_utc": "2026-11-12 01:00 UTC", "exit_utc": "2026-11-12 08:00 UTC", "side": "SHORT", "entry": 3999.8, "exit": 3959.13, "reason": "Take profit", "pnl": 97.08, "R": 1.971, "cash_after": 9947.82}
+{"entry_utc": "2026-11-12 11:00 UTC", "exit_utc": "2026-11-12 13:00 UTC", "side": "SHORT", "entry": 3959.3, "exit": 3911.31, "reason": "Take profit", "pnl": 98.25, "R": 1.975, "cash_after": 10046.07}

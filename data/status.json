@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-13 07:56 UTC",
+  "updated_utc": "2026-11-13 16:21 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "What we know about the global Microsoft outage",
-    "How Riley went from KSI's trainer to world-title dream",
-    "What happened overnight with the Microsoft global outage",
-    "African Miss Universe beauty queens in limbo as US visa restrictions bite",
-    "Liverpool and Van Dijk have a decision to make",
-    "Asylum centre on military base near Piddington approved",
-    "Whatever happened to the diamond that went missing in F1 crash?",
-    "Firms help migrants pose as artists and tech experts for 'Global Talent' visas, BBC finds",
-    "The Papers: 'Nvidia chief quits' and 'Six women say they too were preyed on by Brand'",
-    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-    "What we know about the global Microsoft outage",
-    "Politicians back focus on cost of living",
-    "Cider makers fear future for orchards as costs grow",
-    "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-    "'My window faces a brick wall': What's your rent in NYC?"
+    "Former Hamas bodyguard guilty of UK knife attack",
+    "Sharks, ladders and a four-year plan - how England won World Cup",
+    "Courts, spies and MPs: How the Microsoft outage has been felt around the world",
+    "Tearful Pochettino on 'difficult' decision to leave USA for Man Utd",
+    "Watch: BBC undercover reporter is offered fake art and awards for talent visa",
+    "'Hardest challenge of my life' - Owain Wyn Evans completes Children in Need ride",
+    "Reform and Tory spokesmen in angry clash over immigration at Piddington",
+    "Why is the Microsoft outage lasting so long?",
+    "NHS, schools and police forces hit by Microsoft outage",
+    "Russia hit by second car bomb in as many days as peace talks continue",
+    "Bessent blames Lutnick's Commerce Department for failing to block Megaspeed",
+    "Why is the Microsoft outage lasting so long?",
+    "Shoplifters 'stealing to order' in Scottish shops",
+    "How a sex scandal at Nvidia is putting pressure on the White House",
+    "Heat pumps: How much heat does your home really need?"
   ],
   "ideas": [
     {
