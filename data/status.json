@@ -1,34 +1,34 @@
 {
-  "updated_utc": "2026-11-14 03:14 UTC",
+  "updated_utc": "2026-11-14 10:34 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-12",
-      "close": 71342.97,
-      "change_1d_pct": -3.54
+      "date": "2026-11-13",
+      "close": 68249.27,
+      "change_1d_pct": -4.34
     },
     "GOLD": {
       "date": "2026-11-13",
-      "close": 3887.6,
-      "change_1d_pct": 0.06
+      "close": 3886.3,
+      "change_1d_pct": 0.03
     }
   },
   "headlines": [
-    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-    "Sabalenka's season ended by Svitolina at WTA Finals",
-    "When to put up a real Christmas tree - according to an expert",
-    "Even Grand Theft Auto's original creators haven't been able to play GTA 6",
-    "Family's two-year fight to bring killer driver back from Latvia",
-    "Brand, Walliams and MAFS: Is this a reckoning for the entertainment industry?",
-    "Widespread frost and freezing fog forecast as cold health alerts continue",
-    "'Police launch investigation' into Walliams and Piddington asylum 'betrayal'",
-    "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
-    "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-    "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
-    "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
-    "Why is Microsoft's outage lasting so long and will emails be lost?",
-    "Are board games making a comeback this Christmas?",
-    "What are people emergency stockpiling?"
+    "King jokes with Elton John as he marks 78th birthday with radio show",
+    "Tuchel to remind England of anti-racism protocols before Spain game",
+    "Young people should have legal guarantee of job or training, Milburn tells BBC",
+    "Widespread frost and freezing fog as cold health alerts continue",
+    "Japan's unlikely leader who turned down the All Blacks",
+    "Six goals to go - will McGinn catch Dalglish & Law?",
+    "England boxer missed Worlds over sex-test mix-up",
+    "What we know about the ground stop and what to do if you're affected",
+    "Andy Burnham urges Welsh Labour to listen after historic Senedd election defeat",
+    "Warner accuses Cricket Australia of 'cover-up'",
+    "Football kit giveaway aims to boost participation",
+    "The rise of 'housefishing' by estate agents",
+    "What do Christmas market traders say about rising prices?",
+    "Microsoft says services fully restored after day-long global outage",
+    "Food bank sees donations drop by 10% each year"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.6,
+      "BTC": 49.5,
       "GOLD": 58.4
     }
   }

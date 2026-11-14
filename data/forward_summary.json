@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-14 03:14 UTC",
+  "updated_utc": "2026-11-14 10:34 UTC",
   "forward_start_utc": "2026-11-08 18:00 UTC",
   "rules_unchanged": true,
   "status": "WAITING: 5 of 40 trades needed",
@@ -10,7 +10,7 @@
   "profit_factor": 1.31,
   "avg_R": 0.189,
   "max_drawdown_pct": -1.49,
-  "buy_and_hold_since_start_pct": -4.69,
+  "buy_and_hold_since_start_pct": -4.73,
   "open_position": null,
   "criteria": {
     "min_trades": 40,
