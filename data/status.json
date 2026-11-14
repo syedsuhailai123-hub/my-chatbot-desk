@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-13 22:36 UTC",
+  "updated_utc": "2026-11-14 03:14 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,23 +8,23 @@
       "change_1d_pct": -3.54
     },
     "GOLD": {
-      "date": "2026-11-12",
-      "close": 3885.3,
-      "change_1d_pct": -2.88
+      "date": "2026-11-13",
+      "close": 3887.6,
+      "change_1d_pct": 0.06
     }
   },
   "headlines": [
-    "US Air Force says it responded to 'suspected drones' over RAF Lakenheath",
-    "New campaign against EU membership launches ahead of UK-EU summit",
-    "Dept Q crew member dies after being  injured at Edinburgh film studio",
-    "Microsoft outage 'stark reminder' of how much we rely on tech",
-    "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
-    "Driver who fled to Latvia after killing schoolboy jailed",
-    "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
-    "Democratic Senate leader Schumer set to face leadership challenge",
-    "Eurovision is finally coming to Asia - meet the stars gearing up to take the stage",
-    "Tories pay artist for Burnham images after legal threat",
-    "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+    "Sabalenka's season ended by Svitolina at WTA Finals",
+    "When to put up a real Christmas tree - according to an expert",
+    "Even Grand Theft Auto's original creators haven't been able to play GTA 6",
+    "Family's two-year fight to bring killer driver back from Latvia",
+    "Brand, Walliams and MAFS: Is this a reckoning for the entertainment industry?",
+    "Widespread frost and freezing fog forecast as cold health alerts continue",
+    "'Police launch investigation' into Walliams and Piddington asylum 'betrayal'",
+    "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+    "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+    "Microsoft 'deeply sorry' for global outage as it reports broad recovery",
     "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
     "Why is Microsoft's outage lasting so long and will emails be lost?",
     "Are board games making a comeback this Christmas?",
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.6,
-      "GOLD": 58.5
+      "GOLD": 58.4
     }
   }
 }
