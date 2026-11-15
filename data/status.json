@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-14 21:29 UTC",
+  "updated_utc": "2026-11-15 01:54 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "UK ethics watchdog chief steps back from role over sexual misconduct claims",
-    "Comeback kid Joseph thrills as England eye All Blacks",
-    "Second catch attempt as SpaceX Starship rocket heads back to Earth",
-    "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-    "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+    "Fiji 'did Ireland a favour' before South Africa game",
+    "Hannah Fry feels 'unbelievably lucky' after cervical cancer treatment",
+    "Holly Humberstone: People can't connect to a pop star who's 'too polished'",
+    "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+    "Judo champion shakes up French  presidential race with surprise candidacy",
+    "How to shake hands and make eye contact - the lessons preparing pupils for the world of work",
+    "Beauty advent calendars can cost hundreds - but are they value for money?",
+    "UK papers: 'I was only 16' says alleged Brand victim, as disgraced comedian 'moved to soft jail'",
+    "Svitolina races in WTA Finals showpiece against Andreeva",
     "How telecoms upgrade work sparked US flight chaos",
-    "'One of the greatest wins' - Wales stun All Blacks to go from no-hopers to heroes",
-    "Joseph enjoys dream return as England thrash Japan at Twickenham",
-    "Haaland helps Norway to win over Wales in Nations League",
-    "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+    "Beauty advent calendars can cost hundreds - but are they value for money?",
     "Football kit giveaway aims to boost participation",
     "The rise of 'housefishing' by estate agents",
     "What do Christmas market traders say about rising prices?",
-    "Microsoft says services fully restored after day-long global outage",
-    "Food bank sees donations drop by 10% each year"
+    "Microsoft says services fully restored after day-long global outage"
   ],
   "ideas": [
     {
