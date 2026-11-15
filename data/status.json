@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-15 09:24 UTC",
+  "updated_utc": "2026-11-15 17:09 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "England are favourites against All Blacks, and fearless Wales are an inspiration",
-    "Milder day in store before more cold health alerts take effect",
-    "Israel kills Hamas commander in strike on Gaza camp, officials say",
-    "Australia's Sayers 'took sandpaper from field' & rejects Cummins' claims",
-    "How Spain's humble superstar Simon became world's best keeper",
-    "Alleged Russell Brand rape victim wants age of consent law changed",
-    "Copper wire upgrade behind US flight suspension, transport secretary says",
-    "Ex-Met Police inspector lied about wife's death in Barbados hotel room, BBC learns",
-    "UK papers: 'I was only 16' says alleged Brand victim, as disgraced comedian 'moved to soft jail'",
-    "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
-    "Beauty advent calendars can cost hundreds - but are they value for money?",
+    "Czechs rally against plan to switch funding of public media",
+    "Clothing factories shut in Bangladesh as workers strike over pay",
+    "Judge blocks Trump closure of 'Trash Island' Washington DC golf course on Sunday",
+    "Staggered age of consent to be discussed after Brand case, minister says",
+    "How telecoms upgrade work sparked US flight chaos",
+    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+    "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
+    "Iran targets US military base in Bahrain with drone attack",
+    "South Korea's top scorer in tax accountancy exam admits cheating",
+    "Man dies after being hit by ambulance near Sunderland",
+    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+    "Minister backs legal right to job support for young people",
+    "Beauty advent calendars can cost hundreds but are they value for money?",
     "Football kit giveaway aims to boost participation",
-    "The rise of 'housefishing' by estate agents",
-    "What do Christmas market traders say about rising prices?",
-    "Microsoft says services fully restored after day-long global outage"
+    "The rise of 'housefishing' by estate agents"
   ],
   "ideas": [
     {
