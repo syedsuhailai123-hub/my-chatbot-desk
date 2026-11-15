@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-15 01:54 UTC",
+  "updated_utc": "2026-11-15 09:24 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-13",
-      "close": 68249.27,
-      "change_1d_pct": -4.34
+      "date": "2026-11-14",
+      "close": 64128.05,
+      "change_1d_pct": -6.04
     },
     "GOLD": {
       "date": "2026-11-13",
@@ -14,16 +14,16 @@
     }
   },
   "headlines": [
-    "Fiji 'did Ireland a favour' before South Africa game",
-    "Hannah Fry feels 'unbelievably lucky' after cervical cancer treatment",
-    "Holly Humberstone: People can't connect to a pop star who's 'too polished'",
-    "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
-    "Judo champion shakes up French  presidential race with surprise candidacy",
-    "How to shake hands and make eye contact - the lessons preparing pupils for the world of work",
-    "Beauty advent calendars can cost hundreds - but are they value for money?",
+    "England are favourites against All Blacks, and fearless Wales are an inspiration",
+    "Milder day in store before more cold health alerts take effect",
+    "Israel kills Hamas commander in strike on Gaza camp, officials say",
+    "Australia's Sayers 'took sandpaper from field' & rejects Cummins' claims",
+    "How Spain's humble superstar Simon became world's best keeper",
+    "Alleged Russell Brand rape victim wants age of consent law changed",
+    "Copper wire upgrade behind US flight suspension, transport secretary says",
+    "Ex-Met Police inspector lied about wife's death in Barbados hotel room, BBC learns",
     "UK papers: 'I was only 16' says alleged Brand victim, as disgraced comedian 'moved to soft jail'",
-    "Svitolina races in WTA Finals showpiece against Andreeva",
-    "How telecoms upgrade work sparked US flight chaos",
+    "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
     "Beauty advent calendars can cost hundreds - but are they value for money?",
     "Football kit giveaway aims to boost participation",
     "The rise of 'housefishing' by estate agents",
