@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-16 09:41 UTC",
+  "updated_utc": "2026-11-16 20:28 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
-    "UK and allies call on Israel to allow rapid humanitarian access to Gaza",
-    "Camara to race again for Haas in Las Vegas",
-    "Burnham urges caution on scrapping 3pm TV blackout",
-    "UK lost more than it gained from Brexit, Burnham to say ahead of EU summit",
-    "Prince and Princess of Wales play street cricket in Mumbai",
-    "Yellow weather warnings issued for snow and ice as temperatures plummet",
-    "49ers stun Cowboys, Chiefs and Bengals impress - NFL week 10",
-    "Homophobia on the rise in football - what is your club doing about it?",
-    "US basketball player arrested with 34kg of cannabis at Nigerian airport",
-    "Gas starts flowing from Jackdaw after government green light",
-    "Thrift shop asks shoppers to nominate a charity",
-    "'Break-in and rising costs could kill my business'",
-    "Investors sue chip giant Intel after 29% stock plunge",
-    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
+    "Forensic expert says his analysis raises doubts about how Epstein died",
+    "Robert Pattinson to replace Daniel Craig as James Bond",
+    "Robertson eclipses Dalglish to become Scotland's most capped man",
+    "Lindsay Clancy to face retrial next year for deaths of her three children",
+    "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+    "Russell Brand prison message 'appalling' and being investigated, No 10 says",
+    "Five-try Joseph set to start for England against All Blacks",
+    "How Frank can restore reputation and save Crystal Palace",
+    "Emma Barnett to leave Radio 4's Today for new BBC Show",
+    "When will we see Robert Pattinson as Bond in cinemas?",
+    "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+    "'Parents are offering to pay kids' wages': Salon owner",
+    "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
+    "Create more jobs for under-25s by cutting National Insurance, key report urges",
+    "Avoid this Black Friday scam - how to check it's a real deal"
   ],
   "ideas": [
     {
