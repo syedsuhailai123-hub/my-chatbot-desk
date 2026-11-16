@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-15 21:48 UTC",
+  "updated_utc": "2026-11-16 02:05 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Czechs rally against plan to switch funding of public media",
-    "Townsend hails Scotland's defence in Australia 'arm wrestle'",
-    "London City's 'bravery' paying off in top three pursuit",
-    "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-    "Ronaldinho makes comeback in Ravenna win",
-    "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
-    "Pope Leo rides in helicopter cockpit during Peru trip",
-    "Staggered age of consent to be discussed after Brand case, minister says",
-    "Chapecoense air crash survivor wins promotion in final game",
-    "Trident submarine returns home after record-breaking undersea patrol",
+    "Australian MP who lost both legs in alleged car attack discharged from hospital",
     "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-    "Minister backs legal right to job support for young people",
-    "Beauty advent calendars can cost hundreds but are they value for money?",
-    "Football kit giveaway aims to boost participation",
-    "The rise of 'housefishing' by estate agents"
+    "Brand moved from Wandsworth to category C prison, his wife confirms on podcast",
+    "Clothing factories shut in Bangladesh as workers strike over pay",
+    "Black Friday and tax return scams  - don't fall for these",
+    "Cancer 'sponge' tests could be offered to more people with bad indigestion",
+    "Russia's mega-rich are already imagining a future after Putin",
+    "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
+    "How did England cling on against Spain and what did Tuchel do differently?",
+    "60 minutes of perfection, 30 minutes of chaos - an England win for the ages",
+    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+    "Black Friday and tax return scams  - don't fall for these",
+    "Cut national insurance for under-25s to create jobs, Milburn report to say",
+    "UK will have 'voice' but no vote on EU food rules in Brexit reset",
+    "Minister backs legal right to job support for young people"
   ],
   "ideas": [
     {
