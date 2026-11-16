@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-16 02:05 UTC",
+  "updated_utc": "2026-11-16 09:41 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-14",
-      "close": 64128.05,
-      "change_1d_pct": -6.04
+      "date": "2026-11-15",
+      "close": 65305.06,
+      "change_1d_pct": 1.84
     },
     "GOLD": {
       "date": "2026-11-13",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Australian MP who lost both legs in alleged car attack discharged from hospital",
-    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-    "Brand moved from Wandsworth to category C prison, his wife confirms on podcast",
-    "Clothing factories shut in Bangladesh as workers strike over pay",
-    "Black Friday and tax return scams  - don't fall for these",
-    "Cancer 'sponge' tests could be offered to more people with bad indigestion",
-    "Russia's mega-rich are already imagining a future after Putin",
-    "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
-    "How did England cling on against Spain and what did Tuchel do differently?",
-    "60 minutes of perfection, 30 minutes of chaos - an England win for the ages",
-    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-    "Black Friday and tax return scams  - don't fall for these",
-    "Cut national insurance for under-25s to create jobs, Milburn report to say",
-    "UK will have 'voice' but no vote on EU food rules in Brexit reset",
-    "Minister backs legal right to job support for young people"
+    "'You're going to win the war': Harry praises war veterans on surprise Ukraine visit",
+    "UK and allies call on Israel to allow rapid humanitarian access to Gaza",
+    "Camara to race again for Haas in Las Vegas",
+    "Burnham urges caution on scrapping 3pm TV blackout",
+    "UK lost more than it gained from Brexit, Burnham to say ahead of EU summit",
+    "Prince and Princess of Wales play street cricket in Mumbai",
+    "Yellow weather warnings issued for snow and ice as temperatures plummet",
+    "49ers stun Cowboys, Chiefs and Bengals impress - NFL week 10",
+    "Homophobia on the rise in football - what is your club doing about it?",
+    "US basketball player arrested with 34kg of cannabis at Nigerian airport",
+    "Gas starts flowing from Jackdaw after government green light",
+    "Thrift shop asks shoppers to nominate a charity",
+    "'Break-in and rising costs could kill my business'",
+    "Investors sue chip giant Intel after 29% stock plunge",
+    "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.5,
+      "BTC": 49.4,
       "GOLD": 58.4
     }
   }
