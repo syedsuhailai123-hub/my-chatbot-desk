@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-16 20:28 UTC",
+  "updated_utc": "2026-11-17 03:52 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": 1.84
     },
     "GOLD": {
-      "date": "2026-11-13",
-      "close": 3886.3,
-      "change_1d_pct": 0.03
+      "date": "2026-11-16",
+      "close": 3853.0,
+      "change_1d_pct": -0.86
     }
   },
   "headlines": [
-    "Forensic expert says his analysis raises doubts about how Epstein died",
+    "Vance says he will decide 'sometime next year' about 2028 US presidential run",
+    "Trump says Alaska voters chose the wrong Dan Sullivan. What does the data show?",
+    "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
     "Robert Pattinson to replace Daniel Craig as James Bond",
-    "Robertson eclipses Dalglish to become Scotland's most capped man",
-    "Lindsay Clancy to face retrial next year for deaths of her three children",
-    "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
-    "Russell Brand prison message 'appalling' and being investigated, No 10 says",
-    "Five-try Joseph set to start for England against All Blacks",
-    "How Frank can restore reputation and save Crystal Palace",
-    "Emma Barnett to leave Radio 4's Today for new BBC Show",
-    "When will we see Robert Pattinson as Bond in cinemas?",
-    "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
-    "'Parents are offering to pay kids' wages': Salon owner",
-    "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
-    "Create more jobs for under-25s by cutting National Insurance, key report urges",
-    "Avoid this Black Friday scam - how to check it's a real deal"
+    "The Papers:  'No savings for a decade' and 'The name's Pattinson'",
+    "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
+    "Failed asylum seekers face removal without five-day notice period",
+    "New Zealand tricks and annual leave - the lengths fans are going to for GTA 6",
+    "What's the story with Scotland boss Pocognoli - is it time to go?",
+    "Met Office yellow warning in place as snow could disrupt Tuesday morning travel",
+    "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
+    "Customers report service outages at major US banks",
+    "Aged 16-24 and looking for work? Use our look-up to find out which areas have the most jobs",
+    "We couldn't afford a house alone, so we bought one with strangers",
+    "California sues OpenAI over Hugging Face attack"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.4,
-      "GOLD": 58.4
+      "GOLD": 58.3
     }
   }
 }
