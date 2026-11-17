@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-17 13:24 UTC",
+  "updated_utc": "2026-11-17 22:22 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Why Milburn's Neets reforms will only save £200m a year by 2036",
-    "Batman to James Bond: The clues about what to expect from Robert Pattinson's 007",
-    "UK sanctions firms over Israeli West Bank settlements",
-    "Speed camera fault may have allowed drivers to escape fines",
+    "Henry Nowak killer applies to appeal against conviction",
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+    "Russian military plane crashes killing all 19 on board",
+    "US loses measles elimination status after 26 years amid record case numbers",
+    "American soldier arrested by UK police on suspicion of spying taken into US military custody",
     "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-    "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "Government must act now or lose Royal Mail, former minister warns",
-    "Mozambique opposition leader faces trial over deadly 2024 election unrest",
-    "DeChambeau joins DP World Tour after LIV Golf collapse",
-    "Where are the most jobs for 18-24 year-olds?",
+    "Trump in Asia ahead of talks with Russian and Chinese presidents",
+    "Protest against talk by academic who made Arday plagiarism claim",
+    "Church of England should protect 'every belief', King says",
+    "Carney looks to China as Trump tariffs squeeze Canada's car industry",
+    "New Nvidia boss says momentum goes on as firm reports bumper results after Huang quits",
     "Speed camera fault may have allowed drivers to escape fines",
-    "Government must act now or lose Royal Mail, former minister warns",
-    "Where are the most jobs for 18-24 year-olds?",
-    "US government confirms investigation into tech firm Megaspeed",
-    "Immigration arrests after organised crime blitz"
+    "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
+    "We can't afford to hire under-25s, say firms. Will Milburn plans help?",
+    "US bank services returning to normal after major outage"
   ],
   "ideas": [
     {
