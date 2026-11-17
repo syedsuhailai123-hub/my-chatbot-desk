@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-17 03:52 UTC",
+  "updated_utc": "2026-11-17 13:24 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-15",
-      "close": 65305.06,
-      "change_1d_pct": 1.84
+      "date": "2026-11-16",
+      "close": 64855.84,
+      "change_1d_pct": -0.69
     },
     "GOLD": {
       "date": "2026-11-16",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Vance says he will decide 'sometime next year' about 2028 US presidential run",
-    "Trump says Alaska voters chose the wrong Dan Sullivan. What does the data show?",
-    "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
-    "Robert Pattinson to replace Daniel Craig as James Bond",
-    "The Papers:  'No savings for a decade' and 'The name's Pattinson'",
-    "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
-    "Failed asylum seekers face removal without five-day notice period",
-    "New Zealand tricks and annual leave - the lengths fans are going to for GTA 6",
-    "What's the story with Scotland boss Pocognoli - is it time to go?",
-    "Met Office yellow warning in place as snow could disrupt Tuesday morning travel",
-    "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex CEO",
-    "Customers report service outages at major US banks",
-    "Aged 16-24 and looking for work? Use our look-up to find out which areas have the most jobs",
-    "We couldn't afford a house alone, so we bought one with strangers",
-    "California sues OpenAI over Hugging Face attack"
+    "Why Milburn's Neets reforms will only save £200m a year by 2036",
+    "Batman to James Bond: The clues about what to expect from Robert Pattinson's 007",
+    "UK sanctions firms over Israeli West Bank settlements",
+    "Speed camera fault may have allowed drivers to escape fines",
+    "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
+    "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+    "Government must act now or lose Royal Mail, former minister warns",
+    "Mozambique opposition leader faces trial over deadly 2024 election unrest",
+    "DeChambeau joins DP World Tour after LIV Golf collapse",
+    "Where are the most jobs for 18-24 year-olds?",
+    "Speed camera fault may have allowed drivers to escape fines",
+    "Government must act now or lose Royal Mail, former minister warns",
+    "Where are the most jobs for 18-24 year-olds?",
+    "US government confirms investigation into tech firm Megaspeed",
+    "Immigration arrests after organised crime blitz"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.4,
+      "BTC": 49.3,
       "GOLD": 58.3
     }
   }
