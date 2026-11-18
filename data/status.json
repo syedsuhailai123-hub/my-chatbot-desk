@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-18 04:19 UTC",
+  "updated_utc": "2026-11-18 13:57 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-16",
-      "close": 64855.84,
-      "change_1d_pct": -0.69
+      "date": "2026-11-17",
+      "close": 64893.95,
+      "change_1d_pct": 0.06
     },
     "GOLD": {
       "date": "2026-11-17",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Rubio says US not 'under systemic attack' after series of tech outages",
-    "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new 007",
-    "Cricket Australia sets up 'safe space' for players to share sandpapergate experiences",
-    "Waymo pulls driverless taxis from all US freeways",
-    "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
-    "The Papers:  'Over-25s next in line' and 'Clean for Colleen'",
-    "Irishman charged with destroying US military aircraft with axe",
-    "Nvidia says it won't reinstate Huang as firm reports bumper results",
-    "Is there any more snow on the way for England and Scotland?",
-    "Voy at-home test kit adverts banned over low testosterone claims",
-    "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new 007",
-    "Waymo pulls driverless taxis from all US freeways",
-    "Nvidia says it won't reinstate Huang as firm reports bumper results",
-    "Europe plans to catch the next computer chip wave",
-    "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal"
+    "Police investigate death of boy, 3, after incident at nursery",
+    "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+    "What's behind the recent flurry of global tech outages?",
+    "Glastonbury 2027 headliners announced after year off for the festival",
+    "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+    "Kuwait says it repelled first Iranian attack in two months after US strikes island",
+    "Brain cancer patients demand public inquiry into chemotherapy scandal",
+    "Lammy urges Burnham to take UK back into the EU",
+    "Ivan Toney loses bid to avoid Euro 2028 court clash",
+    "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+    "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+    "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+    "MP urges council to speed up heating oil payments",
+    "Security flaw found in Java, world's third-largest programming language",
+    "States to debate social security contributions cut"
   ],
   "ideas": [
     {
