@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-17 22:22 UTC",
+  "updated_utc": "2026-11-18 04:19 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": -0.69
     },
     "GOLD": {
-      "date": "2026-11-16",
-      "close": 3853.0,
-      "change_1d_pct": -0.86
+      "date": "2026-11-17",
+      "close": 3864.2,
+      "change_1d_pct": 0.29
     }
   },
   "headlines": [
-    "Henry Nowak killer applies to appeal against conviction",
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "Russian military plane crashes killing all 19 on board",
-    "US loses measles elimination status after 26 years amid record case numbers",
-    "American soldier arrested by UK police on suspicion of spying taken into US military custody",
-    "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
-    "Trump in Asia ahead of talks with Russian and Chinese presidents",
-    "Protest against talk by academic who made Arday plagiarism claim",
-    "Church of England should protect 'every belief', King says",
-    "Carney looks to China as Trump tariffs squeeze Canada's car industry",
-    "New Nvidia boss says momentum goes on as firm reports bumper results after Huang quits",
-    "Speed camera fault may have allowed drivers to escape fines",
-    "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-    "We can't afford to hire under-25s, say firms. Will Milburn plans help?",
-    "US bank services returning to normal after major outage"
+    "Rubio says US not 'under systemic attack' after series of tech outages",
+    "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new 007",
+    "Cricket Australia sets up 'safe space' for players to share sandpapergate experiences",
+    "Waymo pulls driverless taxis from all US freeways",
+    "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
+    "The Papers:  'Over-25s next in line' and 'Clean for Colleen'",
+    "Irishman charged with destroying US military aircraft with axe",
+    "Nvidia says it won't reinstate Huang as firm reports bumper results",
+    "Is there any more snow on the way for England and Scotland?",
+    "Voy at-home test kit adverts banned over low testosterone claims",
+    "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new 007",
+    "Waymo pulls driverless taxis from all US freeways",
+    "Nvidia says it won't reinstate Huang as firm reports bumper results",
+    "Europe plans to catch the next computer chip wave",
+    "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.3,
-      "GOLD": 58.3
+      "GOLD": 58.2
     }
   }
 }
