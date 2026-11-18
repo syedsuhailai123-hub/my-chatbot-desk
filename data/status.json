@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-18 13:57 UTC",
+  "updated_utc": "2026-11-18 21:55 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Police investigate death of boy, 3, after incident at nursery",
+    "UK government asks for Russell Brand's YouTube account to be removed",
+    "Democrats nominate Hakeem Jeffries to be US Speaker of the House",
+    "Prince Harry says he would rejoin army as he warns of Russia threat",
+    "FA explored legal challenge to Infantino staying on",
+    "TfL photocard breach exposes 265,000 customers",
+    "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
+    "Hundreds could be hit by chemotherapy scandal, trust says",
+    "William and Kate meet PM Modi as they wrap up India tour",
+    "Wales police chief says racists and misogynists working inside force",
+    "'Lip King unbothered' when mum collapsed after BBL",
+    "How high is UK inflation and how will you be affected?",
+    "Cathedral's staff review 'difficult but necessary'",
+    "The seven Anthropic founders who are about to become multi-billionaires",
     "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-    "What's behind the recent flurry of global tech outages?",
-    "Glastonbury 2027 headliners announced after year off for the festival",
-    "Heating bills, chocolate and cat food: What the inflation figures mean for you",
-    "Kuwait says it repelled first Iranian attack in two months after US strikes island",
-    "Brain cancer patients demand public inquiry into chemotherapy scandal",
-    "Lammy urges Burnham to take UK back into the EU",
-    "Ivan Toney loses bid to avoid Euro 2028 court clash",
-    "Trump shakes hands with Putin and Xi ahead of historic talks in China",
-    "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-    "Heating bills, chocolate and cat food: What the inflation figures mean for you",
-    "MP urges council to speed up heating oil payments",
-    "Security flaw found in Java, world's third-largest programming language",
-    "States to debate social security contributions cut"
+    "Heating bills, chocolate and cat food: What the inflation figures mean for you"
   ],
   "ideas": [
     {
