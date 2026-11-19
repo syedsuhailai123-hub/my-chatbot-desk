@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-19 03:26 UTC",
+  "updated_utc": "2026-11-19 13:03 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-17",
-      "close": 64893.95,
-      "change_1d_pct": 0.06
+      "date": "2026-11-18",
+      "close": 62987.27,
+      "change_1d_pct": -2.94
     },
     "GOLD": {
       "date": "2026-11-18",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "The Papers: 'I'd rejoin the Army to fight Russia' and 'Boiling point'",
-    "Elon Musk says record spending on US midterms was 'pretty foolish'",
-    "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-    "'Feudal' leasehold system set to be scrapped in England and Wales",
-    "Crimean Bridge attacked again, Russian official says",
-    "Van Gogh painting sells for record $190.4m after row over its Nazi history",
-    "India's religious make-up - what a new Pew study says about Hindus and Muslims",
-    "Is your child lying to you? That might not be a bad thing",
-    "Crew unaware of risks before Bayesian yacht accident, say investigators",
-    "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
-    "Elon Musk says record spending on US midterms was 'pretty foolish'",
-    "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-    "Who are the investors ready to jump on Anthropic?",
-    "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
-    "Why has Waymo pulled all its driverless cars from US freeways?"
+    "Badenoch defends amputee marathon runners claim in benefits cut row",
+    "Covid inquiry report: key findings on testing, tracing and 'the pingdemic'",
+    "McCullum plans to use Brook and Banton as bowlers",
+    "Florence Pugh hits out at weight loss and cosmetic surgery speculation",
+    "Deception can begin aged one - why experts say children lying can be a good thing",
+    "Ella Langley sweeps Country Music Awards as Taylor Swift performs",
+    "Florida pastor found guilty over role in assassination of Haitian president",
+    "Google rejects UK request for Russell Brand YouTube video to be removed, sources say",
+    "Surgeon calls for corporate homicide probe over claims patients unnecessarily bled to death",
+    "Israeli military completes ground operation in Gaza beyond Yellow Line",
+    "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
+    "Indian driver wins $1.3m in life-changing lottery prize",
+    "Anthropic raises $81bn in record-breaking stock market debut",
+    "Increase in direct cremations since pandemic",
+    "Gilts v kilts: What is happening with Scottish government bonds?"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.3,
+      "BTC": 49.2,
       "GOLD": 58.1
     }
   }
