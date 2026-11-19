@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-18 21:55 UTC",
+  "updated_utc": "2026-11-19 03:26 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": 0.06
     },
     "GOLD": {
-      "date": "2026-11-17",
-      "close": 3864.2,
-      "change_1d_pct": 0.29
+      "date": "2026-11-18",
+      "close": 3741.9,
+      "change_1d_pct": -3.16
     }
   },
   "headlines": [
-    "UK government asks for Russell Brand's YouTube account to be removed",
-    "Democrats nominate Hakeem Jeffries to be US Speaker of the House",
-    "Prince Harry says he would rejoin army as he warns of Russia threat",
-    "FA explored legal challenge to Infantino staying on",
-    "TfL photocard breach exposes 265,000 customers",
-    "Israeli military launches rare ground operation in Gaza beyond Yellow Line",
-    "Hundreds could be hit by chemotherapy scandal, trust says",
-    "William and Kate meet PM Modi as they wrap up India tour",
-    "Wales police chief says racists and misogynists working inside force",
-    "'Lip King unbothered' when mum collapsed after BBL",
-    "How high is UK inflation and how will you be affected?",
-    "Cathedral's staff review 'difficult but necessary'",
-    "The seven Anthropic founders who are about to become multi-billionaires",
-    "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-    "Heating bills, chocolate and cat food: What the inflation figures mean for you"
+    "The Papers: 'I'd rejoin the Army to fight Russia' and 'Boiling point'",
+    "Elon Musk says record spending on US midterms was 'pretty foolish'",
+    "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
+    "'Feudal' leasehold system set to be scrapped in England and Wales",
+    "Crimean Bridge attacked again, Russian official says",
+    "Van Gogh painting sells for record $190.4m after row over its Nazi history",
+    "India's religious make-up - what a new Pew study says about Hindus and Muslims",
+    "Is your child lying to you? That might not be a bad thing",
+    "Crew unaware of risks before Bayesian yacht accident, say investigators",
+    "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
+    "Elon Musk says record spending on US midterms was 'pretty foolish'",
+    "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
+    "Who are the investors ready to jump on Anthropic?",
+    "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
+    "Why has Waymo pulled all its driverless cars from US freeways?"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.3,
-      "GOLD": 58.2
+      "GOLD": 58.1
     }
   }
 }
