@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-19 13:03 UTC",
+  "updated_utc": "2026-11-19 21:32 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Badenoch defends amputee marathon runners claim in benefits cut row",
-    "Covid inquiry report: key findings on testing, tracing and 'the pingdemic'",
-    "McCullum plans to use Brook and Banton as bowlers",
-    "Florence Pugh hits out at weight loss and cosmetic surgery speculation",
-    "Deception can begin aged one - why experts say children lying can be a good thing",
-    "Ella Langley sweeps Country Music Awards as Taylor Swift performs",
-    "Florida pastor found guilty over role in assassination of Haitian president",
-    "Google rejects UK request for Russell Brand YouTube video to be removed, sources say",
-    "Surgeon calls for corporate homicide probe over claims patients unnecessarily bled to death",
-    "Israeli military completes ground operation in Gaza beyond Yellow Line",
+    "Fiona the hippo dies after swallowing a hat at Cincinnati Zoo",
+    "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
+    "Shevchenko accuses Mudryk camp of 'baseless slander'",
+    "Myanmar committed genocide against Rohingya minority, top UN court rules",
+    "Bowen: Myanmar genocide verdict is historic and could have far-reaching implications",
+    "England fined for fans' anti-Catholic chants in Spain",
+    "EU-UK talks going down to the wire, says No 10",
+    "Pochettino's first Man Utd training session filmed by drone operator",
+    "Faults not fixed in 90% of homes in government insulation scheme",
+    "Anthony Zurcher: Trilateral summit high on spectacle, short on substance",
+    "Anthropic raises $81bn in record-breaking stock market debut",
+    "More support for households reliant on heating oil",
     "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
     "Indian driver wins $1.3m in life-changing lottery prize",
-    "Anthropic raises $81bn in record-breaking stock market debut",
-    "Increase in direct cremations since pandemic",
-    "Gilts v kilts: What is happening with Scottish government bonds?"
+    "Increase in direct cremations since pandemic"
   ],
   "ideas": [
     {
