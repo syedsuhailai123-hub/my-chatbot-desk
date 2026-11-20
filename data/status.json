@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-20 11:47 UTC",
+  "updated_utc": "2026-11-20 20:16 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Three Kyiv bridges hit during major Russian missile attack",
-    "Nearly 600 women killed in South Africa within three months",
-    "Calls for consent law change after Joanne Young rape case",
-    "South Korea catches 111 students with new measures against exam cheating",
-    "Pat Cummins retains support of Cricket Australia despite sandpaper allegations",
-    "Guests no longer asked to wash up as new Airbnb rules come into force",
-    "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
-    "Rams star Nacua suspended for personal conduct violation",
+    "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+    "Trump threatens ban on US firms building AI data centres overseas",
+    "Gérard Depardieu and French author investigated over sexual allegations",
+    "Burnham rejects calls for devolution of powers in letter to Welsh FM",
+    "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
+    "Mum's fatal BBL an accident - but risk of more deaths",
     "White House removes cyber-security chief after series of tech outages",
-    "Missing fishing boat Kilda recovered from waters off Orkney",
+    "Man guilty of murdering woman he groomed on fetish site",
+    "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+    "Calls for consent defence change after Joanne Young rape case",
+    "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+    "Trump threatens ban on US firms building AI data centres overseas",
+    "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
     "Airbnb's divisive new house rules come into force",
-    "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
-    "Should AI be judging our credit worthiness?",
-    "Social poker with £5 stake is booming, says dealer",
-    "Survey reveals 'major increase' in cost of living"
+    "Could you spot a fake banknote?"
   ],
   "ideas": [
     {
