@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-20 03:13 UTC",
+  "updated_utc": "2026-11-20 11:47 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-18",
-      "close": 62987.27,
-      "change_1d_pct": -2.94
+      "date": "2026-11-19",
+      "close": 61901.82,
+      "change_1d_pct": -1.72
     },
     "GOLD": {
       "date": "2026-11-19",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "UK and EU to agree youth mobility scheme, BBC understands",
-    "Does our ethnicity change how we experience dying?",
-    "Woman drugged and advertised for sex by husband speaks out as abusers found guilty",
-    "'The bravest woman in Britain' and 'Silence is not an option'",
-    "More climate money for Africa? Europe says use what's already pledged",
-    "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-    "Next round of BBC cuts will be more noticeable to audiences, report warns",
-    "Why Canada is embracing AI data centres while the US pushes back",
-    "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
+    "Three Kyiv bridges hit during major Russian missile attack",
+    "Nearly 600 women killed in South Africa within three months",
+    "Calls for consent law change after Joanne Young rape case",
+    "South Korea catches 111 students with new measures against exam cheating",
+    "Pat Cummins retains support of Cricket Australia despite sandpaper allegations",
+    "Guests no longer asked to wash up as new Airbnb rules come into force",
+    "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+    "Rams star Nacua suspended for personal conduct violation",
+    "White House removes cyber-security chief after series of tech outages",
+    "Missing fishing boat Kilda recovered from waters off Orkney",
     "Airbnb's divisive new house rules come into force",
-    "GTA 6 breaks records as sales top $2bn - industry estimate",
-    "Airbnb's divisive new house rules come into force",
-    "Fish and eggs al desko? The dos and don'ts of the lunch break",
-    "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
-    "How did Anthropic's stock market debut unfold?"
+    "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+    "Should AI be judging our credit worthiness?",
+    "Social poker with £5 stake is booming, says dealer",
+    "Survey reveals 'major increase' in cost of living"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.2,
+      "BTC": 49.1,
       "GOLD": 58.0
     }
   }
