@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-19 21:32 UTC",
+  "updated_utc": "2026-11-20 03:13 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": -2.94
     },
     "GOLD": {
-      "date": "2026-11-18",
-      "close": 3741.9,
-      "change_1d_pct": -3.16
+      "date": "2026-11-19",
+      "close": 3685.5,
+      "change_1d_pct": -1.51
     }
   },
   "headlines": [
-    "Fiona the hippo dies after swallowing a hat at Cincinnati Zoo",
+    "UK and EU to agree youth mobility scheme, BBC understands",
+    "Does our ethnicity change how we experience dying?",
+    "Woman drugged and advertised for sex by husband speaks out as abusers found guilty",
+    "'The bravest woman in Britain' and 'Silence is not an option'",
+    "More climate money for Africa? Europe says use what's already pledged",
     "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-    "Shevchenko accuses Mudryk camp of 'baseless slander'",
-    "Myanmar committed genocide against Rohingya minority, top UN court rules",
-    "Bowen: Myanmar genocide verdict is historic and could have far-reaching implications",
-    "England fined for fans' anti-Catholic chants in Spain",
-    "EU-UK talks going down to the wire, says No 10",
-    "Pochettino's first Man Utd training session filmed by drone operator",
-    "Faults not fixed in 90% of homes in government insulation scheme",
-    "Anthony Zurcher: Trilateral summit high on spectacle, short on substance",
-    "Anthropic raises $81bn in record-breaking stock market debut",
-    "More support for households reliant on heating oil",
-    "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
-    "Indian driver wins $1.3m in life-changing lottery prize",
-    "Increase in direct cremations since pandemic"
+    "Next round of BBC cuts will be more noticeable to audiences, report warns",
+    "Why Canada is embracing AI data centres while the US pushes back",
+    "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
+    "Airbnb's divisive new house rules come into force",
+    "GTA 6 breaks records as sales top $2bn - industry estimate",
+    "Airbnb's divisive new house rules come into force",
+    "Fish and eggs al desko? The dos and don'ts of the lunch break",
+    "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
+    "How did Anthropic's stock market debut unfold?"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.2,
-      "GOLD": 58.1
+      "GOLD": 58.0
     }
   }
 }
