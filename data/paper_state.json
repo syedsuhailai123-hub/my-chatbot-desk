@@ -1,5 +1,5 @@
 {
-  "equity": 10709.692552913757,
+  "equity": 10602.595627384619,
   "slots": {
     "BTC-1h-trend": {
       "open": null,
@@ -58,19 +58,7 @@
       "mode_note": "Learning: 4/30 trades needed before any mode change."
     },
     "BTC-4h-breakout": {
-      "open": {
-        "side": -1,
-        "entry": 58484.0390625,
-        "entry_t": 1795190400,
-        "last_t": 1795233600,
-        "atr": 1243.9598150946506,
-        "stop": 60349.978785141975,
-        "target": 54752.15961721605,
-        "max_hold": 30,
-        "bars_held": 3,
-        "opened": "2026-11-20 16:00 UTC",
-        "shadow": false
-      },
+      "open": null,
       "last_signal_t": 1795190400,
       "trades": [
         {
@@ -132,10 +120,22 @@
           "R": 2.0,
           "shadow": false,
           "pnl_usd": 205.88
+        },
+        {
+          "slot": "BTC-4h-breakout",
+          "side": "SHORT",
+          "entry": 58484.0391,
+          "exit": 60349.9788,
+          "opened": "2026-11-20 16:00 UTC",
+          "closed": "2026-11-21 12:00 UTC",
+          "reason": "stop",
+          "R": -1.0,
+          "shadow": false,
+          "pnl_usd": -107.1
         }
       ],
       "mode": "active",
-      "mode_note": "Learning: 5/30 trades needed before any mode change."
+      "mode_note": "Learning: 6/30 trades needed before any mode change."
     },
     "BTC-1d-trend": {
       "open": null,

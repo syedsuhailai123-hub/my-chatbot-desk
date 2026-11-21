@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-21 09:52 UTC",
+  "updated_utc": "2026-11-21 17:30 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "Deal with EU not dependent on tuition fees agreement, Miliband says",
     "FBI reportedly investigating apparent hack of its criminal database",
-    "Harden passes Bryant for 50-point games",
-    "'Somebody has to stand up to that guy' - and Russell has his chance in Vegas",
-    "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
-    "Trafalgar Square Christmas tree felled in Norway",
-    "Athlete who lost hand saving friends in attack 'would do it again'",
-    "Staff gagging clauses lifted ahead of probe into culture at data watchdog",
-    "Man convicted of starting Palisades fire in Los Angeles",
+    "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+    "British man swims through Strait of Hormuz to highlight environmental impact of war",
+    "England run up record win over New Zealand in rugby union's Nations Championship",
+    "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+    "Scouts say they face £1m tourist tax cost for overnight trips",
+    "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+    "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+    "'We're not meant to carry life's challenges alone', Catherine says in first clip",
+    "Catherine talks openly about how cancer changed her in documentary on BBC",
+    "Sessions offer advice on rising energy costs",
     "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
     "Tech stock sell-off drags markets down as Anthropic shares slide",
     "Trump threatens ban on US firms building AI data centres overseas",
-    "UK to explore even closer ties with EU after agreeing deal, says Burnham",
-    "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow"
+    "UK to explore even closer ties with EU after agreeing deal, says Burnham"
   ],
   "ideas": [
     {

@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-11-21 09:52 UTC",
-  "equity": 10709.69,
+  "updated_utc": "2026-11-21 17:30 UTC",
+  "equity": 10602.6,
   "slots": {
     "BTC-1h-trend": {
       "mode": "active",
@@ -12,17 +12,11 @@
     },
     "BTC-4h-breakout": {
       "mode": "active",
-      "mode_note": "Learning: 5/30 trades needed before any mode change.",
-      "trades": 5,
-      "win_rate_pct": 80.0,
-      "avg_R": 1.4,
-      "open": {
-        "side": "SHORT",
-        "entry": 58484.04,
-        "stop": 60349.98,
-        "target": 54752.16,
-        "shadow": false
-      }
+      "mode_note": "Learning: 6/30 trades needed before any mode change.",
+      "trades": 6,
+      "win_rate_pct": 66.7,
+      "avg_R": 1.0,
+      "open": null
     },
     "BTC-1d-trend": {
       "mode": "active",
@@ -56,6 +50,18 @@
     }
   },
   "recent_trades": [
+    {
+      "slot": "BTC-4h-breakout",
+      "side": "SHORT",
+      "entry": 58484.0391,
+      "exit": 60349.9788,
+      "opened": "2026-11-20 16:00 UTC",
+      "closed": "2026-11-21 12:00 UTC",
+      "reason": "stop",
+      "R": -1.0,
+      "shadow": false,
+      "pnl_usd": -107.1
+    },
     {
       "slot": "BTC-4h-breakout",
       "side": "SHORT",
