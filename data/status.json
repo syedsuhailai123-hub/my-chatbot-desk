@@ -1,29 +1,29 @@
 {
-  "updated_utc": "2026-11-21 02:12 UTC",
+  "updated_utc": "2026-11-21 09:52 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-19",
-      "close": 61901.82,
-      "change_1d_pct": -1.72
+      "date": "2026-11-20",
+      "close": 58798.98,
+      "change_1d_pct": -5.01
     },
     "GOLD": {
       "date": "2026-11-20",
-      "close": 3539.0,
-      "change_1d_pct": -3.98
+      "close": 3515.4,
+      "change_1d_pct": -4.62
     }
   },
   "headlines": [
-    "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-    "Villagers to vote on 'leaving UK' over plans to house migrants at RAF base",
-    "The Papers: 'Closest ties since Brexit' and 'Grand Theft EU'",
-    "They were fined $811m for conning detained migrants, but the scams didn't stop",
-    "ANC fights to keep control of South Africa's key cities after election setback",
-    "'I was exhausted': Two days in the shoes of a tradwife",
-    "Phoebe Bridgers banned phones at her gigs, so fans are using art to remember them",
-    "Can AI really help spot Black Friday deals? We put it to the test",
-    "Who will be Robert Pattinson's 'Bond girl' - and does the role need to change?",
-    "Sales of baby sleeping bag halted by Next after new mum raises alarm",
+    "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+    "Deal with EU not dependent on tuition fees agreement, Miliband says",
+    "FBI reportedly investigating apparent hack of its criminal database",
+    "Harden passes Bryant for 50-point games",
+    "'Somebody has to stand up to that guy' - and Russell has his chance in Vegas",
+    "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+    "Trafalgar Square Christmas tree felled in Norway",
+    "Athlete who lost hand saving friends in attack 'would do it again'",
+    "Staff gagging clauses lifted ahead of probe into culture at data watchdog",
+    "Man convicted of starting Palisades fire in Los Angeles",
     "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
     "Tech stock sell-off drags markets down as Anthropic shares slide",
     "Trump threatens ban on US firms building AI data centres overseas",
