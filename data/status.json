@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-20 20:16 UTC",
+  "updated_utc": "2026-11-21 02:12 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": -1.72
     },
     "GOLD": {
-      "date": "2026-11-19",
-      "close": 3685.5,
-      "change_1d_pct": -1.51
+      "date": "2026-11-20",
+      "close": 3539.0,
+      "change_1d_pct": -3.98
     }
   },
   "headlines": [
-    "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+    "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+    "Villagers to vote on 'leaving UK' over plans to house migrants at RAF base",
+    "The Papers: 'Closest ties since Brexit' and 'Grand Theft EU'",
+    "They were fined $811m for conning detained migrants, but the scams didn't stop",
+    "ANC fights to keep control of South Africa's key cities after election setback",
+    "'I was exhausted': Two days in the shoes of a tradwife",
+    "Phoebe Bridgers banned phones at her gigs, so fans are using art to remember them",
+    "Can AI really help spot Black Friday deals? We put it to the test",
+    "Who will be Robert Pattinson's 'Bond girl' - and does the role need to change?",
+    "Sales of baby sleeping bag halted by Next after new mum raises alarm",
+    "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
     "Trump threatens ban on US firms building AI data centres overseas",
-    "Gérard Depardieu and French author investigated over sexual allegations",
-    "Burnham rejects calls for devolution of powers in letter to Welsh FM",
-    "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
-    "Mum's fatal BBL an accident - but risk of more deaths",
-    "White House removes cyber-security chief after series of tech outages",
-    "Man guilty of murdering woman he groomed on fetish site",
     "UK to explore even closer ties with EU after agreeing deal, says Burnham",
-    "Calls for consent defence change after Joanne Young rape case",
-    "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
-    "Trump threatens ban on US firms building AI data centres overseas",
-    "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
-    "Airbnb's divisive new house rules come into force",
-    "Could you spot a fake banknote?"
+    "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 49.1,
-      "GOLD": 58.0
+      "GOLD": 57.8
     }
   }
 }
