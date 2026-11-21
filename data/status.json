@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-21 17:30 UTC",
+  "updated_utc": "2026-11-21 23:14 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,16 +14,16 @@
     }
   },
   "headlines": [
-    "FBI reportedly investigating apparent hack of its criminal database",
-    "Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
-    "British man swims through Strait of Hormuz to highlight environmental impact of war",
-    "England run up record win over New Zealand in rugby union's Nations Championship",
+    "Match of the Day",
+    "Can win over All Blacks finally break England's boom-bust cycle?",
+    "Australia hold on for narrow win against Wales",
+    "France secure Nations Championship final with Springboks",
     "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "Scouts say they face £1m tourist tax cost for overnight trips",
-    "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+    "Lock of former US President George Washington's hair sells for $4,000",
+    "Spitting Image co-creator Peter Fluck dies aged 85",
+    "Raya set to have scan on injury - how much would Arsenal miss him?",
     "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "'We're not meant to carry life's challenges alone', Catherine says in first clip",
-    "Catherine talks openly about how cancer changed her in documentary on BBC",
+    "Ireland remind themselves that the best are beatable",
     "Sessions offer advice on rising energy costs",
     "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
     "Tech stock sell-off drags markets down as Anthropic shares slide",
