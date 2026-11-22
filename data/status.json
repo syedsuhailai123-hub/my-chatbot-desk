@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-22 03:15 UTC",
+  "updated_utc": "2026-11-22 12:34 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-20",
-      "close": 58798.98,
-      "change_1d_pct": -5.01
+      "date": "2026-11-21",
+      "close": 60094.09,
+      "change_1d_pct": 2.2
     },
     "GOLD": {
       "date": "2026-11-20",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "Kate's 'road to recovery' and 'Brave princess'",
-    "FBI reportedly investigating apparent hack of its criminal database",
-    "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-    "How a teen gamer and his mother helped rescue a missing girl",
-    "Parents urged to spot online stalking warning signs as cases rise",
-    "From pit-stops to go-to destinations: The transformation of service stations",
+    "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
+    "Russia-bound ship still on fire after attack in Gulf of Finland",
+    "Verstappen a constant amid chaos as he says Russell is 'so far below my level'",
+    "Injured Jacks out of T20 Australia tour",
+    "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
+    "South Korea education minister resigns over exam cheating scandal",
+    "Hamilton-Leclerc collision completely unacceptable, says Ferrari boss",
+    "Joanna Page says she nearly messed up Gavin and Stacey audition",
+    "Miley Cyrus marries Maxx Morando in California ceremony",
+    "'Not the right time' - Fernandes pauses Man Utd contract talks",
+    "MP criticises Guernsey and Jersey company ownership register plans",
+    "Italian jeweller and businessman Paolo Bulgari dies aged 89",
     "Employers are being asked to give interview feedback - here's what applicants want",
-    "Why Nicola Coughlan's new drama might leave viewers uncomfortable",
-    "Can win over All Blacks finally break England's boom-bust cycle?",
     "Sessions offer advice on rising energy costs",
-    "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
-    "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "Trump threatens ban on US firms building AI data centres overseas",
-    "UK to explore even closer ties with EU after agreeing deal, says Burnham"
+    "Can AI really help spot Black Friday deals? We put it to the test"
   ],
   "ideas": [
     {
@@ -60,7 +60,7 @@
     "hit_rate": 33.3,
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
-      "BTC": 49.1,
+      "BTC": 49.0,
       "GOLD": 57.8
     }
   }
