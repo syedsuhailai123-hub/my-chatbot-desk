@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-22 12:34 UTC",
+  "updated_utc": "2026-11-22 20:21 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Theresa May 'aghast' at Burnham's EU plans and says 'Brexit is done'",
-    "Russia-bound ship still on fire after attack in Gulf of Finland",
-    "Verstappen a constant amid chaos as he says Russell is 'so far below my level'",
-    "Injured Jacks out of T20 Australia tour",
-    "Verstappen wins extraordinary Las Vegas Grand Prix as Ferraris collide",
-    "South Korea education minister resigns over exam cheating scandal",
-    "Hamilton-Leclerc collision completely unacceptable, says Ferrari boss",
-    "Joanna Page says she nearly messed up Gavin and Stacey audition",
-    "Miley Cyrus marries Maxx Morando in California ceremony",
-    "'Not the right time' - Fernandes pauses Man Utd contract talks",
+    "Alcaraz outplays Zverev for first ATP Finals triumph",
+    "Ngumoha stars as Liverpool thrash 10-man Man Utd",
+    "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+    "From conceding seven to Hull heroics - how Tzolakis recovered to defy Brighton",
+    "What's next after no deal at COP31 climate talks?",
+    "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
+    "Yoro sees red as Ngumoha shines - Liverpool v Man Utd player ratings",
+    "COP31 fails to reach major climate deal as talks expose deep divisions",
+    "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
+    "The red card that changed Liverpool-Man Utd: correct call?",
+    "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
     "MP criticises Guernsey and Jersey company ownership register plans",
     "Italian jeweller and businessman Paolo Bulgari dies aged 89",
     "Employers are being asked to give interview feedback - here's what applicants want",
-    "Sessions offer advice on rising energy costs",
-    "Can AI really help spot Black Friday deals? We put it to the test"
+    "Sessions offer advice on rising energy costs"
   ],
   "ideas": [
     {
