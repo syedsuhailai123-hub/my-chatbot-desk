@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-21 23:14 UTC",
+  "updated_utc": "2026-11-22 03:15 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,16 +14,16 @@
     }
   },
   "headlines": [
-    "Match of the Day",
-    "Can win over All Blacks finally break England's boom-bust cycle?",
-    "Australia hold on for narrow win against Wales",
-    "France secure Nations Championship final with Springboks",
-    "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-    "Lock of former US President George Washington's hair sells for $4,000",
-    "Spitting Image co-creator Peter Fluck dies aged 85",
-    "Raya set to have scan on injury - how much would Arsenal miss him?",
     "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
-    "Ireland remind themselves that the best are beatable",
+    "Kate's 'road to recovery' and 'Brave princess'",
+    "FBI reportedly investigating apparent hack of its criminal database",
+    "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
+    "How a teen gamer and his mother helped rescue a missing girl",
+    "Parents urged to spot online stalking warning signs as cases rise",
+    "From pit-stops to go-to destinations: The transformation of service stations",
+    "Employers are being asked to give interview feedback - here's what applicants want",
+    "Why Nicola Coughlan's new drama might leave viewers uncomfortable",
+    "Can win over All Blacks finally break England's boom-bust cycle?",
     "Sessions offer advice on rising energy costs",
     "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
     "Tech stock sell-off drags markets down as Anthropic shares slide",
