@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-23 10:45 UTC",
+  "updated_utc": "2026-11-23 22:38 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
-    "How we made friends so our children could bond with their half-siblings",
-    "Poundland is facing collapse - what's gone wrong?",
-    "Catering giant to switch stock market listing to US in further blow to UK",
-    "Tyson Fury reveals schizophrenia diagnosis",
+    "Janelt scores stunner as Brentford beat 10-man Everton",
+    "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+    "'Life is not infinite': Catherine talks about 'mortality' in new documentary clip",
+    "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+    "De Bruyne's feelings for Man City will 'never change'",
+    "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+    "US rapper Don Toliver postpones two arena shows after Manchester evacuation",
+    "What strike on Russian ship in Libya says about spread of Ukraine war",
+    "Andrew Mountbatten-Windsor received £750,000 from Turkish millionaire, court told",
+    "My approach to EU is pragmatic, says Burnham",
+    "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
+    "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
+    "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
     "Pip assessments need 'fundamental overhaul', report to say",
-    "Watch: Who is taking part in France's recent street protests?",
-    "Kenya and DR Congo agree to restore ties after tensions over conflict",
-    "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
-    "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-    "South East Water reports loss after supply issues",
-    "Poundland is facing collapse - what's gone wrong?",
-    "Catering giant to switch stock market listing to US in further blow to UK",
-    "Pip assessments need 'fundamental overhaul', report to say",
-    "Who is taking part in France's recent street protests?"
+    "Faisal Islam: Why Jensen Huang proved too big to fire"
   ],
   "ideas": [
     {
