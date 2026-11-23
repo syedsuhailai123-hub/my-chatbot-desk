@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-22 20:21 UTC",
+  "updated_utc": "2026-11-23 01:42 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Alcaraz outplays Zverev for first ATP Finals triumph",
-    "Ngumoha stars as Liverpool thrash 10-man Man Utd",
-    "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
-    "From conceding seven to Hull heroics - how Tzolakis recovered to defy Brighton",
-    "What's next after no deal at COP31 climate talks?",
-    "US Army to detonate tonnes of unstable explosives in Iowa despite court order",
-    "Yoro sees red as Ngumoha shines - Liverpool v Man Utd player ratings",
+    "Democrats win largest House majority since 1992 after flipping North Carolina seat",
+    "Would you go on holiday with your ex's kids and their mum? How to make blended families work",
+    "Energy bills will soar - here's how you can ease the pain",
+    "Australian music legend Molly Meldrum dies aged 83",
     "COP31 fails to reach major climate deal as talks expose deep divisions",
-    "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
-    "The red card that changed Liverpool-Man Utd: correct call?",
-    "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
-    "MP criticises Guernsey and Jersey company ownership register plans",
+    "Can AI spot breast cancer earlier? NHS launches world's largest trial to find out",
+    "Will it snow this week? Mild Atlantic air collides with cold air across the UK",
     "Italian jeweller and businessman Paolo Bulgari dies aged 89",
-    "Employers are being asked to give interview feedback - here's what applicants want",
-    "Sessions offer advice on rising energy costs"
+    "What is going on with Poundland?",
+    "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+    "Energy bills will soar - here's how you can ease the pain",
+    "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+    "What is going on with Poundland?",
+    "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+    "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills"
   ],
   "ideas": [
     {
