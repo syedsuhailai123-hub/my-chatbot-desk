@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-23 22:38 UTC",
+  "updated_utc": "2026-11-24 06:57 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": 1.78
     },
     "GOLD": {
-      "date": "2026-11-20",
-      "close": 3515.4,
-      "change_1d_pct": -4.62
+      "date": "2026-11-23",
+      "close": 3651.4,
+      "change_1d_pct": 3.87
     }
   },
   "headlines": [
-    "Janelt scores stunner as Brentford beat 10-man Everton",
-    "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
-    "'Life is not infinite': Catherine talks about 'mortality' in new documentary clip",
-    "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
-    "De Bruyne's feelings for Man City will 'never change'",
-    "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
-    "US rapper Don Toliver postpones two arena shows after Manchester evacuation",
-    "What strike on Russian ship in Libya says about spread of Ukraine war",
-    "Andrew Mountbatten-Windsor received £750,000 from Turkish millionaire, court told",
-    "My approach to EU is pragmatic, says Burnham",
+    "Two goals in 15 games - what's going on with Gyokeres?",
+    "Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December",
+    "115 days, 39 private-jet flights, one election - Infantino's globetrotting",
+    "Vapes seized in schools spiked with drugs, Met says",
+    "State failing to keep public safe, warns victims' commissioner",
+    "From dancing on the Tube to being sectioned: Sabrina Bahsoon on her psychosis misdiagnosis",
+    "Afghan women with UK university offers 'heartbroken' after visas stopped",
+    "Cold War missile tucked away in a field hides love story for man's late wife",
+    "India's 'cockroach' party leader says he was stopped from flying to UK",
+    "UK papers:  'Huang returns to Nvidia hotseat' and 'Burnham opens door to second referendum'",
+    "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
+    "I pay £250 a month for someone else to do my life admin - it's worth it",
     "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
     "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-    "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-    "Pip assessments need 'fundamental overhaul', report to say",
-    "Faisal Islam: Why Jensen Huang proved too big to fire"
+    "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 48.9,
-      "GOLD": 57.8
+      "GOLD": 57.7
     }
   }
 }
