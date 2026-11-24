@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-24 06:57 UTC",
+  "updated_utc": "2026-11-24 18:53 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-22",
-      "close": 61161.91,
-      "change_1d_pct": 1.78
+      "date": "2026-11-23",
+      "close": 61210.98,
+      "change_1d_pct": 0.08
     },
     "GOLD": {
       "date": "2026-11-23",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Two goals in 15 games - what's going on with Gyokeres?",
-    "Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December",
-    "115 days, 39 private-jet flights, one election - Infantino's globetrotting",
-    "Vapes seized in schools spiked with drugs, Met says",
-    "State failing to keep public safe, warns victims' commissioner",
-    "From dancing on the Tube to being sectioned: Sabrina Bahsoon on her psychosis misdiagnosis",
-    "Afghan women with UK university offers 'heartbroken' after visas stopped",
-    "Cold War missile tucked away in a field hides love story for man's late wife",
-    "India's 'cockroach' party leader says he was stopped from flying to UK",
-    "UK papers:  'Huang returns to Nvidia hotseat' and 'Burnham opens door to second referendum'",
-    "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
-    "I pay £250 a month for someone else to do my life admin - it's worth it",
-    "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-    "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-    "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia"
+    "Faisal Islam: Fears over the AI boom haven't gone away",
+    "Watch: Would you let Meta's AI agent run parts of your life?",
+    "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
+    "'I miss being on court' - Sinner has 'minor surgery' on knee",
+    "Sacked London Pride boss given suspended prison sentence",
+    "Man charged with murder of missing 20-year-old woman",
+    "Businesses supporting Ukraine told to 'act now' to protect against Russian sabotage",
+    "Disability benefit review calls for closer link with claimant costs",
+    "Former police chief inspector jailed for rape",
+    "Girl, 14, repeatedly stabbed by boy told friends he 'begged' to see her, murder trial hears",
+    "Faisal Islam: Fears over the AI boom haven't gone away",
+    "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
+    "Four generations of a family working in one factory",
+    "World Cup drove profits surge, says Marston's",
+    "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang"
   ],
   "ideas": [
     {
