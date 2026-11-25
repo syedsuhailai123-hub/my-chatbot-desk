@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-24 18:53 UTC",
+  "updated_utc": "2026-11-25 03:02 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": 0.08
     },
     "GOLD": {
-      "date": "2026-11-23",
-      "close": 3651.4,
-      "change_1d_pct": 3.87
+      "date": "2026-11-24",
+      "close": 3561.9,
+      "change_1d_pct": -2.45
     }
   },
   "headlines": [
-    "Faisal Islam: Fears over the AI boom haven't gone away",
-    "Watch: Would you let Meta's AI agent run parts of your life?",
-    "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-    "'I miss being on court' - Sinner has 'minor surgery' on knee",
-    "Sacked London Pride boss given suspended prison sentence",
-    "Man charged with murder of missing 20-year-old woman",
-    "Businesses supporting Ukraine told to 'act now' to protect against Russian sabotage",
-    "Disability benefit review calls for closer link with claimant costs",
-    "Former police chief inspector jailed for rape",
-    "Girl, 14, repeatedly stabbed by boy told friends he 'begged' to see her, murder trial hears",
-    "Faisal Islam: Fears over the AI boom haven't gone away",
-    "Nvidia shares slide as Trump's role in Jensen Huang's comeback questioned by US politicians",
-    "Four generations of a family working in one factory",
-    "World Cup drove profits surge, says Marston's",
-    "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang"
+    "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+    "Lies, a disguise and surfboard bags: how a jealous Sydney policeman tried to cover up double murder",
+    "Kilmar Ábrego García leaving US for Spain, bringing deportation battle to an end",
+    "Thomas Markle indicted in US for possessing child sex abuse images",
+    "Ministers ask public for views on changing age of consent",
+    "UK papers: PIP benefits 'not fit for purpose' and Royal 'security scare'",
+    "Will there be a White Christmas this year?",
+    "Anthony Zurcher: Trump's Nvidia intervention ties his political fortunes to the AI boom",
+    "The rising cost of putting food on the table in India",
+    "Shot in the face at 15: The lives shattered by Cameroon's decade of conflict",
+    "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+    "Trump's Nvidia intervention ties his political fortunes to the AI boom",
+    "The rising cost of putting food on the table in India",
+    "US preparing to unveil new tariffs on global trading partners",
+    "Why tiny cars are taking off across Europe"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 48.9,
-      "GOLD": 57.7
+      "GOLD": 57.6
     }
   }
 }

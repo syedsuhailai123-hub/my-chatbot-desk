@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-24 18:53 UTC",
+  "updated_utc": "2026-11-25 03:02 UTC",
   "equity": 10496.57,
   "slots": {
     "BTC-1h-trend": {
@@ -32,7 +32,13 @@
       "trades": 1,
       "win_rate_pct": 0.0,
       "avg_R": -1.0,
-      "open": null
+      "open": {
+        "side": "LONG",
+        "entry": 3549.3,
+        "stop": 3518.87,
+        "target": 3610.15,
+        "shadow": false
+      }
     },
     "GOLD-1d-breakout": {
       "mode": "active",

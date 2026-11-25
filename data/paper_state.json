@@ -145,8 +145,20 @@
       "mode_note": "Learning: 0/30 trades needed before any mode change."
     },
     "GOLD-1h-reversion": {
-      "open": null,
-      "last_signal_t": 1794441600,
+      "open": {
+        "side": 1,
+        "entry": 3549.300048828125,
+        "entry_t": 1795572000,
+        "last_t": 1795572000,
+        "atr": 20.283684899639223,
+        "stop": 3518.8745214786663,
+        "target": 3610.151103527043,
+        "max_hold": 24,
+        "bars_held": 0,
+        "opened": "2026-11-25 02:00 UTC",
+        "shadow": false
+      },
+      "last_signal_t": 1795572000,
       "trades": [
         {
           "slot": "GOLD-1h-reversion",
