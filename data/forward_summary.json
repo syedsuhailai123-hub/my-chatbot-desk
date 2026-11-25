@@ -1,21 +1,21 @@
 {
-  "updated_utc": "2026-11-25 03:02 UTC",
+  "updated_utc": "2026-11-25 12:52 UTC",
   "forward_start_utc": "2026-11-08 18:00 UTC",
   "rules_unchanged": true,
   "status": "WAITING: 16 of 40 trades needed",
-  "net_pnl_usd": 240.36,
+  "net_pnl_usd": 240.32,
   "return_pct": 2.4,
   "closed_trades": 16,
   "win_rate_pct": 43.8,
   "profit_factor": 1.53,
-  "avg_R": 0.303,
+  "avg_R": 0.302,
   "max_drawdown_pct": -1.99,
-  "buy_and_hold_since_start_pct": -12.99,
+  "buy_and_hold_since_start_pct": -13.75,
   "open_position": {
     "side": "SHORT",
-    "entry": 3551.0,
-    "stop": 3581.67,
-    "target": 3489.95,
+    "entry": 3551.3,
+    "stop": 3581.97,
+    "target": 3490.25,
     "opened_utc": "2026-11-24 21:00 UTC"
   },
   "criteria": {

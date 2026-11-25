@@ -1,5 +1,5 @@
 {
-  "equity": 10496.569671110772,
+  "equity": 10391.603974399664,
   "slots": {
     "BTC-1h-trend": {
       "open": null,
@@ -58,8 +58,20 @@
       "mode_note": "Learning: 4/30 trades needed before any mode change."
     },
     "BTC-4h-breakout": {
-      "open": null,
-      "last_signal_t": 1795190400,
+      "open": {
+        "side": -1,
+        "entry": 58551.3984375,
+        "entry_t": 1795593600,
+        "last_t": 1795593600,
+        "atr": 1204.0988167226267,
+        "stop": 60357.54666258394,
+        "target": 54939.10198733212,
+        "max_hold": 30,
+        "bars_held": 0,
+        "opened": "2026-11-25 08:00 UTC",
+        "shadow": false
+      },
+      "last_signal_t": 1795593600,
       "trades": [
         {
           "slot": "BTC-4h-breakout",
@@ -145,19 +157,7 @@
       "mode_note": "Learning: 0/30 trades needed before any mode change."
     },
     "GOLD-1h-reversion": {
-      "open": {
-        "side": 1,
-        "entry": 3549.300048828125,
-        "entry_t": 1795572000,
-        "last_t": 1795572000,
-        "atr": 20.283684899639223,
-        "stop": 3518.8745214786663,
-        "target": 3610.151103527043,
-        "max_hold": 24,
-        "bars_held": 0,
-        "opened": "2026-11-25 02:00 UTC",
-        "shadow": false
-      },
+      "open": null,
       "last_signal_t": 1795572000,
       "trades": [
         {
@@ -171,10 +171,22 @@
           "R": -1.0,
           "shadow": false,
           "pnl_usd": -98.97
+        },
+        {
+          "slot": "GOLD-1h-reversion",
+          "side": "LONG",
+          "entry": 3549.3,
+          "exit": 3518.8745,
+          "opened": "2026-11-25 02:00 UTC",
+          "closed": "2026-11-25 06:00 UTC",
+          "reason": "stop",
+          "R": -1.0,
+          "shadow": false,
+          "pnl_usd": -104.97
         }
       ],
       "mode": "active",
-      "mode_note": "Learning: 1/30 trades needed before any mode change."
+      "mode_note": "Learning: 2/30 trades needed before any mode change."
     },
     "GOLD-1d-breakout": {
       "open": null,
