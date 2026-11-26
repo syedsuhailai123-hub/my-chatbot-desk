@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-25 22:31 UTC",
+  "updated_utc": "2026-11-26 05:02 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
@@ -8,27 +8,27 @@
       "change_1d_pct": -2.39
     },
     "GOLD": {
-      "date": "2026-11-24",
-      "close": 3561.9,
-      "change_1d_pct": -2.45
+      "date": "2026-11-25",
+      "close": 3535.8,
+      "change_1d_pct": -0.73
     }
   },
   "headlines": [
-    "Duran Duran guitarist Andy Taylor dies aged 65",
-    "Thirty-one killed in massive fire as fuel tanker crashes on Cairo highway",
-    "Andy Taylor: Duran Duran's livewire guitarist who was a Wild Boy on stage and off",
-    "Isak scores twice as clinical Liverpool beat Brugge",
-    "Gordon stars in comfortable Barca win over Sabah",
-    "North Korea expels Swiss diplomat in sanctions row",
-    "US stocks fall further as fears over AI intensify",
-    "Poundland collapses putting 11,000 jobs at risk",
-    "Dubois to defend title against Parker in Manchester",
-    "US Army says controlled blast of explosives in Iowa was 'huge success'",
-    "US stocks fall further as fears over AI intensify",
-    "Poundland collapses putting 11,000 jobs at risk",
-    "What we know about Trump's Thanksgiving tariffs",
-    "Martin Lewis' tips on staying warm this winter",
-    "Energy price increase 'could put me in hospital'"
+    "US announces new tariffs on host of countries including China",
+    "Macy's postpones Thanksgiving parade due to severe weather",
+    "FedEx plane overshoots Miami runway, with flights briefly suspended at airport",
+    "UK government set to publish new treaties agreed with EU",
+    "As foreign troops withdraw from Somalia, could al-Shabab take over?",
+    "California warns of flooding as King Tides peak over Thanksgiving",
+    "UK papers: Six-day streak 'smashes' global temperature record and 'Gord speed'",
+    "Frustration reigns for Pochettino in chaotic start to Man Utd job",
+    "The US pastor who wants to see women's right to vote overturned",
+    "Spanish elections: What you need to know and what's at stake",
+    "US announces new tariffs on host of countries including China",
+    "UK government set to publish new treaties agreed with EU",
+    "US approves SpaceX plan to send a million data satellites to space",
+    "Guitar wars - the transatlantic battle over the Stratocaster",
+    "US stocks fall further as fears over AI intensify"
   ],
   "ideas": [
     {
@@ -61,7 +61,7 @@
     "avg_return_pct": -4.89,
     "baseline_up_pct": {
       "BTC": 48.8,
-      "GOLD": 57.6
+      "GOLD": 57.5
     }
   }
 }
