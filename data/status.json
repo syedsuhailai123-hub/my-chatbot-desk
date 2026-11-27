@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-11-26 23:53 UTC",
+  "updated_utc": "2026-11-27 08:29 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-25",
-      "close": 60378.2,
-      "change_1d_pct": 1.06
+      "date": "2026-11-26",
+      "close": 60494.71,
+      "change_1d_pct": 0.19
     },
     "GOLD": {
       "date": "2026-11-25",
@@ -14,21 +14,21 @@
     }
   },
   "headlines": [
-    "Huw Edwards gives first interviews since child abuse image conviction",
-    "UK to pay 'participation' fee to deliver EU deals",
-    "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
-    "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
-    "Bournemouth 'allowed to dream' as fans book Europa League final hotels",
+    "'I wouldn't be here today without you': Student's praise for man who stopped train attacker",
+    "Australia's sandpapergate probe to also include 2017-18 Ashes against England",
+    "My self-care ritual is a meal at a fancy restaurant - on my own",
     "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
-    "Zelensky questions 'strange' Trump-Putin friendship in BBC interview",
-    "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-    "Watch: Man and dog narrowly escape powerful king tide in Oregon",
-    "Fury 'never received' schizophrenia diagnosis",
-    "Asia made a big AI bet on Nvidia. What happens now?",
-    "Faisal Islam: Why Trump's new tariffs are less of a threat",
-    "When will Poundland shops close? Five key questions answered",
-    "New UK-EU treaty has 10-year termination clause",
-    "Norse Atlantic suspends all flights as it faces potential collapse"
+    "How Fury and Joshua changed British boxing forever",
+    "Man City owners should be forced to sell, say rival club chiefs",
+    "Chris Mason: Immigration stats are down but will that be the end of the issue?",
+    "Could housing decide Spain's general election?",
+    "Houthi attacks test Saudi Arabia's image of security",
+    "Leaders clash in final Spain election debate as housing dominates run-in",
+    "My self-care ritual is a meal at a fancy restaurant - on my own",
+    "How much is your rent in Birmingham?",
+    "The food bank helping pet owners with rising bills",
+    "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
+    "Why is there a shortage of 'wizard' elevator mechanics?"
   ],
   "ideas": [
     {
