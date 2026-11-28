@@ -1,34 +1,34 @@
 {
-  "updated_utc": "2026-11-28 01:58 UTC",
+  "updated_utc": "2026-11-28 10:25 UTC",
   "ai_status": "error: HTTPError: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
   "prices": {
     "BTC": {
-      "date": "2026-11-26",
-      "close": 60494.71,
-      "change_1d_pct": 0.19
+      "date": "2026-11-27",
+      "close": 59866.37,
+      "change_1d_pct": -1.04
     },
     "GOLD": {
       "date": "2026-11-27",
-      "close": 3668.5,
-      "change_1d_pct": 3.75
+      "close": 3639.6,
+      "change_1d_pct": 2.94
     }
   },
   "headlines": [
-    "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
-    "Nigeria's 'ultimate hard man' who become an online meme",
-    "'I don't know what I'd do without it': Why shoppers and staff fear losing Poundland",
-    "Should I get a flu vaccine now?",
-    "'Poison seller' Kenneth Law apologises in court to the families of his victims",
-    "The Indian 'Tamasha queen' whose fans paid for a show that never happened",
-    "The Papers: 'Catherine on cancer fight' and 'Benefits and pensions chaos'",
-    "A clinic is reassessing people with ADHD and autism diagnoses - but critics fear it could deepen stigma",
-    "Behind China's spectacular rise, voices who defied it say they are being drowned out",
-    "Five-try Ireland beat Australia in autumn finale",
+    "Actor and comedian PJ Gallagher dies aged 51",
+    "Seven students killed and nearly 100 injured in explosion in Afghanistan, official says",
+    "'I was trying to be someone I wasn't' – Steward on All Blacks shot",
+    "Pensions and benefits services still down after 'cyber incident'",
+    "Set time aside for children to read for pleasure, schools to be told",
+    "Ranking the Premier League's ultimate free-kick specialists",
+    "Australian wrestler Bronson Reed dies aged 38, WWE says",
+    "'It doesn't come from me' - Eckert irked by Southampton jibes at Boro",
+    "Two staff killed in Israeli strike on Gaza medical clinic, MSF says",
+    "UK set for break from harsh cold as temperatures climb into next week",
+    "Butcher blames costs for closure after 127 years",
     "Will new energy fixes cost more in January?",
     "My self-care ritual is a meal at a fancy restaurant - on my own",
     "'We're scared to turn our heating on'",
-    "How much is your rent in Birmingham?",
-    "The food bank helping pet owners with rising bills"
+    "How much is your rent in Birmingham?"
   ],
   "ideas": [
     {
